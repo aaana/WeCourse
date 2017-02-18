@@ -1,0 +1,58 @@
+body {
+    /*background-image: url('../img/logBg.jpg');*/
+    background-image: url(http://www.17sucai.com/upload/70418/2016-01-25/8aa42007154c96c2184006ab7e503f91_big.jpg);
+    font-family: "Arial","Microsoft YaHei","黑体",'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+}
+footer {
+    padding: 20px 0;
+}
+
+.container input:hover,
+.container input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-login,
+.form-signup  {
+    max-width: 330px;
+    padding: 20px 15px 25px;
+    margin: 140px auto 0;
+    border-radius: 10px;
+    
+    /*带边白底*/
+    background-color: rgba(255, 255, 254, 0.81);
+    border: solid 1px #888;
+    /*灰底*/
+    /*background-color: #eee;*/
+}
+.form-login input {
+    margin-bottom: 10px;
+}
+.form-signup {
+	display: none;
+}
+.form-login-heading,
+.form-signup-heading {
+    padding-left: 5px;
+}
+.log_trans_sign,
+.sign_trans_log {
+	margin: 5px auto;
+	text-align: center;
+}
+a:hover {
+    text-decoration: none;
+    outline: none;
+    cursor: default;
+}
+
+img {
+    padding-left: 5px;
+}

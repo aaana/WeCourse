@@ -1,0 +1,152 @@
+#sidebar {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 16px;
+}
+
+#sidebar button {
+    color: #ffffff;
+    background-color: #337ab7;
+    border: none;
+    outline: none;
+}
+
+#sidebar.affix {
+    top: 70px;
+}
+
+.sidebarUserInfo,
+.loginDiv {
+    display: flex;
+    background: #eee;
+    flex-direction: column;
+}
+.sidebarUserInfo > div:first-child {
+    background-color: #3E3E3E;
+    background-position: 100px -100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sidebarUserInfo > div:first-child > a {
+    position: relative;
+    top:20px;
+}
+.sidebarUserInfo > div:first-child > a > img {
+    width: 80px;
+    height: 80px;
+}
+
+.sidebarUserInfo > a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: default;
+    color: #888;
+}
+
+.sidebarUserInfo > div:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebarUserInfo > div:last-child > span {
+    color: #888;
+    font-size: 20px;
+    margin: 15px 0 10px;
+}
+
+.sidebarUserInfo > div:last-child > a {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: default;
+}
+.sidebarUserInfo > div:last-child > a:not(:last-child) {
+    border-right: #888 solid 2px;
+}
+
+.sidebarUserInfo > div:last-child > a > span:first-child {
+    font-size: 20px;
+    margin-bottom: -3px;
+    font-weight: bold;
+    color: #888;
+}
+.sidebarUserInfo > div:last-child > a > span:last-child {
+    font-size: 12px;
+    color: #888;
+}
+.sidebarUserInfo a > span {
+    transition: .3s;
+}
+.sidebarUserInfo > a:hover > span, 
+.sidebarUserInfo > div:last-child > a:hover > span {
+    color: #222;
+}
+
+.sidebarPublishBtn {
+    margin-top: 20px;
+}
+
+#sidebar .sidebarPublishBtn button,
+.loginDiv #login_button  {
+    width: 100%;
+    padding: 10px;
+    transition: .5s;
+}
+
+#sidebar .sidebarPublishBtn button:hover,
+.loginDiv #login_button:hover {
+    background-color: #286090;
+}
+
+.loginDiv h4 {
+    padding: 16px 20px 8px;
+    border-left: #666 solid 4px;
+    border-right: #666 solid 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.loginDiv > form {
+    padding: 10px 20px;
+}
+
+.loginDiv input.form-control {
+    border-radius: 0;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.loginDiv input.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+.loginDiv #login_button {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.loginDiv p {
+    font-size: small;
+}
+.loginDiv p a {
+    cursor: default;
+}
+.loginDiv p a:hover {
+    text-decoration: none;
+}
+
+#signupModal input.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}

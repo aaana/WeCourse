@@ -1,0 +1,120 @@
+.grid.grid--loaded {
+    width: 100%;
+}
+
+.grid__item {
+    width: 280px;
+    padding: 5px;
+}
+
+.weikeCell {
+	padding: 0;
+    border: none;
+    margin: 0;
+}
+.weikeCell .weikeCellDes {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.weikeCell .weikeCellDes h3 {
+    margin: 0
+}
+.weikeCell .weikeCellDes .weikeCellVote {
+    align-self: stretch;
+    display: flex;
+    margin: 10px 0;
+}
+.weikeCell .weikeCellDes .weikeCellVote > h5 {
+    margin: 0;
+}
+.weikeCell .weikeCellDes .weikeCellVote > span:nth-child(2) {
+    flex: 1;
+}
+.weikeCell .weikeCellDes .weikeCellVote > span {
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.weikeCell .weikeCellDes .weikeCellVote > span > span {
+    margin-right: 5px;
+}
+.weikeCellDetail {
+    margin: 0 0 20px;
+}
+
+.weikeCellDetail > div {
+    display: flex;
+    justify-content: flex-end;
+}
+.weikeCellDetail > div a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-decoration: none;
+    cursor: default;
+}
+
+.weikeCellDetail > div span {
+    margin-right: 5px;
+}
+
+
+.weikeCellComment,
+.weikeCellCommentList {
+    margin: 8px 0;
+}
+
+.weikeCellComment input:focus,
+.weikeCellComment button:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+
+.weikeCellCommentList {
+    height: 200px;
+    overflow: scroll;
+}
+
+.weikeCellCommentList img {
+    width: 32px;
+    height: 32px;
+}
+
+.weikeCellCommentList .media {
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.weikeCellCommentList > .media .media  {
+    border-left: #888 2px solid;
+    padding-left: 10px;
+}
+
+.weikeCellShowComment {
+    align-self: flex-end;
+    position: relative;
+    top: -20px;
+}
+
+.weikeCellCommentReply {
+    display: flex;
+    justify-content: flex-end;
+}
+.weikeCellShowComment a,
+.weikeCellCommentReply a{
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-decoration: none;
+    cursor: default;
+}
+
+.action.action--close h1 {
+    color: #eee;
+}

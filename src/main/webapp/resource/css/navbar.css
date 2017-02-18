@@ -1,0 +1,64 @@
+body {
+    background-color: #fff; 
+    font-family: "Microsoft YaHei", "Arial","黑体",'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.body-content {
+    padding: 0;
+}
+
+.content {
+    padding: 75px 19px 80px;
+    background-color: rgba(238,238,238,0.50);
+}
+
+.navbar .navBarMessageCount {
+    margin-left: 25px;
+    background-color: #dddddd;
+    padding: 1px 5px;
+    border-radius: 6px;
+}
+
+.navbar .navBarMessageCountAll {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover .navBarMessageCountAl {
+    color: #999999;
+}
+
+.navbar .navbar-form input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #eee;
+    
+}
+
+.navbar .navbar-form button {
+    outline: none;
+    
+}
+
+footer {
+    margin-top: 80px;
+    background-color: #222;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+footer address {
+    margin: 0 20px;
+    color: #888;
+    -webkit-transition: property duration timing-function delay;
+    -moz-transition: property duration timing-function delay;
+    transition: property duration timing-function delay;
+}
