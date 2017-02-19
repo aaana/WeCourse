@@ -35,6 +35,17 @@
 
         videojs.options.flash.swf = "resource/video-js/video-js.swf";
 
+        $(window).scroll(function(){
+            var min_height = 300;
+            var s = $(window).scrollTop();
+            //The gotoTop fidein when users scroll to a certain position
+            if( s > min_height){
+                $("#gotoTop").fadeIn(200);
+            }else{
+                $("#gotoTop").fadeOut(200);
+            };
+        });
+
     </script>
 
 </head>
@@ -108,7 +119,13 @@
             </div>
         </div>
     </div>
+    <a id="gotoTop" onclick="gotoTop()"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
     <jsp:include page="template/footer.jsp" />
 </body>
+<script>
+    function gotoTop() {
+        $('html,body').animate({scrollTop:0},400);
+    }
+</script>
 </html>
