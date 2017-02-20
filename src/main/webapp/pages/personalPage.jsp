@@ -92,7 +92,7 @@
                                             <%--<img src="../uploadfiles/${weikeCell.thumbnail_url}">--%>
                                             <c:choose>
                                                 <c:when test="${weikeCell.file_type == 0}">
-                                                    <img src="../uploadfiles/${weikeCell.file_url}" />
+                                                    <a href="../uploadfiles/${weikeCell.file_url}"><img  src="../uploadfiles/${weikeCell.file_url}" /></a>
                                                 </c:when>
                                                 <c:when test="${weikeCell.file_type == 1}">
                                                     <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
