@@ -11,8 +11,8 @@ public class WeikeCell extends Weike {
     private int file_type;
     private String file_url;
 
-    public WeikeCell(String title, String subject, int user_id, String description, Timestamp post_date, int file_id, int thumbnail_id, int star_num, int comment_num) {
-        super(title, subject, user_id, description, post_date, file_id, thumbnail_id, star_num, comment_num);
+    public WeikeCell(String title, String subject, int user_id, String description, Timestamp post_date, int file_id, int thumbnail_id, String attachment, int star_num, int comment_num) {
+        super(title, subject, user_id, description, post_date, file_id, thumbnail_id, attachment, star_num, comment_num);
     }
 
     public WeikeCell(Weike weike) {
@@ -24,6 +24,7 @@ public class WeikeCell extends Weike {
         this.setPost_date(weike.getPost_date());
         this.setFile_id(weike.getFile_id());
         this.setThumbnail_id(weike.getThumbnail_id());
+        this.setAttachment(weike.getAttachment());
         this.setStar_num(weike.getStar_num());
         this.setComment_num(weike.getComment_num());
     }

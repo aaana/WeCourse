@@ -1,6 +1,7 @@
 package com.weike.java.controller;
 
 import com.weike.java.entity.UploadFile;
+import com.weike.java.entity.User;
 import com.weike.java.entity.Weike;
 import com.weike.java.entity.WeikeCell;
 import com.weike.java.service.FileService;
@@ -55,6 +56,11 @@ public class WeikeController {
     public String submit(HttpServletRequest request)
             throws IllegalStateException, IOException {
 
+        HttpSession session = request.getSession();
+        if(session.getAttribute("user") == null) {
+            return "redirect:/";
+        }
+
         String title = request.getParameter("title");
         String subject = request.getParameter("subject");
         String description = request.getParameter("description") == null? "" : request.getParameter("description");
@@ -67,7 +73,8 @@ public class WeikeController {
         UploadFile uploadFile = null;
         int fileid = -1;
         int thumbnailid = -1;
-
+        String attachment = null;
+        int userid = ((User)session.getAttribute("user")).getId();
 
         //创建一个通用的多部分解析器
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
@@ -85,6 +92,7 @@ public class WeikeController {
                     //取得当前上传文件的文件名称
                     fileName = file.getOriginalFilename();
                     //如果名称不为“”,说明该文件存在，否则说明该文件不存在
+
                     if(fileName.trim() !=""){
                         //定义上传路径
                         String directoryPath= request.getSession().getServletContext().getRealPath("/uploadfiles");
@@ -101,7 +109,10 @@ public class WeikeController {
                         if (fieldName.equals("thumbnail")){
                             uploadFile = new UploadFile(0, fileName);
                             thumbnailid = fileService.saveFile(uploadFile);
-                        } else {
+                        }else if(fieldName.equals("attachment")){
+                            attachment = fileName;
+                        }
+                        else {
                             uploadFile = new UploadFile(mediaType, fileName);
                             fileid = fileService.saveFile(uploadFile);
                         }
@@ -115,9 +126,9 @@ public class WeikeController {
         if (thumbnailid == -1 && mediaType == 0) {
             thumbnailid = fileid;
         }
-        Weike weike = new Weike(title, subject, 1, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid, 0, 0);
+        Weike weike = new Weike(title, subject, userid, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid,attachment, 0, 0);
         weikeService.saveWeike(weike);
-        return "redirect:/playground";
+        return "redirect:/";
     }
 
 

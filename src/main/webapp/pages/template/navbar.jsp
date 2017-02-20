@@ -19,7 +19,7 @@
                     </button>
                 </c:when>
             </c:choose>
-            <a class="navbar-brand" href="#">微课</a>
+            <a class="navbar-brand" href="/">微课</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

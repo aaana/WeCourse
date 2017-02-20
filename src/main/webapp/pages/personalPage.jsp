@@ -106,6 +106,12 @@
                                                 </c:otherwise>
                                             </c:choose>
                                         </div>
+                                    <c:choose>
+                                        <c:when test = "${weikeCell.attachment!=null}">
+                                            <a href="../uploadfiles/${weikeCell.attachment}" target="_blank">查看附件</a>
+                                        </c:when>
+                                    </c:choose>
+
                                 </div>
                             </div>
                             <div class="personalPageContentItemBotmBar">
