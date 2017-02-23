@@ -7,26 +7,17 @@ import java.sql.Timestamp;
  */
 public class WeikeCell extends Weike {
     private String user_name;
+    private String user_avatar;
     private String thumbnail_url;
+    private String thumbnail_size;
     private int file_type;
     private String file_url;
-
-    public WeikeCell(String title, String subject, int user_id, String description, Timestamp post_date, int file_id, int thumbnail_id, String attachment, int star_num, int comment_num) {
-        super(title, subject, user_id, description, post_date, file_id, thumbnail_id, attachment, star_num, comment_num);
-    }
+    private boolean starred;
 
     public WeikeCell(Weike weike) {
+        super(weike.getTitle(), weike.getSubject(), weike.getUser_id(), weike.getDescription(), weike.getPost_date(),
+            weike.getFile_id(), weike.getThumbnail_id(), weike.getView_num(), weike.getStar_num(), weike.getComment_num());
         this.setId(weike.getId());
-        this.setTitle(weike.getTitle());
-        this.setSubject(weike.getSubject());
-        this.setUser_id(weike.getUser_id());
-        this.setDescription(weike.getDescription());
-        this.setPost_date(weike.getPost_date());
-        this.setFile_id(weike.getFile_id());
-        this.setThumbnail_id(weike.getThumbnail_id());
-        this.setAttachment(weike.getAttachment());
-        this.setStar_num(weike.getStar_num());
-        this.setComment_num(weike.getComment_num());
     }
 
     public String getUser_name() {
@@ -59,5 +50,30 @@ public class WeikeCell extends Weike {
 
     public void setFile_url(String file_url) {
         this.file_url = file_url;
+    }
+
+    public String getUser_avatar() {
+        return user_avatar;
+    }
+
+    public String getThumbnail_size() {
+        return thumbnail_size;
+    }
+
+    public void setThumbnail_size(String thumbnail_size) {
+        this.thumbnail_size = thumbnail_size;
+    }
+
+    public void setUser_avatar(String user_avatar) {
+
+        this.user_avatar = user_avatar;
+    }
+
+    public boolean isStarred() {
+        return starred;
+    }
+
+    public void setStarred(boolean starred) {
+        this.starred = starred;
     }
 }

@@ -26,6 +26,11 @@ public class MainController {
         return "publish";
     }
 
+    @RequestMapping("/reminder")
+    public String gotoReminderPage(){
+        return "reviewPage";
+    }
+
 //    @RequestMapping("/json")
 //    @ResponseBody
 //    public List<User> json(){

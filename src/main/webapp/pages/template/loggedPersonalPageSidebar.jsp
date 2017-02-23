@@ -11,10 +11,10 @@
     <span>个人信息</span>
     <c:choose>
         <c:when test="${user != null && user.id == visiting.id}">
-            <a href="../editUserInfo" style="position: absolute;right: 12px; top:10px;"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="../editUserInfo" style="position: absolute;right: 12px; top:10px;"><span class="glyphicon glyphicon-edit"></span></a>
         </c:when>
     </c:choose>
-    <div>
+    <div style="border-top: none">
         <span>学校</span>
         <span>${visiting.school != "" ? visiting.school : "未填写"}</span>
     </div>
@@ -42,28 +42,18 @@
         <p>2016-06-16 英语</p>
     </div>
 </div>
-<div class="personalPageCommonFollow" data-spy="affix" data-offset-top="668">
-    <span>共同关注</span>
-    <div>
-        <div>
-            <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
-            <span>用户名1</span>
+<c:choose>
+    <c:when test="${commonFollowings.size() != 0}">
+        <div class="personalPageCommonFollow" data-spy="affix" data-offset-top="668">
+            <span>共同关注</span>
+            <div>
+                <c:forEach var="follow" items="${commonFollowings}">
+                    <div onclick="gotoPersonalPage(this)" user_id="${follow.id}">
+                        <img src="../resource/img/${follow.avatar}" class=" img-circle">
+                        <span>${follow.name}</span>
+                    </div>
+                </c:forEach>
+            </div>
         </div>
-        <div>
-            <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
-            <span>用户名1</span>
-        </div>
-        <div>
-            <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
-            <span>用户名1</span>
-        </div>
-        <div>
-            <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
-            <span>用户名1</span>
-        </div>
-        <div>
-            <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
-            <span>用户名1</span>
-        </div>
-    </div>
-</div>
+    </c:when>
+</c:choose>

@@ -17,9 +17,9 @@
         </div>
         <a href="#"><span><c:out value="${user.name}"/></span></a>
         <div>
-            <a href="#"><span>8</span><span>关注</span></a>
-            <a href="#"><span>10</span><span>收藏</span></a>
-            <a href="#"><span>1</span><span>微课</span></a>
+            <a href="#"><span>${user.following_num}</span><span>关注</span></a>
+            <a href="#"><span>${user.favorite_num}</span><span>收藏</span></a>
+            <a href="#"><span>${user.weike_num}</span><span>微课</span></a>
         </div>
     </div>
     <div class="sidebarPublishBtn">

@@ -22,10 +22,10 @@
             <a class="navbar-brand" href="/">微课</a>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#">热门</a></li>
-                <li><a href="#">广场</a></li>
-            </ul>
+            <%--<ul class="nav navbar-nav">--%>
+                <%--<li><a href="#">热门</a></li>--%>
+                <%--<li><a href="#">广场</a></li>--%>
+            <%--</ul>--%>
 
             <c:choose>
                 <c:when test="${user != null}">
@@ -56,14 +56,17 @@
                         </li>
 
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="Manage/Index">用户名</a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="Manage/Index">${user.name}</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">个人主页</a></li>
+                                <li><a href="/user/${user.id}" style="text-align: center; text-align: -webkit-center;">
+                                    <div style="width: 80px; height: 80px; background-image: url('../resource/img/${user.avatar}');background-position: center;background-size: cover" class="img-responsive img-circle">
+                                    </div>
+                                </a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">我的关注</a></li>
                                 <li><a href="#">我的收藏</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="javascript:document.getElementById('logoutForm').submit()">注销</a></li>
+                                <li><a href="/logout">注销</a></li>
                             </ul>
                         </li>
                     </ul>
