@@ -90,6 +90,13 @@
                     <input id="videoInput" style="display:none" type="file" name="video" accept="video/*" />
                 </div>
             </div>
+            <div class="form-group" id="attachmentDiv">
+                <label class="col-sm-2 control-label">添加附件</label>
+                <div class="col-sm-9">
+                    <button id="attachmentBtn" type="button" class="btn btn-primary" onclick="attachmentInput.click();event.target.blur();">+</button>
+                    <input id="attachmentInput" style="display:none" type="file" name="attachment" />
+                </div>
+            </div>
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-9">
@@ -141,6 +148,13 @@
                 $("#videoBtn").text("已选择文件:" + $("#videoInput").val());
             }
         });
+        $("#attachmentInput").change(function(){
+            if($("#attachmentInput").val() == ""){
+                $("#attachmentBtn").text("+");
+            }else{
+                $("#attachmentBtn").text("已选择文件："+$("#attachmentInput").val());
+            }
+        })
 
     });
 

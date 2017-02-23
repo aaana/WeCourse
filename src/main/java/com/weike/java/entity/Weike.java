@@ -24,6 +24,7 @@ public class Weike implements Serializable {
     private Timestamp post_date;
     private int file_id;
     private int thumbnail_id;
+    private String attachment;
     private int view_num;
     private int star_num;
     private int comment_num;
@@ -31,7 +32,7 @@ public class Weike implements Serializable {
     public Weike() {
     }
 
-    public Weike(String title, String subject, int user_id, String description, Timestamp post_date, int file_id, int thumbnail_id, int view_num, int star_num, int comment_num) {
+    public Weike(String title, String subject, int user_id, String description, Timestamp post_date, int file_id, int thumbnail_id, String attachment, int view_num, int star_num, int comment_num) {
         this.title = title;
         this.subject = subject;
         this.user_id = user_id;
@@ -39,9 +40,18 @@ public class Weike implements Serializable {
         this.post_date = post_date;
         this.file_id = file_id;
         this.thumbnail_id = thumbnail_id;
+        this.attachment = attachment;
         this.view_num = view_num;
         this.star_num = star_num;
         this.comment_num = comment_num;
+    }
+
+    public String getAttachment() {
+        return attachment;
+    }
+
+    public void setAttachment(String attachment) {
+        this.attachment = attachment;
     }
 
     public int getId() {

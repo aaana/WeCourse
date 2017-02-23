@@ -44,6 +44,7 @@ To change this template use File | Settings | File Templates.
             var weikePostDate = $(query + '.weikePostDate').val();
             var weikeDescription = $(query + '.weikeDescription').val();
             var weikeThumbnailUrl = $(query + '.weikeThumbnailUrl').val();
+            var weikeAttachmentUrl = $(query + '.weikeAttachmentUrl').val();
             var weikeFileUrl = $(query + '.weikeFileUrl').val();
             var weikeFileType = $(query + '.weikeFileType').val();
             var weikeCommentNum = $(query + '.weikeCommentNum').val();
@@ -59,6 +60,15 @@ To change this template use File | Settings | File Templates.
             $("#displayModal #subjectInDisplayModal").text(weikeSubject);
             $("#displayModal #postDateInDisplayModal").text(weikePostDate);
             $("#displayModal #descriptionInDisplayModal").text(weikeDescription);
+//            alert(weikeAttachmentUrl!="");
+            if(weikeAttachmentUrl!=""){
+                $("#displayModal #attachment").show();
+                $("#displayModal #attachment").text("查看附件");
+                $("#displayModal #attachment")[0].href="../uploadfiles/"+weikeAttachmentUrl;
+            }else{
+                $("#displayModal #attachment").hide();
+            }
+
 
             if (weikeFileType == "0") {
                 $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="uploadfiles/' + weikeFileUrl + '">');
@@ -138,6 +148,7 @@ To change this template use File | Settings | File Templates.
                                 <input type="hidden" class="weikePostDate" value="${weikeCell.post_date}" />
                                 <input type="hidden" class="weikeDescription" value="${weikeCell.description}" />
                                 <input type="hidden" class="weikeThumbnailUrl" value="${weikeCell.thumbnail_url}" />
+                                <input type="hidden" class="weikeAttachmentUrl" value="${weikeCell.attachment==null?"":weikeCell.attachment}">
                                 <input type="hidden" class="weikeFileUrl" value="${weikeCell.file_url}" />
                                 <input type="hidden" class="weikeFileType" value="${weikeCell.file_type}" />
                                 <input type="hidden" class="weikeCommentNum" value="${weikeCell.comment_num}" />

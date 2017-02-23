@@ -169,6 +169,11 @@ public class WeikeController {
     public String submit(HttpServletRequest request)
             throws IllegalStateException, IOException {
 
+        HttpSession session = request.getSession();
+        if(session.getAttribute("user") == null) {
+            return "redirect:/";
+        }
+
         String title = request.getParameter("title");
         String subject = request.getParameter("subject");
         String description = request.getParameter("description") == null? "" : request.getParameter("description");
@@ -182,6 +187,8 @@ public class WeikeController {
         int fileid = -1;
         int thumbnailid = -1;
 
+        String attachment = null;
+        int userId = ((User)session.getAttribute("user")).getId();
 
         //创建一个通用的多部分解析器
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
@@ -215,7 +222,9 @@ public class WeikeController {
                         if (fieldName.equals("thumbnail")){
                             uploadFile = new UploadFile(0, fileName);
                             thumbnailid = fileService.saveFile(uploadFile);
-                        } else {
+                        }else if(fieldName.equals("attachment")){
+                            attachment = fileName;
+                        }else {
                             uploadFile = new UploadFile(mediaType, fileName);
                             fileid = fileService.saveFile(uploadFile);
                         }
@@ -230,15 +239,15 @@ public class WeikeController {
             thumbnailid = fileid;
         }
 
-        HttpSession session = request.getSession();
-        int userId = -1;
-        if(session.getAttribute("user") != null) {
-            UserCell userCell = (UserCell) session.getAttribute("user");
-            userId = userCell.getId();
-        }
-        Weike weike = new Weike(title, subject, userId, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid, 0, 0, 0);
+//        HttpSession session = request.getSession();
+//        int userId = -1;
+//        if(session.getAttribute("user") != null) {
+//            UserCell userCell = (UserCell) session.getAttribute("user");
+//            userId = userCell.getId();
+//        }
+        Weike weike = new Weike(title, subject, userId, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid,attachment, 0, 0, 0);
         weikeService.saveWeike(weike);
-        return "redirect:/playground";
+        return "redirect:/";
     }
 
 }

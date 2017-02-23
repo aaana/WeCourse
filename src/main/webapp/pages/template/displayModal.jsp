@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: tina
@@ -31,6 +32,7 @@
                         </div>
                     </div>
                     <div class="thumbnail"></div>
+                    <a id="attachment" target="_blank" href=""></a>
                     <div class="modalWeikeItemBotmBar">
                         <a onclick="showCommentDiv(this)"><span class="glyphicon glyphicon-comment"></span> <span id="commentNumInDisplayModal"></span></a>
                         <span>|</span>
