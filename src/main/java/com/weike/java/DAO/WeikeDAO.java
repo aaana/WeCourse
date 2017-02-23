@@ -10,11 +10,12 @@ import java.util.List;
  */
 public interface WeikeDAO {
     public int save(Weike weike);
-    public void update(Weike weike);
+    public Boolean update(Weike weike);
     public void remove(Weike weike);
 
     public WeikeCell findWeikeByWeikeId(int id);
     public List<WeikeCell> findAllWeike();
     public List<WeikeCell> findWeikesWithUserId(int id);
+    public int findWeikeNumWithUserId(int id);
     public List<WeikeCell> findWeikeWithQueryString(String string);
 }

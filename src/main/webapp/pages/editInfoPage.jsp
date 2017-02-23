@@ -33,7 +33,7 @@
             <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">用户名</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" name="email" id="name" value="${user.name}" />
+                    <input type="text" class="form-control" name="name" id="name" value="${user.name}" />
                     <input type="hidden" id="oldName" value="${user.name}"/>
                 </div>
             </div>
@@ -107,13 +107,18 @@
 
     function checkRequired() {
         if ($("#name").val() == ""){
-            showHint("未填写用户名,将使用原来的用户名");
+            showHint("未填写用户名,使用原来的用户名");
             $("#name").val($("#oldName").val());
             return false;
         }
         if ($("#email").val() == ""){
-            showHint("未填写邮箱,将使用原来的邮箱");
+            showHint("未填写邮箱,使用原来的邮箱");
             $("#email").val($("#oldEmail").val());
+            return false;
+        }
+        if(!$("#email").val().match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/)){
+            showHint("邮箱格式不正确");
+            $("#email").focus();
             return false;
         }
         return true;

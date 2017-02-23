@@ -82,8 +82,7 @@ body {
 }
 
 .personalPageHotWeike > div:nth-child(2),
-.personalPageInfo > div:nth-child(2),
-.personalPageInfo > div:nth-child(3){
+.personalPageInfo > div:nth-child(2) {
     border-top: none;
 }
 
@@ -143,6 +142,7 @@ body {
 
 .personalPageNav span {
     flex: 1;
+    height: 34px;
 }
 
 .personalPageNav button {
@@ -231,12 +231,17 @@ body {
     text-align: center;
     color: #fff;
     text-decoration: none;
+    cursor: default;
+}
+.personalPageContentItemBotmBar > a:last-child:hover {
+    color: #ccc;
 }
 
 .personalPageContentItemBotmBar > a:first-child {
-    flex: 3;
+    flex: 2;
 }
 
+.personalPageContentItemBotmBar > a:nth-child(3),
 .personalPageContentItemBotmBar > a:last-child {
     flex: 1;
 }
@@ -321,7 +326,7 @@ body {
 }
 
 .followList > div:hover {
-    background-color: #ddd; 
+    background-color: #ddd;
 }
 
 .followList .media-body {
@@ -343,16 +348,7 @@ body {
     flex: 1;
 }
 
-#gotoTop{
-    display:none;
-    position: fixed;
-    bottom: 15%;
-    right: 3%;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding-top: 15px;
-    color:white;
-    background-color: #337ab7;
-    border-radius: 5px
+#favoriteWeike,
+#followUser {
+    display: none;
 }

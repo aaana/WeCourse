@@ -1,7 +1,8 @@
 package com.weike.java.controller;
 
-import com.weike.java.entity.UploadFile;
-import com.weike.java.entity.User;
+import com.weike.java.entity.*;
+import com.weike.java.service.FollowService;
+import com.weike.java.service.NoticeService;
 import com.weike.java.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -31,6 +33,12 @@ import java.util.Map;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private FollowService followService;
+
+    @Autowired
+    private NoticeService noticeService;
 
     @RequestMapping("/checkEmailUsed")
     public @ResponseBody Map<String,Object> checkEmailUsed(HttpServletRequest request) {
@@ -50,10 +58,10 @@ public class UserController {
 
         User user = new User(name, email, password, type, "", "", "avatar01.png");
         int id = userService.signup(user);
-        user.setId(id);
+        UserCell userCell = userService.findUserById(id);
 
         HttpSession session = request.getSession();
-        session.setAttribute("user", user);
+        session.setAttribute("user", userCell);
         return "redirect:/";
     }
 
@@ -62,11 +70,11 @@ public class UserController {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        User user = userService.login(email, password);
+        UserCell userCell = userService.login(email, password);
         Map<String,Object> map = new HashMap<String,Object>();
-        if (user != null) {
+        if (userCell != null) {
             HttpSession session = request.getSession();
-            session.setAttribute("user", user);
+            session.setAttribute("user", userCell);
             map.put("result", "success");
         } else {
             map.put("result", "fail");
@@ -78,28 +86,39 @@ public class UserController {
     public String gotoEditPage(Model model, HttpServletRequest request) {
         HttpSession session = request.getSession();
         if(session.getAttribute("user") != null) {
-            User user = (User) session.getAttribute("user");
-            model.addAttribute("user", user);
+            UserCell userCell = (UserCell) session.getAttribute("user");
+            userCell = userService.findUserById(userCell.getId());
+
+            model.addAttribute("user", userCell);
         }
         return "editInfoPage";
+    }
+
+    @RequestMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        if(session.getAttribute("user") != null) {
+            session.setAttribute("user", null);
+        }
+        return "redirect:/";
     }
 
     @RequestMapping("/updateUserInfo")
     public String updateUserInfo(Model model, HttpServletRequest request) throws IOException {
 
         HttpSession session = request.getSession();
-        User user = null;
+        UserCell userCell = null;
         if(session.getAttribute("user") != null) {
-            user = (User) session.getAttribute("user");
-            model.addAttribute("user", user);
+            userCell = (UserCell) session.getAttribute("user");
         }
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String school = request.getParameter("school");
         String introduction = request.getParameter("introduction");
-        user.setEmail(email);
-        user.setSchool(school);
-        user.setIntroduction(introduction);
+        userCell.setName(name);
+        userCell.setEmail(email);
+        userCell.setSchool(school);
+        userCell.setIntroduction(introduction);
 
         String fileName = "";
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
@@ -122,19 +141,63 @@ public class UserController {
                             uploadedFile.createNewFile();
                         }
                         file.transferTo(uploadedFile);
-                        user.setAvatar(fileName);
+                        userCell.setAvatar(fileName);
                     }
                 }
             }
         }
 
-        userService.updateUserInfo(user);
+        userService.updateUserInfo(userCell);
         if(session.getAttribute("user") != null) {
-            user = userService.findUserById(user.getId());
-            session.setAttribute("user", user);
-            model.addAttribute("user", user);
+            userCell = userService.findUserById(userCell.getId());
+            session.setAttribute("user", userCell);
+            model.addAttribute("user", userCell);
         }
-        return "redirect:/user/" + user.getId();
+        return "redirect:/user/" + userCell.getId();
     }
 
+    @RequestMapping("/follow")
+    public @ResponseBody
+    Map<String,Object> follow(HttpServletRequest request) {
+        int following_id = Integer.parseInt(request.getParameter("user_id"));
+        HttpSession session = request.getSession();
+        Map<String,Object> map = new HashMap<String,Object>();
+
+        if(session.getAttribute("user") != null) {
+            map.put("isLogged", true);
+            UserCell userCell = (UserCell) session.getAttribute("user");
+
+            // 新增follow
+            Follow follow = followService.follow(userCell.getId(), following_id);
+
+            // 新增notice
+            Notice notice = new Notice(userCell.getId(), following_id, 2, new Timestamp(System.currentTimeMillis()), follow.getId(), following_id, false);
+            noticeService.saveNotice(notice);
+
+            map.put("result", true);
+
+        } else {
+            map.put("isLogged", false);
+        }
+        return map;
+    }
+
+    @RequestMapping("/unfollow")
+    public @ResponseBody
+    Map<String,Object> unfollow(HttpServletRequest request) {
+        int following_id = Integer.parseInt(request.getParameter("user_id"));
+        HttpSession session = request.getSession();
+        Map<String,Object> map = new HashMap<String,Object>();
+
+        if(session.getAttribute("user") != null) {
+            map.put("isLogged", true);
+            UserCell userCell = (UserCell) session.getAttribute("user");
+            Follow follow = followService.unfollow(userCell.getId(), following_id);
+            map.put("result", true);
+
+        } else {
+            map.put("isLogged", false);
+        }
+        return map;
+    }
 }

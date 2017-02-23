@@ -1,6 +1,7 @@
 package com.weike.java.DAO;
 
 import com.weike.java.entity.UploadFile;
+import com.weike.java.entity.User;
 import com.weike.java.entity.Weike;
 import com.weike.java.entity.WeikeCell;
 import org.hibernate.Criteria;
@@ -26,8 +27,23 @@ public class WeikeDAOImpl implements WeikeDAO {
         return (Integer) sessionFactory.getCurrentSession().save(weike);
     }
 
-    public void update(Weike weike) {
-        sessionFactory.getCurrentSession().update(weike);
+    public Boolean update(Weike weike) {
+        String hql = "update Weike weike set weike.title = ?,weike.subject=?,weike.description=?,weike.post_date=?," +
+                "weike.file_id=?,weike.thumbnail_id=?,weike.view_num=?,weike.star_num=?,weike.comment_num=? where weike.id = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0, weike.getTitle());
+        query.setParameter(1, weike.getSubject());
+        query.setParameter(2, weike.getDescription());
+        query.setParameter(3, weike.getPost_date());
+        query.setParameter(4, weike.getFile_id());
+        query.setParameter(5, weike.getThumbnail_id());
+        query.setParameter(6, weike.getView_num());
+        query.setParameter(7, weike.getStar_num());
+        query.setParameter(8, weike.getComment_num());
+        query.setParameter(9, weike.getId());
+
+        return (query.executeUpdate() > 0);
+//        sessionFactory.getCurrentSession().update(weike);
     }
 
     public void remove(Weike weike) {
@@ -53,21 +69,26 @@ public class WeikeDAOImpl implements WeikeDAO {
 
     public List<WeikeCell> findWeikesWithUserId(int id) {
         List<Weike> weikes = (List<Weike>) sessionFactory.getCurrentSession().createQuery("from Weike where user_id=?").setParameter(0, id).list();
-        String user_name = (String) sessionFactory.getCurrentSession().createQuery("select name from User where id=?").setParameter(0, id).uniqueResult();
+        User user = (User) sessionFactory.getCurrentSession().createQuery("from User where id=?").setParameter(0, id).uniqueResult();
         List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
 
         for (Weike weike : weikes) {
             WeikeCell weikeCell = new WeikeCell(weike);
-            String thumbnail_url = (String) sessionFactory.getCurrentSession().createQuery("select url from UploadFile where id=?").setParameter(0, weike.getThumbnail_id()).uniqueResult();
-            int file_type = (Integer) sessionFactory.getCurrentSession().createQuery("select type from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
-            String file_url = (String) sessionFactory.getCurrentSession().createQuery("select url from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
-            weikeCell.setUser_name(user_name);
-            weikeCell.setThumbnail_url(thumbnail_url);
-            weikeCell.setFile_type(file_type);
-            weikeCell.setFile_url(file_url);
+            UploadFile thumbnail = (UploadFile) sessionFactory.getCurrentSession().createQuery("from UploadFile where id=?").setParameter(0, weike.getThumbnail_id()).uniqueResult();
+            UploadFile file = (UploadFile) sessionFactory.getCurrentSession().createQuery("from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
+            weikeCell.setUser_name(user.getName());
+            weikeCell.setUser_avatar(user.getAvatar());
+            weikeCell.setThumbnail_url(thumbnail.getUrl());
+            weikeCell.setThumbnail_size("1280x1280");
+            weikeCell.setFile_url(file.getUrl());
+            weikeCell.setFile_type(file.getType());
             weikeCells.add(weikeCell);
         }
         return weikeCells;
+    }
+
+    public int findWeikeNumWithUserId(int id) {
+        return findWeikesWithUserId(id).size();
     }
 
     public List<WeikeCell> findWeikeWithQueryString(String string) {
@@ -82,14 +103,15 @@ public class WeikeDAOImpl implements WeikeDAO {
 
     public WeikeCell transWeike2WeikeCell(Weike weike) {
         WeikeCell weikeCell = new WeikeCell(weike);
-        String user_name = (String) sessionFactory.getCurrentSession().createQuery("select name from User where id=?").setParameter(0, weike.getUser_id()).uniqueResult();
-        String thumbnail_url = (String) sessionFactory.getCurrentSession().createQuery("select url from UploadFile where id=?").setParameter(0, weike.getThumbnail_id()).uniqueResult();
-        int file_type = (Integer) sessionFactory.getCurrentSession().createQuery("select type from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
-        String file_url = (String) sessionFactory.getCurrentSession().createQuery("select url from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
-        weikeCell.setUser_name(user_name);
-        weikeCell.setThumbnail_url(thumbnail_url);
-        weikeCell.setFile_type(file_type);
-        weikeCell.setFile_url(file_url);
+        User user = (User) sessionFactory.getCurrentSession().createQuery("from User where id=?").setParameter(0, weike.getUser_id()).uniqueResult();
+        UploadFile thumbnail = (UploadFile) sessionFactory.getCurrentSession().createQuery("from UploadFile where id=?").setParameter(0, weike.getThumbnail_id()).uniqueResult();
+        UploadFile file = (UploadFile) sessionFactory.getCurrentSession().createQuery("from UploadFile where id=?").setParameter(0, weike.getFile_id()).uniqueResult();
+        weikeCell.setUser_name(user.getName());
+        weikeCell.setUser_avatar(user.getAvatar());
+        weikeCell.setThumbnail_url(thumbnail.getUrl());
+        weikeCell.setThumbnail_size("1280x1280");
+        weikeCell.setFile_url(file.getUrl());
+        weikeCell.setFile_type(file.getType());
 
         return weikeCell;
     }

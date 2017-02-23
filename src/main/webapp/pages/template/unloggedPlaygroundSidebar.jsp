@@ -14,7 +14,7 @@
             <input type="email" class="form-control" name="inputEmail" placeholder="邮箱">
             <input type="password" name="inputPassword" class="form-control" placeholder="密码">
 
-            <button id="login_button" onclick="login()">登陆</button>
+            <button type="button" id="login_button" onclick="login()">登陆</button>
             <p>没有账号?<a data-toggle="modal" data-target="#signupModal">先去注册</a></p>
         </form>
     </div>
@@ -79,5 +79,3 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
-<jsp:include page="formhelper.jsp" />

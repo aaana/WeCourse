@@ -15,37 +15,35 @@
     <title>WeiKeHome</title>
     <link rel="stylesheet" type="text/css" href="../resource/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../resource/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../resource/css/personalPage1.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/personalPage.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/loading.css">
     <script type="text/javascript" src="../resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../resource/Bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../resource/js/comment.js"></script>
+    <script type="text/javascript" src="../resource/js/weikeOpHelper.js"></script>
 
     <link href="../resource/video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="../resource/video-js/video.js"></script>
 
     <script>
-        $(document).ready(function () {
-            function follow(t) {
-                $(t).parent().attr('id');
-
-                $(t).text('已关注');
-            }
-
-        });
-
         videojs.options.flash.swf = "resource/video-js/video-js.swf";
 
-        $(window).scroll(function(){
-            var min_height = 300;
-            var s = $(window).scrollTop();
-            //The gotoTop fidein when users scroll to a certain position
-            if( s > min_height){
-                $("#gotoTop").fadeIn(200);
-            }else{
-                $("#gotoTop").fadeOut(200);
-            };
-        });
+        function changePage2AllWeike() {
+            changePage("allWeike");
+        }
+        function changePage2FavoriteWeike() {
+            changePage("favoriteWeike");
+        }
+        function changePage2FollowUser() {
+            changePage("followUser");
+        }
+        function changePage(idString) {
+            $("#allWeike").hide();
+            $("#favoriteWeike").hide();
+            $("#followUser").hide();
+            $("#" + idString).show();
 
+
+        }
     </script>
 
 </head>
@@ -54,10 +52,20 @@
 
     <div class="container body-content">
         <div class="personalPageHead">
-            <div class="img img-responsive img-circle" style="background-image: url('../resource/img/${user.avatar}');background-position: center;background-size: cover"></div>
-            <div id="${visiting.id}">
+            <div class="img img-responsive img-circle" style="background-image: url('../resource/img/${visiting.avatar}');background-position: center;background-size: cover"></div>
+            <div user_id="${visiting.id}">
                 <span>${visiting.name}</span>
-                <button class="btn btn-primary" onclick="follow(this)">关注</button>
+                <c:choose>
+                    <c:when test="${user != null && user.id == visiting.id}">
+
+                    </c:when>
+                    <c:when test="${visiting.hasfollowed}">
+                        <button type="button" class="btn btn-default" onclick="doFollow(this)">已关注</button>
+                    </c:when>
+                    <c:otherwise>
+                        <button type="button" class="btn btn-primary" onclick="doFollow(this)">关注</button>
+                    </c:otherwise>
+                </c:choose>
             </div>            
             
         </div>
@@ -69,25 +77,31 @@
 
             <div class="personalPageMain col-md-8">
                 <ol class="breadcrumb personalPageNav" data-spy="affix" data-offset-top="230">
-                    <li class="active">微课</li>
-                    <li><a href="#">赞过的微课</a></li>
-                    <li><a href="#">关注的人</a></li>
+                    <li class="active"><a onclick="changePage2AllWeike()">微课(${visiting.weike_num})</a></li>
+                    <li><a onclick="changePage2FavoriteWeike()">赞过的微课(${visiting.favorite_num})</a></li>
+                    <li><a onclick="changePage2FollowUser()">关注的人(${visiting.following_num})</a></li>
                     <span></span>
-                    <button class="btn btn-primary">+<span>发布微课</span></button>
+                    <c:choose>
+                        <c:when test="${user != null && user.id == visiting.id}">
+                            <button class="btn btn-primary">+<span>发布微课</span></button>
+                        </c:when>
+                    </c:choose>
+
                 </ol>
-                <div class="personalPageContent">
+                <div id="allWeike" class="personalPageContent">
                     <c:forEach var="weikeCell" items="${weikeCells}">
                         <div class="personalPageContentItem" weike_id="${weikeCell.id}">
                             <input type="hidden" class="fileType" value="${weikeCell.file_type}">
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="http://img0.pconline.com.cn/pconline/1408/11/5254676_1407293-2_thumb.jpg" class=" img-circle">
+                                    <img src="../resource/img/${weikeCell.user_avatar}" class=" img-circle">
                                 </div>
                                 <div class="media-body">
                                     <p><b>${weikeCell.user_name}</b></p>
                                     <p>${weikeCell.post_date} ${weikeCell.subject}</p>
                                     <h3>${weikeCell.title}</h3>
                                     <p>${weikeCell.description}</p>
+<<<<<<< HEAD
                                         <div class="thumbnail" >
                                             <%--<img src="../uploadfiles/${weikeCell.thumbnail_url}">--%>
                                             <c:choose>
@@ -111,27 +125,157 @@
                                             <a href="../uploadfiles/${weikeCell.attachment}" target="_blank">查看附件</a>
                                         </c:when>
                                     </c:choose>
-
+=======
+                                    <div class="thumbnail" >
+                                        <c:choose>
+                                            <c:when test="${weikeCell.file_type == 0}">
+                                                <img src="../uploadfiles/${weikeCell.file_url}" />
+                                            </c:when>
+                                            <c:when test="${weikeCell.file_type == 1}">
+                                                <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
+                                                       poster="../uploadfiles/${weikeCell.thumbnail_url}"
+                                                       data-setup="{}" width="100%" height="400px">
+                                                    <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />
+                                                </video>
+                                            </c:when>
+                                            <c:otherwise>
+                                                未匹配类型
+                                            </c:otherwise>
+                                        </c:choose>
+                                    </div>
                                 </div>
                             </div>
                             <div class="personalPageContentItemBotmBar">
-                                <a onclick="showCommentDiv(this)">评论 <span>${weikeCell.comment_num}</span></a>
+                                <a onclick="showCommentDiv(this)"><span class="glyphicon glyphicon-comment"></span> <span>${weikeCell.comment_num}</span></a>
                                 <span>|</span>
-                                <a onclick="likeWeike(this)">点赞 <span>${weikeCell.star_num}</span></a>
+                                <c:choose>
+                                    <c:when test="${weikeCell.starred == 'true'}">
+                                        <a onclick="doFavoriteFromPP(this)"><span class="glyphicon glyphicon-heart"></span> <span>${weikeCell.star_num}</span></a>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <a onclick="doFavoriteFromPP(this)"><span class="glyphicon glyphicon-heart-empty"></span> <span>${weikeCell.star_num}</span></a>
+                                    </c:otherwise>
+                                </c:choose>
+                                <span>|</span>
+                                <a onclick="return false"><span class="glyphicon glyphicon glyphicon-eye-open"></span> <span>${weikeCell.view_num}</span></a>
                             </div>
                         </div>
                     </c:forEach>
+                    <c:choose>
+                        <c:when test="${weikeCells.size() == 0}">
+                            <div class="personalPageContentItem" style="text-align: center;padding-bottom: 16px;">
+                                用户未发布微课
+                            </div>
+                        </c:when>
+                    </c:choose>
+                </div>
+>>>>>>> f1c4b79c7a9b5a524995343e9d0811d2d11611d8
+
+                <div id="favoriteWeike" class="personalPageContent">
+                    <c:forEach var="weikeCell" items="${favorites}">
+                        <div class="personalPageContentItem" weike_id="${weikeCell.id}">
+                            <input type="hidden" class="fileType" value="${weikeCell.file_type}">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="../resource/img/${weikeCell.user_avatar}" class=" img-circle">
+                                </div>
+                                <div class="media-body">
+                                    <p><b>${weikeCell.user_name}</b></p>
+                                    <p>${weikeCell.post_date} ${weikeCell.subject}</p>
+                                    <h3>${weikeCell.title}</h3>
+                                    <p>${weikeCell.description}</p>
+                                    <div class="thumbnail" >
+                                        <c:choose>
+                                            <c:when test="${weikeCell.file_type == 0}">
+                                                <img src="../uploadfiles/${weikeCell.file_url}" />
+                                            </c:when>
+                                            <c:when test="${weikeCell.file_type == 1}">
+                                                <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
+                                                       poster="../uploadfiles/${weikeCell.thumbnail_url}"
+                                                       data-setup="{}" width="100%" height="400px">
+                                                    <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />
+                                                </video>
+                                            </c:when>
+                                            <c:otherwise>
+                                                未匹配类型
+                                            </c:otherwise>
+                                        </c:choose>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personalPageContentItemBotmBar">
+                                <a onclick="showCommentDiv(this)"><span class="glyphicon glyphicon-comment"></span> <span>${weikeCell.comment_num}</span></a>
+                                <span>|</span>
+                                <c:choose>
+                                    <c:when test="${weikeCell.starred == 'true'}">
+                                        <a onclick="doFavoriteFromPP(this)"><span class="glyphicon glyphicon-heart"></span> <span>${weikeCell.star_num}</span></a>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <a onclick="doFavoriteFromPP(this)"><span class="glyphicon glyphicon-heart-empty"></span> <span>${weikeCell.star_num}</span></a>
+                                    </c:otherwise>
+                                </c:choose>
+                                <span>|</span>
+                                <a onclick="return false"><span class="glyphicon glyphicon glyphicon-eye-open"></span> <span>${weikeCell.view_num}</span></a>
+                            </div>
+                        </div>
+                    </c:forEach>
+                    <c:choose>
+                        <c:when test="${favorites.size() == 0}">
+                            <div class="personalPageContentItem" style="text-align: center;padding-bottom: 16px;">
+                                用户未收藏微课
+                            </div>
+                        </c:when>
+                    </c:choose>
+                </div>
+
+                <div id="followUser" class="personalPageContent">
+                    <c:choose>
+                        <c:when test="${followings.size() == 0}">
+                            <div class="personalPageContentItem" style="text-align: center;padding-bottom: 16px;">
+                                用户未关注其他用户
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="personalPageContentItem followList">
+                                <c:forEach var="follow" items="${followings}">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="../resource/img/${follow.avatar}" class=" img-circle">
+                                        </div>
+                                        <div class="media-body">
+                                            <div>
+                                                <div>
+                                                    <span><b>${follow.name}</b></span>
+                                                    <span>邮箱：${follow.email}</span>
+                                                </div>
+                                                <div></div>
+                                                <c:choose>
+                                                    <c:when test="${user != null && user.id == follow.id}">
+
+                                                    </c:when>
+                                                    <c:when test="${follow.hasfollowed}">
+                                                        <div user_id="${follow.id}">
+                                                            <button type="button" class="btn btn-default" onclick="doFollow(this)">已关注</button>
+                                                        </div>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <div user_id="${follow.id}">
+                                                            <<button type="button" class="btn btn-primary" onclick="doFollow(this)">关注</button>
+                                                        </div>
+                                                    </c:otherwise>
+                                                </c:choose>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </c:forEach>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </div>
         </div>
     </div>
-    <a id="gotoTop" onclick="gotoTop()"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
+    <jsp:include page="template/formhelper.jsp" />
     <jsp:include page="template/footer.jsp" />
 </body>
-<script>
-    function gotoTop() {
-        $('html,body').animate({scrollTop:0},400);
-    }
-</script>
 </html>
