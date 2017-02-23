@@ -145,7 +145,7 @@
 			item.addEventListener(clickEvent, function(ev) {
 				if(clickEvent === 'click') {
 					ev.preventDefault();
-					self._openItem(ev, item);
+					//self._openItem(ev, item);
 				}
 				else {
 					manageTouch();
@@ -180,7 +180,7 @@
 		this.current = this.items.indexOf(item);
 
 		// set the src of the original image element (large image)
-		this._setOriginal(item.querySelector('a').getAttribute('href'));
+		//this._setOriginal(item.querySelector('a').getAttribute('href'));
 		
 		// callback
 		this.options.onOpenItem(this, item);
