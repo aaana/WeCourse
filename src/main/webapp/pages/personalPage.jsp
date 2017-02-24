@@ -114,23 +114,29 @@
                                     <p>${weikeCell.post_date} ${weikeCell.subject}</p>
                                     <h3>${weikeCell.title}</h3>
                                     <p>${weikeCell.description}</p>
-                                    <div class="thumbnail" >
-                                        <c:choose>
-                                            <c:when test="${weikeCell.file_type == 0}">
-                                                <img src="../uploadfiles/${weikeCell.file_url}" />
-                                            </c:when>
-                                            <c:when test="${weikeCell.file_type == 1}">
-                                                <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
-                                                       poster="../uploadfiles/${weikeCell.thumbnail_url}"
-                                                       data-setup="{}" width="100%" height="400px">
-                                                    <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />
-                                                </video>
-                                            </c:when>
-                                            <c:otherwise>
-                                                未匹配类型
-                                            </c:otherwise>
-                                        </c:choose>
-                                    </div>
+                                        <div class="thumbnail" >
+                                            <%--<img src="../uploadfiles/${weikeCell.thumbnail_url}">--%>
+                                            <c:choose>
+                                                <c:when test="${weikeCell.file_type == 0}">
+                                                    <a href="../uploadfiles/${weikeCell.file_url}"><img  src="../uploadfiles/${weikeCell.file_url}" /></a>
+                                                </c:when>
+                                                <c:when test="${weikeCell.file_type == 1}">
+                                                    <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
+                                                           poster="../uploadfiles/${weikeCell.thumbnail_url}"
+                                                           data-setup="{}" width="100%" height="400px">
+                                                        <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />
+                                                    </video>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    未匹配类型
+                                                </c:otherwise>
+                                            </c:choose>
+                                        </div>
+                                    <c:choose>
+                                        <c:when test = "${weikeCell.attachment!=null}">
+                                            <a href="../uploadfiles/${weikeCell.attachment}" target="_blank">查看附件</a>
+                                        </c:when>
+                                    </c:choose>
                                 </div>
                             </div>
                             <div class="personalPageContentItemBotmBar">
@@ -189,6 +195,11 @@
                                         </c:choose>
                                     </div>
                                 </div>
+                                <c:choose>
+                                    <c:when test = "${weikeCell.attachment!=null}">
+                                        <a href="../uploadfiles/${weikeCell.attachment}" target="_blank">查看附件</a>
+                                    </c:when>
+                                </c:choose>
                             </div>
                             <div class="personalPageContentItemBotmBar">
                                 <a onclick="showCommentDiv(this)"><span class="glyphicon glyphicon-comment"></span> <span>${weikeCell.comment_num}</span></a>

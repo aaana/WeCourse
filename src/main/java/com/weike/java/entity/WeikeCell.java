@@ -16,7 +16,7 @@ public class WeikeCell extends Weike {
 
     public WeikeCell(Weike weike) {
         super(weike.getTitle(), weike.getSubject(), weike.getUser_id(), weike.getDescription(), weike.getPost_date(),
-            weike.getFile_id(), weike.getThumbnail_id(), weike.getView_num(), weike.getStar_num(), weike.getComment_num());
+            weike.getFile_id(), weike.getThumbnail_id(), weike.getAttachment(), weike.getView_num(), weike.getStar_num(), weike.getComment_num());
         this.setId(weike.getId());
     }
 
