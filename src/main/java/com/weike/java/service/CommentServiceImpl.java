@@ -29,6 +29,10 @@ public class CommentServiceImpl implements CommentService {
         return commentDAO.save(comment);
     }
 
+    public Comment getSimpleCommentWithId(int id) {
+        return commentDAO.findCommentWithId(id);
+    }
+
     public List<CommentCell> getAllCommentsWithWeikeId(int weikeId) {
         List<Comment> comments = commentDAO.findAllCommentWithWeikeId(weikeId);
         List<CommentCell> commentCells = new LinkedList<CommentCell>();

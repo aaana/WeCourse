@@ -28,4 +28,8 @@ public class CommentDAOImpl implements CommentDAO {
     public int getCommentNumWithWeikeId(int weikeId) {
         return findAllCommentWithWeikeId(weikeId).size();
     }
+
+    public Comment findCommentWithId(int id) {
+        return (Comment) sessionFactory.getCurrentSession().createQuery("from Comment where id=?").setParameter(0, id).uniqueResult();
+    }
 }

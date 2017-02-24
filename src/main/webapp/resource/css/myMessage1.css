@@ -24,6 +24,10 @@ body {
     padding: 0;
 }
 
+.messageList > p:first-child {
+    margin-left: 30px;
+}
+
 .weikeDetail > .media,
 .messageList > .media {
     padding: 10px 20px;
@@ -91,4 +95,9 @@ body {
 
 .messageList .media-body div:nth-child(2){
     flex: 1;
+}
+
+/*              筛选 checkbox                 */
+.checkboxList {
+    padding: 0 30px;
 }

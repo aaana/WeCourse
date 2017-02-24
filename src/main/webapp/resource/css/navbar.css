@@ -19,6 +19,10 @@ body {
     border-radius: 6px;
 }
 
+.navbar .dropdown-menu > li > a > span:first-child {
+    width: 200px;
+}
+
 .navbar .navBarMessageCountAll {
     position: absolute;
     top: 10px;
@@ -28,6 +32,7 @@ body {
     border-radius: 5px;
     background-color: red;
 }
+
 
 
 .navbar-inverse .navbar-nav > li > a:hover .navBarMessageCountAl {
@@ -58,7 +63,4 @@ footer {
 footer address {
     margin: 0 20px;
     color: #888;
-    -webkit-transition: property duration timing-function delay;
-    -moz-transition: property duration timing-function delay;
-    transition: property duration timing-function delay;
 }

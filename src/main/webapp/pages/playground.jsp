@@ -12,10 +12,10 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" type="text/css" href="resource/pbl/css/default.css" />
     <link rel="stylesheet" type="text/css" href="resource/css/weike.css">
     <link rel="stylesheet" type="text/css" href="resource/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/pblItem.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/pblItem1.css">
     <link rel="stylesheet" type="text/css" href="resource/css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="resource/css/loading.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/displayModal.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/displayModal1.css">
 
     <script src="resource/pbl/js/modernizr-custom.js"></script>
 
@@ -30,11 +30,13 @@ To change this template use File | Settings | File Templates.
     <script src="resource/video-js/video.js"></script>
 
     <script src="resource/js/pblItem.js"></script>
-    <script src="resource/js/weikeOpHelper.js"></script>
+    <script src="resource/js/weikeOpHelper1.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>
         function showDisplayModal(weikeId) {
+            $("#displayModal .personalPageContentItemComment").remove();
+
             var query = '.weikeCell[weikeid=' + weikeId +'] ';
             var weikeTitle = $(query + '.weikeTitle').val();
             var weikeAuthorName = $(query + '.weikeAuthorName').val();

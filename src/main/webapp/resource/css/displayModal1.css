@@ -64,12 +64,12 @@
     flex: 1;
 }
 
-.modalWeikeItemComment {
+.personalPageContentItemComment {
     padding: 5px 16px 10px;
     position: relative;
 }
 
-.modalWeikeItemComment > div:first-child {
+.personalPageContentItemComment > div:first-child {
     width: 0;
     height: 0;
     border-style: solid;
@@ -77,43 +77,46 @@
     border-color: transparent transparent #fff transparent;
     position: absolute;
     top: -5px;
-    left:  37%;
+    left: 24%;
 }
 
-.modalWeikeItemComment .weikeCellComment,
-.modalWeikeItemComment .weikeCellCommentList {
+.personalPageContentItemComment > a:last-child {
+    display: block;
+    text-align: center;
+}
+
+.weikeCellComment,
+.weikeCellCommentList {
     margin: 8px 0;
 }
 
-.modalWeikeItemComment .weikeCellCommentList img {
+.weikeCellCommentList img {
     width: 48px;
     height: 48px;
 }
 
-.modalWeikeItemComment .weikeCellCommentList .media {
+.weikeCellCommentList .media {
     margin-top: 0;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.modalWeikeItemComment .weikeCellCommentList .media-body {
-    width: 1000px;
+.weikeCellCommentList .media-body {
+    width: 10000px;
 }
-
 .weikeCellShowComment {
     align-self: flex-end;
     position: relative;
     top: -20px;
 }
 
-
-.modalWeikeItemComment .weikeCellCommentReply {
+.weikeCellCommentReply {
     display: flex;
     justify-content: flex-end;
 }
 
-.modalWeikeItemComment .weikeCellShowComment a,
-.modalWeikeItemComment .weikeCellCommentReply a{
+.weikeCellShowComment a,
+.weikeCellCommentReply a{
     font-size: 12px;
     margin-left: 10px;
     font-weight: 500;
@@ -122,8 +125,8 @@
     cursor: default;
 }
 
-.modalWeikeItemComment .weikeCellCommentList > a,
-.modalWeikeItemComment .weikeCellCommentList > a > span {
+.weikeCellCommentList > a,
+.weikeCellCommentList > a > span {
     width: 100%;
     text-align: center;
 }

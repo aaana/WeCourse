@@ -20,9 +20,10 @@ public class Notice implements Serializable {
     private int sender_id;
     private int receiver_id;
     private int notice_type;
-    // 1:Favorite trigger_id -- t ; target_id -- weike_id
+    // 1:Favorite trigger_id -- favorite_id ; target_id -- weike_id
     // 2:Follow trigger_id -- follow_id ; target_id -- user_id
-    // 3:Comment trigger_id -- comment_id ; Target_id -- comment_id (parent)
+    // 3:Comment trigger_id -- comment_id ; target_id -- comment_id (parent)
+    // 4:Comment(reply) trigger_id -- comment_id ; target_id -- comment_id
     private Timestamp notice_time;
     private int trigger_id;
     private int target_id;

@@ -13,6 +13,7 @@ public interface WeikeDAO {
     public Boolean update(Weike weike);
     public void remove(Weike weike);
 
+    public Weike findSimpleWeikeByWeikeId(int id);
     public WeikeCell findWeikeByWeikeId(int id);
     public List<WeikeCell> findAllWeike();
     public List<WeikeCell> findWeikesWithUserId(int id);

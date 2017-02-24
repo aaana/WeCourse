@@ -10,6 +10,7 @@ import java.util.List;
  */
 public interface CommentService {
     public int newComment(Comment comment);
+    public Comment getSimpleCommentWithId(int id);
     public List<CommentCell> getAllCommentsWithWeikeId(int weikeId);
     public CommentCell transComment2CommentCell(Comment comment);
     public int getCommentNumWithWeikeId(int weikeId);

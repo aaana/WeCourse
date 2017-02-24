@@ -125,6 +125,10 @@ body {
     height: 60px;
 }
 
+.personalPageNav > li.active > a {
+    color: #777;
+}
+
 .personalPageNav {
     margin-bottom: 30px;
     padding-bottom: 5px;
@@ -259,7 +263,11 @@ body {
     border-color: transparent transparent #fff transparent;
     position: absolute;
     top: -5px;
-    left: 270px;
+    left: 24%;
+}
+.personalPageContentItemComment > a:last-child {
+    display: block;
+    text-align: center;
 }
 
 .weikeCellComment,

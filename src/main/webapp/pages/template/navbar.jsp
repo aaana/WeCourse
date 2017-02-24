@@ -22,34 +22,64 @@
             <a class="navbar-brand" href="/">微课</a>
         </div>
         <div class="navbar-collapse collapse">
-            <%--<ul class="nav navbar-nav">--%>
-                <%--<li><a href="#">热门</a></li>--%>
-                <%--<li><a href="#">广场</a></li>--%>
-            <%--</ul>--%>
 
             <c:choose>
                 <c:when test="${user != null}">
-
                     <ul class="nav navbar-nav navbar-right">
-
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                消息<span class="navBarMessageCountAll"></span>
+                                消息
+                                <c:choose>
+                                    <c:when test="${messageNum[0] > 0}">
+                                        <span class="navBarMessageCountAll"></span>
+                                    </c:when>
+                                </c:choose>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">
-                                        有人关注我<span class="navBarMessageCount">1</span>
+                                    <a href="/reminder?page_num=1">
+                                        <span>有人收藏我的微课</span>
+                                        <c:choose>
+                                            <c:when test="${messageNum[1] > 0}">
+                                                <span class="navBarMessageCount">${messageNum[1]}</span>
+                                            </c:when>
+                                        </c:choose>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        有人评论我<span class="navBarMessageCount">3</span>
+                                    <a href="/reminder?page_num=2">
+                                        <span>有人关注我</span>
+                                        <c:choose>
+                                            <c:when test="${messageNum[2] > 0}">
+                                                <span class="navBarMessageCount">${messageNum[2]}</span>
+                                            </c:when>
+                                        </c:choose>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        有人回复我
+                                    <a href="/reminder?page_num=3">
+                                        <span>有人评论我的微课</span>
+                                        <c:choose>
+                                            <c:when test="${messageNum[3] > 0}">
+                                                <span class="navBarMessageCount">${messageNum[3]}</span>
+                                            </c:when>
+                                        </c:choose>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/reminder?page_num=4">
+                                        <span>有人回复我</span>
+                                        <c:choose>
+                                            <c:when test="${messageNum[4] > 0}">
+                                                <span class="navBarMessageCount">${messageNum[4]}</span>
+                                            </c:when>
+                                        </c:choose>
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="/reminder?page_num=0">
+                                        <span>查看全部消息</span>
                                     </a>
                                 </li>
                             </ul>
@@ -63,8 +93,8 @@
                                     </div>
                                 </a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">我的关注</a></li>
-                                <li><a href="#">我的收藏</a></li>
+                                <li><a href="/user/${user.id}?page_num=2">我的关注</a></li>
+                                <li><a href="/user/${user.id}?page_num=3">我的收藏</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="/logout">注销</a></li>
                             </ul>

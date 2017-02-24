@@ -12,4 +12,6 @@ public interface NoticeDAO {
     public Boolean updateReadStatus(int notice_id);
     public List<Notice> findAllNoticeWithReceiverId(int receiver_id);
     public List<Notice> findAllUnreadNoticeWithReceiverId(int receiver_id);
+    public List<Notice> findAllNoticeWithReceiverIdAndType(int receiver_id, int type);
+    public List<Notice> findAllUnreadNoticeWithReceiverIdAndType(int receiver_id, int type);
 }

@@ -104,7 +104,7 @@ public class WeikeServiceImpl implements WeikeService {
 
     public Boolean weikeGetCommented(int weikeId) {
         Weike weike = weikeDAO.findWeikeByWeikeId(weikeId);
-        weike.setView_num(weike.getView_num() + 1);
+        weike.setComment_num(weike.getComment_num() + 1);
         return weikeDAO.update(weike);
     }
 

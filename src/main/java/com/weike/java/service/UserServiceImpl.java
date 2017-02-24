@@ -35,8 +35,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public UserCell login(String email, String password) {
-        UserCell userCell = new UserCell(userDao.findUserWithEmailAndPw(email, password));
-
+        UserCell userCell = transUser2UserCell(userDao.findUserWithEmailAndPw(email, password));
         return userCell;
     }
 

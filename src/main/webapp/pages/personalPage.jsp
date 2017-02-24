@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../resource/css/loading.css">
     <script type="text/javascript" src="../resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../resource/Bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../resource/js/weikeOpHelper.js"></script>
+    <script type="text/javascript" src="../resource/js/weikeOpHelper1.js"></script>
 
     <link href="../resource/video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="../resource/video-js/video.js"></script>
@@ -28,27 +28,40 @@
         videojs.options.flash.swf = "resource/video-js/video-js.swf";
 
         function changePage2AllWeike() {
-            changePage("allWeike");
+            changePage("allWeike", 1);
         }
         function changePage2FavoriteWeike() {
-            changePage("favoriteWeike");
+            changePage("favoriteWeike", 2);
         }
         function changePage2FollowUser() {
-            changePage("followUser");
+            changePage("followUser", 3);
         }
-        function changePage(idString) {
+        function changePage(idString, idInt) {
+            $(".breadcrumb  > li").removeClass("active");
+            $(".breadcrumb  > li:nth-child("+ idInt +")").addClass("active");
+            $("#pageNum").val(idInt);
+
             $("#allWeike").hide();
             $("#favoriteWeike").hide();
             $("#followUser").hide();
             $("#" + idString).show();
-
-
         }
+
+        $(document).ready(function () {
+            var pageNum =  $("#pageNum").val();
+            if (pageNum == 2) {
+                changePage2FavoriteWeike();
+            }
+            if (pageNum == 3) {
+                changePage2FollowUser();
+            }
+        });
     </script>
 
 </head>
 <body>
     <jsp:include page="template/navbar.jsp" />
+    <input type="hidden" id="pageNum" value="${pageNum}" />
 
     <div class="container body-content">
         <div class="personalPageHead">

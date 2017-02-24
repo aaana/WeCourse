@@ -52,7 +52,9 @@ public class WeikeController {
         List<WeikeCell> weikeCells = null;
         if(session.getAttribute("user") != null) {
             UserCell userCell = (UserCell) session.getAttribute("user");
-            session.setAttribute("user", userService.findUserById(userCell.getId()));
+            userCell = userService.findUserById(userCell.getId());
+            session.setAttribute("user", userCell);
+            model.addAttribute("messageNum", noticeService.getUnreadNoticeNumList(userCell.getId()));
             model.addAttribute("user", userCell);
             weikeCells = weikeService.findAllWeike(userCell.getId());
         } else {
@@ -60,6 +62,11 @@ public class WeikeController {
         }
         model.addAttribute("weikeCells", weikeCells);
         return "playground";
+    }
+
+    @RequestMapping("/upload")
+    public String upload(){
+        return "publish";
     }
 
     @RequestMapping("/favorite")
@@ -141,6 +148,11 @@ public class WeikeController {
             Weike weike = weikeService.findWeikeByWeikeId(weikeId);
             Notice notice = new Notice(userCell.getId(), weike.getUser_id(), 3, new Timestamp(System.currentTimeMillis()), comment.getId(), parentId, false);
             noticeService.saveNotice(notice);
+            if (parentId != -1) {
+                Comment comment2 = commentService.getSimpleCommentWithId(parentId);
+                notice = new Notice(userCell.getId(), comment2.getPublisher_id(), 4, new Timestamp(System.currentTimeMillis()), comment.getId(), parentId, false);
+                noticeService.saveNotice(notice);
+            }
 
             weikeService.weikeGetCommented(weikeId);
 
@@ -163,7 +175,6 @@ public class WeikeController {
         map.put("comments", commentCells);
         return map;
     }
-
 
     @RequestMapping("/submitFile")
     public String submit(HttpServletRequest request)
@@ -239,6 +250,24 @@ public class WeikeController {
         Weike weike = new Weike(title, subject, userId, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid, 0, 0, 0);
         weikeService.saveWeike(weike);
         return "redirect:/playground";
+    }
+
+    @RequestMapping("/detailWeike")
+    public @ResponseBody
+    Map<String,Object> getDetailWeike(HttpServletRequest request) {
+        int weikeId = Integer.parseInt(request.getParameter("weikeId"));
+        Map<String,Object> map = new HashMap<String,Object>();
+        HttpSession session = request.getSession();
+
+        if(session.getAttribute("user") != null) {
+            UserCell userCell = (UserCell) session.getAttribute("user");
+
+            WeikeCell weikeCell = weikeService.findWeikeByWeikeId(weikeId, userCell.getId());
+            List<CommentCell> commentCells = commentService.getAllCommentsWithWeikeId(weikeId);
+            map.put("weikeCell", weikeCell);
+            map.put("commentCells", commentCells);
+        }
+        return map;
     }
 
 }

@@ -50,6 +50,10 @@ public class WeikeDAOImpl implements WeikeDAO {
         sessionFactory.getCurrentSession().createQuery("delete Weike where id=?").setParameter(0, weike.getId()).executeUpdate();
     }
 
+    public Weike findSimpleWeikeByWeikeId(int id) {
+        return (Weike) sessionFactory.getCurrentSession().createQuery("from Weike where id=?").setParameter(0, id).uniqueResult();
+    }
+
     public WeikeCell findWeikeByWeikeId(int id) {
         Weike weike = (Weike) sessionFactory.getCurrentSession().createQuery("from Weike where id=?").setParameter(0, id).uniqueResult();
         return transWeike2WeikeCell(weike);

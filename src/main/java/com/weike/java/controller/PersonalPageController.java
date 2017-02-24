@@ -1,9 +1,7 @@
 package com.weike.java.controller;
 
-import com.weike.java.entity.User;
-import com.weike.java.entity.UserCell;
-import com.weike.java.entity.Weike;
-import com.weike.java.entity.WeikeCell;
+import com.weike.java.entity.*;
+import com.weike.java.service.NoticeService;
 import com.weike.java.service.UserService;
 import com.weike.java.service.WeikeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +28,11 @@ public class PersonalPageController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private NoticeService noticeService;
+
     @RequestMapping("/{user_id}")
-    public String upload(@PathVariable String user_id, Model model, HttpServletRequest request){
+    public String gotoPersonalPage(@PathVariable String user_id, Model model, HttpServletRequest request){
         HttpSession session = request.getSession();
         List<WeikeCell> weikeCells = null;
         User visiting = null;
@@ -41,8 +42,11 @@ public class PersonalPageController {
         if(session.getAttribute("user") != null) {
             UserCell userCell = (UserCell) session.getAttribute("user");
             userCell = userService.findUserById(userCell.getId());
-
+            session.setAttribute("user", userCell);
             model.addAttribute("user", userCell);
+            model.addAttribute("messageNum", noticeService.getUnreadNoticeNumList(userCell.getId()));
+
+
             weikeCells = weikeService.findWeikesWithUserId(Integer.parseInt(user_id), userCell.getId());
             visiting = userService.findUserById(Integer.parseInt(user_id), userCell.getId());
             followings = userService.findFollowedUserWithUserid(Integer.parseInt(user_id), userCell.getId());
@@ -60,6 +64,9 @@ public class PersonalPageController {
         model.addAttribute("followings", followings);
         model.addAttribute("favorites", favorites);
         model.addAttribute("commonFollowings", commonFollowings);
+
+        int page_num = request.getParameter("page_num") == null? 1 : Integer.parseInt(request.getParameter("page_num"));
+        model.addAttribute("pageNum", page_num);
         return "personalPage";
     }
 }
