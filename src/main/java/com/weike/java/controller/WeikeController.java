@@ -21,6 +21,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by tina on 2/16/17.
@@ -224,6 +226,14 @@ public class WeikeController {
                         if(!directory.exists()) {
                             directory.mkdirs();
                         }
+
+                        if (!fieldName.equals("attachment") && isContainChinese(fileName)) {
+                            int id = fileService.getNextUploadFileId();
+                            String s[] = fileName.split("\\.");
+                            fileName = "newUploadFile" + id;
+                            fileName = fileName.concat(".").concat(s[s.length -1]);
+                        }
+
                         File uploadedFile = new File(directoryPath + File.separator + fileName);
                         if(!uploadedFile.exists()){
                             uploadedFile.createNewFile();
@@ -250,12 +260,6 @@ public class WeikeController {
             thumbnailid = fileid;
         }
 
-//        HttpSession session = request.getSession();
-//        int userId = -1;
-//        if(session.getAttribute("user") != null) {
-//            UserCell userCell = (UserCell) session.getAttribute("user");
-//            userId = userCell.getId();
-//        }
         Weike weike = new Weike(title, subject, userId, description, new Timestamp(System.currentTimeMillis()), fileid, thumbnailid,attachment, 0, 0, 0);
         weikeService.saveWeike(weike);
         return "redirect:/";
@@ -277,6 +281,15 @@ public class WeikeController {
             map.put("commentCells", commentCells);
         }
         return map;
+    }
+
+    public boolean isContainChinese(String str) {
+        Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
+        Matcher m = p.matcher(str);
+        if (m.find()) {
+            return true;
+        }
+        return false;
     }
 
 }

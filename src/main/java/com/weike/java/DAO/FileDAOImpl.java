@@ -3,6 +3,7 @@ package com.weike.java.DAO;
 import com.weike.java.entity.UploadFile;
 import com.weike.java.entity.User;
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -27,11 +28,10 @@ public class FileDAOImpl implements FileDAO {
         return criteria.list();
     }
 
-    public List<UploadFile> findHotFiles() {
-        return null;
+    public int getNextUploadFileId() {
+        Query query = sessionFactory.getCurrentSession().createQuery("select id from UploadFile order by id desc");
+        return ((List<Integer>) query.list()).get(0) + 1;
     }
 
-    public List<UploadFile> findFilesWithUserId(int userId) {
-        return null;
-    }
+
 }

@@ -12,4 +12,5 @@ public interface FileService {
     public int saveFile(UploadFile file);
 
     public List<UploadFile> getAllFiles();
+    public int getNextUploadFileId();
 }

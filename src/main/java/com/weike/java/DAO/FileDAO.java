@@ -11,8 +11,7 @@ import java.util.List;
 public interface FileDAO {
     public int save(UploadFile file);
     public List<UploadFile> findAllFiles();
-    public List<UploadFile> findHotFiles();
-    public List<UploadFile> findFilesWithUserId(int userId);
 
+    public int getNextUploadFileId();
 
 }

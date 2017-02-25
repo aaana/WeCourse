@@ -32,4 +32,8 @@ public class FileServiceImpl implements FileService {
     public List<UploadFile> getAllFiles() {
         return fileDao.findAllFiles();
     }
+
+    public int getNextUploadFileId() {
+        return fileDao.getNextUploadFileId();
+    }
 }
