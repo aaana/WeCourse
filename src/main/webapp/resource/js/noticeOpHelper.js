@@ -158,7 +158,7 @@ var gotoPP = function (t) {
 };
 
 var showWeikeDetail = function (t) {
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
 
     readNotice(t);
 
@@ -171,11 +171,11 @@ var showWeikeDetail = function (t) {
         dataType: 'json',
         url:"/detailWeike",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             showDisplayModal(data.weikeCell);
             var commentListDivNode = $('#displayModal .weikeCellCommentList');
             commentList = transCommentFormat(data.commentCells);

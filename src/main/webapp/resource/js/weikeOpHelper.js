@@ -31,11 +31,9 @@ var showCommentDiv = function (t) {
         dataType: 'json',
         url:"/comment",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
             if(data.comments != null) {
                 commentList = transCommentFormat(data.comments);
                 initCommentDiv(commentList, commentListDivNode);
@@ -72,7 +70,7 @@ var hideCommentListDiv = function (t) {
     $(t).parent().remove();
 };
 var makeComment2weike = function (t) {
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     var weikeId = $(t).parent().parent().parent().attr('weike_id');
     var parentId = -1;
     var content = $(t).parent().prev().val();
@@ -86,11 +84,11 @@ var makeComment2weike = function (t) {
         dataType: 'json',
         url:"/makeComment",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.commentCell != null) {
                 var comment = {
                     'id': data.commentCell.id,
@@ -108,9 +106,9 @@ var makeComment2weike = function (t) {
                 var commentNum = $(t).closest('.personalPageContentItemComment').prev().children("a:first-child").children("span:last-child").text();
                 $(t).closest('.personalPageContentItemComment').prev().children("a:first-child").children("span:last-child").text(parseInt(commentNum) + 1);
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试");
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -129,7 +127,7 @@ var showCommentInput = function (t) {
         '</div>');
 };
 var makeComment2comment = function (t) {
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     var weikeId = $(t).closest(".personalPageContentItemComment").attr("weike_id");
     var parentId = $($(t).parents('.media')[0]).attr('comment_id');
     var content = $(t).parent().prev().val();
@@ -143,11 +141,11 @@ var makeComment2comment = function (t) {
         dataType: 'json',
         url:"/makeComment",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal()
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.commentCell != null) {
                 var comment = {
                     'id': data.commentCell.id,
@@ -169,9 +167,9 @@ var makeComment2comment = function (t) {
                 hideComment2comment(t);
 
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试");
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -252,8 +250,8 @@ var doFavorite = function (t) {
 };
 var favorite = function (t) {
     var weikeId = $(t).parent().parent().attr('weike_id');
-    
-    $('#uploadModal').modal('show');
+
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             weikeId: weikeId
@@ -262,11 +260,11 @@ var favorite = function (t) {
         dataType: 'json',
         url:"/favorite",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).children('span:last-child').text(parseInt($(t).children('span:last-child').text()) + 1);
                 $(t).children('span:first-child').removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
@@ -276,17 +274,16 @@ var favorite = function (t) {
                 $(".weikeCell[weikeid = "+ weikeId+"] .weikeStarNum").val(parseInt($(t).children('span:last-child').text()));
                 $(".weikeCell[weikeid = "+ weikeId+"] .weikeStarred").val("true");
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定");
             }
         }
     });
 };
 var unfavorite = function (t) {
     var weikeId = $(t).parent().parent().attr('weike_id');
-
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             weikeId: weikeId
@@ -295,11 +292,11 @@ var unfavorite = function (t) {
         dataType: 'json',
         url:"/unfavorite",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).children('span:last-child').text(parseInt($(t).children('span:last-child').text()) - 1);
                 $(t).children('span:first-child').removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
@@ -309,9 +306,9 @@ var unfavorite = function (t) {
                 $(".weikeCell[weikeid = "+ weikeId+"] .weikeStarNum").val(parseInt($(t).children('span:last-child').text()));
                 $(".weikeCell[weikeid = "+ weikeId+"] .weikeStarred").val("false");
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -328,7 +325,7 @@ var doFavoriteFromPP = function (t) {
 var favoriteFromPP = function (t) {
     var weikeId = $(t).parent().parent().attr('weike_id');
 
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             weikeId: weikeId
@@ -337,19 +334,19 @@ var favoriteFromPP = function (t) {
         dataType: 'json',
         url:"/favorite",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).children('span:last-child').text(parseInt($(t).children('span:last-child').text()) + 1);
                 $(t).children('span:first-child').removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
 
                 } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定")
             }
         }
     });
@@ -358,7 +355,7 @@ var favoriteFromPP = function (t) {
 var unfavoriteFromPP = function (t) {
     var weikeId = $(t).parent().parent().attr('weike_id');
 
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             weikeId: weikeId
@@ -367,19 +364,19 @@ var unfavoriteFromPP = function (t) {
         dataType: 'json',
         url:"/unfavorite",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).children('span:last-child').text(parseInt($(t).children('span:last-child').text()) - 1);
                 $(t).children('span:first-child').removeClass('glyphicon-heart').addClass('glyphicon-heart-empty');
 
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -398,7 +395,7 @@ var doFollow = function (t) {
 var follow = function (t) {
     var user_id = $(t).parent().attr('user_id');
 
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             user_id: user_id
@@ -407,18 +404,18 @@ var follow = function (t) {
         dataType: 'json',
         url:"/follow",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).removeClass("btn-primary").addClass("btn-default");
                 $(t).text("已关注");
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -426,7 +423,7 @@ var follow = function (t) {
 var unfollow = function (t) {
     var user_id = $(t).parent().attr('user_id');
 
-    $('#uploadModal').modal('show');
+    showUploadModal("请稍等");
     $.ajax({
         data:{
             user_id: user_id
@@ -435,18 +432,18 @@ var unfollow = function (t) {
         dataType: 'json',
         url:"/unfollow",
         error:function(data){
-            $('#uploadModal').modal('hide');
-            showHint("出错,请重试");
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
         },
         success:function(data){
-            $('#uploadModal').modal('hide');
+            hideUploadModal();
             if(data.isLogged && data.result) {
                 $(t).removeClass("btn-default").addClass("btn-primary");
                 $(t).text("关注");
             } else if(!data.isLogged){
-                showHint("请先登录");
+                showHint("请先登录", "确定");
             } else {
-                showHint("出错,请重试")
+                showHint("出错,请重试", "确定");
             }
         }
     });
@@ -470,9 +467,22 @@ var doWatch = function (weikeId) {
     
 };
 
-function showHint(string) {
+function showHint(string, string2) {
+    if(string2 == "") {
+        string2 = "继续填写";
+    }
     $("#reviewModal .modal-body").html(string);
+    $("#reviewModal #reviewModalBtn").text(string2);
+    
     $('#reviewModal').modal('show');
+}
+function showUploadModal(string) {
+    $('#uploadModal #uploadModalHint').text(string);
+    $('#uploadModal').modal('show');
+}
+function hideUploadModal() {
+    $('#uploadModal #uploadModalHint').text("正在上传");
+    $('#uploadModal').modal('hide');
 }
 function transTimeStamp2String (time){
     var datetime = new Date();

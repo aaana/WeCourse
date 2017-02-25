@@ -28,9 +28,9 @@
 }
 
 
-.modal .modal-dialog {
-    width: 80%;
-}
+/*.modal .modal-dialog {*/
+    /*width: 80%;*/
+/*}*/
 
 .modalWeikeItemBotmBar {
     display: flex;

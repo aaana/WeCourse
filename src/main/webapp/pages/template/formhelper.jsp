@@ -24,7 +24,7 @@
     </div><!-- /.modal -->
 </div>
 
-<!-- 表格不完善不完善 -->
+<!-- 提示信息 -->
 <div class="modal fade bs-example-modal-sm" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
@@ -34,7 +34,7 @@
             </div>
             <div class="modal-body"></div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">继续填写</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="reviewModalBtn">继续填写</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
@@ -64,7 +64,7 @@
                     <div class="circle4"></div>
                 </div>
             </div>
-            <span>正在上传</span>
+            <span id="uploadModalHint">正在上传</span>
         </div>
     </div>
 </div>

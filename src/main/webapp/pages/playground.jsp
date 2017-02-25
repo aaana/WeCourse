@@ -12,10 +12,10 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" type="text/css" href="resource/pbl/css/default.css" />
     <link rel="stylesheet" type="text/css" href="resource/css/weike.css">
     <link rel="stylesheet" type="text/css" href="resource/css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/pblItem1.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/pblItem.css">
     <link rel="stylesheet" type="text/css" href="resource/css/sidebar.css">
     <link rel="stylesheet" type="text/css" href="resource/css/loading.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/displayModal1.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/displayModal.css">
 
     <script src="resource/pbl/js/modernizr-custom.js"></script>
 
