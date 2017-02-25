@@ -56,7 +56,7 @@ public class UserController {
         String password = request.getParameter("password");
         int type = Integer.parseInt(request.getParameter("usertype"));
 
-        User user = new User(name, email, password, type, "", "", "avatar01.png");
+        User user = new User(name, email, password, type, "", "", "");
         int id = userService.signup(user);
         UserCell userCell = userService.findUserById(id);
 

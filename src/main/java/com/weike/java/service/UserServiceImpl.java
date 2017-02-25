@@ -1,9 +1,7 @@
 package com.weike.java.service;
 
-import com.weike.java.DAO.FavoriteDAO;
-import com.weike.java.DAO.FollowDAO;
-import com.weike.java.DAO.UserDAO;
-import com.weike.java.DAO.WeikeDAO;
+import com.weike.java.DAO.*;
+import com.weike.java.entity.Avatar;
 import com.weike.java.entity.Follow;
 import com.weike.java.entity.User;
 import com.weike.java.entity.UserCell;
@@ -27,10 +25,15 @@ public class UserServiceImpl implements UserService {
     private FollowDAO followDAO;
     @Autowired
     private WeikeDAO weikeDAO;
-
-
+    @Autowired
+    private AvatarDAO avatarDAO;
 
     public int signup(User u) {
+        if (u.getAvatar().equals("")) {
+            List<Avatar> avatars = avatarDAO.getAllAvatar();
+            int index = (int)(Math.random()*avatars.size());
+            u.setAvatar(avatars.get(index).getUrl());
+        }
         return userDao.save(u);
     }
 
