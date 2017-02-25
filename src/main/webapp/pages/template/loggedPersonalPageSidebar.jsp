@@ -43,7 +43,7 @@
     </div>
 </div>
 <c:choose>
-    <c:when test="${commonFollowings.size() != 0}">
+    <c:when test="${commonFollowings != null && commonFollowings.size() != 0  && user.id == visiting.id}}">
         <div class="personalPageCommonFollow" data-spy="affix" data-offset-top="668">
             <span>共同关注</span>
             <div>

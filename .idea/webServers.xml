@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3dee577d-257f-4a5e-87a2-832986db5ce5" name="Mr.Donkey" url="http://115.28.56.35">
-        <fileTransfer host="115.28.56.35" port="22" rootFolder="/root/SpringMVC" accessType="SFTP" password="df9adf9adf9bdf93df93df9edf87dfe6dfc3dfc4" username="root">
+        <fileTransfer host="115.28.56.35" port="22" rootFolder="/root/WeCource" accessType="SFTP" password="df9adf9adf9bdf93df93df9edf87dfe6dfc3dfc4" username="root">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
