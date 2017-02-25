@@ -228,6 +228,7 @@ var showDisplayModal = function (weikeCell) {
         // '<a onclick="hideCommentListDiv(this)"><span class="glyphicon glyphicon-chevron-up"></span></a>' +
         '</div>');
 
+    
     $('#displayModal').modal('show');
     doWatch(weikeCell.id);
 };

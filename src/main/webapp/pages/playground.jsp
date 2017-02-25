@@ -30,10 +30,21 @@ To change this template use File | Settings | File Templates.
     <script src="resource/video-js/video.js"></script>
 
     <script src="resource/js/pblItem.js"></script>
-    <script src="resource/js/weikeOpHelper1.js"></script>
+    <script src="resource/js/weikeOpHelper.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>
+        $(document).ready(function () {
+            $('#displayModal').on('hidden.bs.modal', function (event) {
+                if($("body").css("overflow") == "hidden") {
+                    $("body").css("overflow", "");
+                }
+                if($("html").css("overflow") == "hidden") {
+                    $("html").css("overflow", "");
+                }
+            })
+        });
+
         function showDisplayModal(weikeId) {
             $("#displayModal .personalPageContentItemComment").remove();
 

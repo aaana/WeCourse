@@ -20,11 +20,16 @@ To change this template use File | Settings | File Templates.
     <script src="resource/pbl/js/modernizr-custom.js"></script>
     <script type="text/javascript" src="resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="resource/Bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="resource/js/weikeOpHelper1.js"></script>
+    <script type="text/javascript" src="resource/js/weikeOpHelper.js"></script>
     <script type="text/javascript" src="resource/js/noticeOpHelper.js"></script>
     <script>
         $(document).ready(function () {
             showNotices();
+            $('#displayModal').on('shown.bs.modal', function (event) {
+                if (!$("body").hasClass("modal-open")) {
+                    $("body").addClass("modal-open");
+                }
+            })
         })
     </script>
 

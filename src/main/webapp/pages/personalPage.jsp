@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../resource/css/loading.css">
     <script type="text/javascript" src="../resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../resource/Bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../resource/js/weikeOpHelper1.js"></script>
+    <script type="text/javascript" src="../resource/js/weikeOpHelper.js"></script>
 
     <link href="../resource/video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="../resource/video-js/video.js"></script>
