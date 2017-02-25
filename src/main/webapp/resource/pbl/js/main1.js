@@ -77,8 +77,8 @@
 		this.previewEl = nextSibling(this.gridEl);
 		this.isExpanded = false;
 		this.isAnimating = false;
-		this.closeCtrl = this.previewEl.querySelector('button.action--close');
-		this.previewDescriptionEl = this.previewEl.querySelector('.description--preview');
+		//this.closeCtrl = this.previewEl.querySelector('button.action--close');
+		//this.previewDescriptionEl = this.previewEl.querySelector('.description--preview');
 
 		this._init();
 	}

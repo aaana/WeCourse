@@ -449,6 +449,77 @@ var unfollow = function (t) {
     });
 };
 
+// load more weike
+var getMoreWeikeCell = function (t) {
+    // start id
+    var start_id = $(t).attr('start_id');
+
+    showUploadModal("请稍等");
+    $.ajax({
+        data:{
+            startId: start_id
+        },
+        type:"get",
+        dataType: 'json',
+        url:"/moreWeike",
+        error:function(data){
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
+        },
+        success:function(data){
+            hideUploadModal();
+            if (!data.hasMoreWeike) {
+                $(t).text("已显示全部微课");
+                $(t).attr("disabled", "disabled");
+            }
+            var parentNode = $(".js .grid");
+            weikeCells = data.weikeCells;
+            for (var i in weikeCells) {
+                parentNode.append(initWeikeTemplate(weikeCells[i]));
+            }
+            new GridFx(document.querySelector('.grid'));
+        }
+    });
+};
+var initWeikeTemplate = function(weikeCell) {
+    attachment = weikeCell.attachment==null?"":weikeCell.attachment;
+    return '<div class="grid__item" data-size=' + weikeCell.thumbnail_size + '> ' +
+        '<div class="thumbnail weikeCell" weikeid="' + weikeCell.id + '" onclick="showDisplayModal(' + weikeCell.id + ')">' +
+        '<img src="uploadfiles/' + weikeCell.thumbnail_url + '">' +
+        '<div class="weikeCellDes">' +
+        '<h3>' + weikeCell.title + '</h3>' +
+        '<div class="weikeCellVote">' +
+        '<h5>' + weikeCell.subject + '</h5>' +
+        '<span></span>' +
+        '<c:choose>' +
+        '<c:when test="' + weikeCell.starred + '">' +
+        '<span><span class="glyphicon glyphicon-heart"></span> <span>' + weikeCell.star_num + '</span></span>' +
+        '</c:when>' +
+        '<c:otherwise>' +
+        '<span><span class="glyphicon glyphicon-heart-empty"></span> <span>' + weikeCell.star_num + '</span></span>' +
+        '</c:otherwise>' +
+        '</c:choose>' +
+        '</div>' +
+        '</div>' +
+        '<input type="hidden" class="weikeTitle" value="' + weikeCell.title  + '" />' +
+        '<input type="hidden" class="weikeAuthorName" value="' + weikeCell.user_name + '" />' +
+        '<input type="hidden" class="weikeAuthorAvatar" value="' + weikeCell.user_avatar + '" />' +
+        '<input type="hidden" class="weikeAuthorId" value="' + weikeCell.user_id + '" />' +
+        '<input type="hidden" class="weikeSubject" value="' + weikeCell.subject + '" />' +
+        '<input type="hidden" class="weikePostDate" value="' + weikeCell.post_date + '" />' +
+        '<input type="hidden" class="weikeDescription" value="' + weikeCell.description  + '" />' +
+        '<input type="hidden" class="weikeThumbnailUrl" value="' + weikeCell.thumbnail_url  + '" />' +
+        '<input type="hidden" class="weikeAttachmentUrl" value="' + attachment  + '">' +
+        '<input type="hidden" class="weikeFileUrl" value="' + weikeCell.file_url  + '" />' +
+        '<input type="hidden" class="weikeFileType" value="' + weikeCell.file_type  + '" />' +
+        '<input type="hidden" class="weikeCommentNum" value="' + weikeCell.comment_num  + '" />' +
+        '<input type="hidden" class="weikeViewNum" value="' + weikeCell.view_num  + '" />' +
+        '<input type="hidden" class="weikeStarNum" value="' + weikeCell.star_num  + '" />' +
+        '<input type="hidden" class="weikeStarred" value="' + weikeCell.starred  + '" />' +
+        '</div>' +
+        '</div>';
+};
+
 
 // others
 var gotoPersonalPage = function (t) {
@@ -484,6 +555,7 @@ function hideUploadModal() {
     $('#uploadModal #uploadModalHint').text("正在上传");
     $('#uploadModal').modal('hide');
 }
+
 function transTimeStamp2String (time){
     var datetime = new Date();
     datetime.setTime(time);

@@ -24,12 +24,12 @@ To change this template use File | Settings | File Templates.
     <script src="resource/pbl/js/imagesloaded.pkgd.min.js"></script>
     <script src="resource/pbl/js/masonry.pkgd.min.js"></script>
     <script src="resource/pbl/js/classie.js"></script>
-    <script src="resource/pbl/js/main.js"></script>
+    <script src="resource/pbl/js/main1.js"></script>
 
     <link href="resource/video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="resource/video-js/video.js"></script>
 
-    <script src="resource/js/pblItem.js"></script>
+    <script src="resource/js/pblItem1.js"></script>
     <script src="resource/js/weikeOpHelper.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
@@ -133,7 +133,6 @@ To change this template use File | Settings | File Templates.
             <div class="js">
                 <div class="grid">
                     <c:forEach var="weikeCell" items="${weikeCells}">
-                        <br/>
                         <div class="grid__item" data-size='${weikeCell.thumbnail_size}'>
                             <div class="thumbnail weikeCell" weikeid="${weikeCell.id}" onclick="showDisplayModal(${weikeCell.id})">
                                 <img src="uploadfiles/${weikeCell.thumbnail_url}">
@@ -173,9 +172,8 @@ To change this template use File | Settings | File Templates.
                         </div>
                     </c:forEach>
                 </div>
-                <div class="preview">
-                    <button class="action action--close"><h1>×</h1></button>
-                    <div class="description description--preview"></div>
+                <div style="text-align: center">
+                    <button class="btn btn-default" onclick="getMoreWeikeCell(this)" start_id="${weikeCells.size()}">加载更多</button>
                 </div>
             </div>
         </div>

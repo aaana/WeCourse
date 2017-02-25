@@ -23,6 +23,8 @@ public class WeikeDAOImpl implements WeikeDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
+    private int gap = 10;
+
     public int save(Weike weike) {
         return (Integer) sessionFactory.getCurrentSession().save(weike);
     }
@@ -91,8 +93,31 @@ public class WeikeDAOImpl implements WeikeDAO {
         return weikeCells;
     }
 
+    public List<WeikeCell> findWeikeFromStartNum(int startNum) {
+        Query query = sessionFactory.getCurrentSession().createQuery("from Weike order by id DESC");
+        query.setFirstResult(startNum);
+        query.setMaxResults(gap);
+        List<Weike> weikes = query.list();
+
+        List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
+
+        for (Weike weike : weikes) {
+            weikeCells.add(transWeike2WeikeCell(weike));
+        }
+
+        return weikeCells;
+    }
+
     public int findWeikeNumWithUserId(int id) {
         return findWeikesWithUserId(id).size();
+    }
+
+    public Boolean haveMoreWeike(int startNum) {
+        Query query = sessionFactory.getCurrentSession().createQuery("from Weike order by id DESC");
+        query.setFirstResult(startNum);
+        query.setMaxResults(gap + 1);
+        List<Weike> weikes = query.list();
+        return weikes.size() > gap;
     }
 
     public List<WeikeCell> findWeikeWithQueryString(String string) {

@@ -58,9 +58,9 @@ public class WeikeController {
             session.setAttribute("user", userCell);
             model.addAttribute("messageNum", noticeService.getUnreadNoticeNumList(userCell.getId()));
             model.addAttribute("user", userCell);
-            weikeCells = weikeService.findAllWeike(userCell.getId());
+            weikeCells = weikeService.findWeikeFromStartNum(0, userCell.getId());
         } else {
-            weikeCells = weikeService.findAllWeike();
+            weikeCells = weikeService.findWeikeFromStartNum(0);
         }
         model.addAttribute("weikeCells", weikeCells);
         return "playground";
@@ -280,6 +280,25 @@ public class WeikeController {
             map.put("weikeCell", weikeCell);
             map.put("commentCells", commentCells);
         }
+        return map;
+    }
+
+    @RequestMapping("/moreWeike")
+    public @ResponseBody
+    Map<String,Object> getMoreWeike(HttpServletRequest request) {
+        int startNum = Integer.parseInt(request.getParameter("startId"));
+        Map<String,Object> map = new HashMap<String,Object>();
+
+        HttpSession session = request.getSession();
+        List<WeikeCell> weikeCells = null;
+        if(session.getAttribute("user") != null) {
+            UserCell userCell = (UserCell) session.getAttribute("user");
+            weikeCells = weikeService.findWeikeFromStartNum(startNum, userCell.getId());
+        } else {
+            weikeCells = weikeService.findWeikeFromStartNum(startNum);
+        }
+        map.put("weikeCells", weikeCells);
+        map.put("hasMoreWeike", weikeService.haveMoreWeike(startNum));
         return map;
     }
 

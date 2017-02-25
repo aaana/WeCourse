@@ -80,8 +80,17 @@ public class WeikeServiceImpl implements WeikeService {
         return weikeCells;
     }
 
-    public List<WeikeCell> findWeikeWithQueryString(String string) {
-        return weikeDAO.findWeikeWithQueryString(string);
+    public Boolean haveMoreWeike(int startNum) {
+        return weikeDAO.haveMoreWeike(startNum);
+    }
+
+    public List<WeikeCell> findWeikeFromStartNum(int startNum) {
+        return weikeDAO.findWeikeFromStartNum(startNum);
+    }
+
+    public List<WeikeCell> findWeikeFromStartNum(int startNum, int currentUserId) {
+        List<WeikeCell> weikeCells = weikeDAO.findWeikeFromStartNum(startNum);
+        return checkStarred(weikeCells, currentUserId);
     }
 
     public Boolean weikeGetFavorited(int weikeId) {
@@ -106,6 +115,23 @@ public class WeikeServiceImpl implements WeikeService {
         Weike weike = weikeDAO.findWeikeByWeikeId(weikeId);
         weike.setComment_num(weike.getComment_num() + 1);
         return weikeDAO.update(weike);
+    }
+
+    public List<WeikeCell> findHotWeikesWithUserId(int userId) {
+        return null;
+    }
+
+    public List<WeikeCell> findMayLikeWeikesWithUserId(int userId) {
+        return null;
+    }
+
+    public List<WeikeCell> searchWeike(int field, String searchString) {
+        return null;
+    }
+
+    public List<WeikeCell> searchWeike(int field, String searchString, int currentUserId) {
+        List<WeikeCell> weikeCells = searchWeike(field, searchString);
+        return checkStarred(weikeCells, currentUserId);
     }
 
     public List<WeikeCell> checkStarred(List<WeikeCell> weikeCells, int currentUserId) {
