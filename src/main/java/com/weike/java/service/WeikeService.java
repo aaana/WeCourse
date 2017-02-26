@@ -39,6 +39,8 @@ public interface WeikeService {
 
     // search
     // field: 1 -- title & descrption ; 2 -- author_name ; 3 -- subject
-    public List<WeikeCell> searchWeike(int field, String searchString);
-    public List<WeikeCell> searchWeike(int field, String searchString, int currentUserId);
+    public List<WeikeCell> searchWeike(int startNum, int field, String searchString);
+    public List<WeikeCell> searchWeike(int startNum, int field, String searchString, int currentUserId);
+
+    public int getGap();
 }

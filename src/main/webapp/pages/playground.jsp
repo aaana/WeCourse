@@ -30,7 +30,8 @@ To change this template use File | Settings | File Templates.
     <script src="resource/video-js/video.js"></script>
 
     <script src="resource/js/pblItem1.js"></script>
-    <script src="resource/js/weikeOpHelper1.js"></script>
+    <script src="resource/js/weikeOpHelper.js"></script>
+    <script src="resource/js/searchHelper.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>
@@ -44,68 +45,6 @@ To change this template use File | Settings | File Templates.
                 }
             })
         });
-
-        function showDisplayModal(weikeId) {
-            $("#displayModal .personalPageContentItemComment").remove();
-
-            var query = '.weikeCell[weikeid=' + weikeId +'] ';
-            var weikeTitle = $(query + '.weikeTitle').val();
-            var weikeAuthorName = $(query + '.weikeAuthorName').val();
-            var weikeAuthorAvatar = $(query + '.weikeAuthorAvatar').val();
-            var weikeAuthorId = $(query + '.weikeAuthorId').val();
-            var weikeSubject = $(query + '.weikeSubject').val();
-            var weikePostDate = $(query + '.weikePostDate').val();
-            var weikeDescription = $(query + '.weikeDescription').val();
-            var weikeThumbnailUrl = $(query + '.weikeThumbnailUrl').val();
-            var weikeAttachmentUrl = $(query + '.weikeAttachmentUrl').val();
-            var weikeFileUrl = $(query + '.weikeFileUrl').val();
-            var weikeFileType = $(query + '.weikeFileType').val();
-            var weikeCommentNum = $(query + '.weikeCommentNum').val();
-            var weikeViewNum = $(query + '.weikeViewNum').val();
-            var weikeStarNum = $(query + '.weikeStarNum').val();
-            var weikeStarred = $(query + '.weikeStarred').val();
-
-            $("#displayModal .weikeDetail").attr("weike_id", weikeId);
-            $("#displayModal #titleInDisplayModal").text(weikeTitle);
-            $("#displayModal #userNameInDisplayModal").text(weikeAuthorName);
-            $("#displayModal .media").attr("user_id", weikeAuthorId);
-            $("#displayModal #userAvatarInDisplayModal")[0].src = "resource/img/" + weikeAuthorAvatar;
-            $("#displayModal #subjectInDisplayModal").text(weikeSubject);
-            $("#displayModal #postDateInDisplayModal").text(weikePostDate);
-            $("#displayModal #descriptionInDisplayModal").text(weikeDescription);
-//            alert(weikeAttachmentUrl!="");
-            if(weikeAttachmentUrl!=""){
-                $("#displayModal #attachment").show();
-                $("#displayModal #attachment").text("查看附件");
-                $("#displayModal #attachment")[0].href="../uploadfiles/"+weikeAttachmentUrl;
-            }else{
-                $("#displayModal #attachment").hide();
-            }
-
-
-            if (weikeFileType == "0") {
-                $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="uploadfiles/' + weikeFileUrl + '">');
-            } else if (weikeFileType == "1") {
-                $("#displayModal .thumbnail").html(
-                        '<video id="videoInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
-                        'controls preload="none" width="100%" height="600px" ' +
-                        'poster="uploadfiles/' + weikeThumbnailUrl + '">'+
-                        '<source type="video/mp4" src="uploadfiles/' + weikeFileUrl + '"/> </video>');
-                videojs("videoInDisplayModal", {}, function(){});
-            }
-
-            $("#displayModal #commentNumInDisplayModal").text(weikeCommentNum);
-            $("#displayModal #viewNumInDisplayModal").text(weikeViewNum);
-            $("#displayModal #starNumInDisplayModal").text(weikeStarNum);
-            if (weikeStarred == "true") {
-                $("#displayModal .glyphicon.glyphicon-heart-empty").removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
-            } else {
-                $("#displayModal .glyphicon.glyphicon-heart").removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
-            }
-
-            $('#displayModal').modal('show');
-            doWatch(weikeId);
-        }
     </script>
 </head>
 <body>
@@ -116,25 +55,27 @@ To change this template use File | Settings | File Templates.
             <form class="playgroundSearchDiv" action="" method="POST">
                 <div class="input-group">
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 标题 <span class="caret"></span></button>
+                        <button type="button" search_type="1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>内容</span><span style="margin-left: 4px" class="caret"></span>
+                        </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">标题</a></li>
-                            <li><a href="#">作者</a></li>
-                            <li><a href="#">内容</a></li>
+                            <li><a onclick="changeSearchField(1)">内容</a></li>
+                            <li><a onclick="changeSearchField(2)">作者</a></li>
+                            <li><a onclick="changeSearchField(3)">课程</a></li>
                         </ul>
                     </div>
-                    <input type="text" class="form-control" placeholder="搜索">
+                    <input id="searchInput" type="text" class="form-control" placeholder="搜索" />
                     <span class="input-group-btn">
-                        <button class="btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <button class="btn" type="button" onclick="search()"><span class="glyphicon glyphicon-search"></span></button>
                     </span>
                 </div>
             </form>
-            <h5>当前搜索：</h5>
+            <h5>当前搜索：<span id="searchingString"></span></h5>
             <div class="js">
                 <div class="grid">
                     <c:forEach var="weikeCell" items="${weikeCells}">
                         <div class="grid__item" data-size='${weikeCell.thumbnail_size}'>
-                            <div class="thumbnail weikeCell" weikeid="${weikeCell.id}" onclick="showDisplayModal(${weikeCell.id})">
+                            <div class="thumbnail weikeCell" weikeid="${weikeCell.id}" onclick="showDisplayModalInPG(${weikeCell.id})">
                                 <img src="uploadfiles/${weikeCell.thumbnail_url}">
                                 <div class="weikeCellDes">
                                     <h3>${weikeCell.title}</h3>

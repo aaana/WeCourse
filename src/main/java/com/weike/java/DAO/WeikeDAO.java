@@ -18,12 +18,19 @@ public interface WeikeDAO {
     public List<WeikeCell> findAllWeike();
     public List<WeikeCell> findWeikesWithUserId(int id);
     public List<WeikeCell> findHotWeikesWithUserId(int id);
-    public List<WeikeCell> findWeikeFromStartNum(int startId);
+    public List<WeikeCell> findWeikeFromStartNum(int startNum);
     public List<WeikeCell> findWeikeWithQueryString(String string, String searchString);
     public List<WeikeCell> findWeikeWithQueryString(String string, List<Integer> searchUsers);
 
+    public List<WeikeCell> searchWeikeWithContentString(int startNum, String searchString);
+    public List<WeikeCell> searchWeikeWithUserNameString(int startNum, List<Integer> searchUsers);
+    public List<WeikeCell> searchWeikeWithSubjectString(int startNum, String searchString);
+
+
     public int findWeikeNumWithUserId(int id);
     public Boolean haveMoreWeike(int startId);
+
+    public int getGap();
 
 
 }

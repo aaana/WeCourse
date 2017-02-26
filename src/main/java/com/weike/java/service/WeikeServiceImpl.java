@@ -30,6 +30,8 @@ public class WeikeServiceImpl implements WeikeService {
     @Autowired
     private UserDAO userDAO;
 
+
+
     public void saveWeike(Weike weike) {
         weikeDAO.save(weike);
     }
@@ -135,37 +137,26 @@ public class WeikeServiceImpl implements WeikeService {
         return null;
     }
 
-    public List<WeikeCell> searchWeike(int field, String searchString) {
-        String search = "";
+    public List<WeikeCell> searchWeike(int startNum, int field, String searchString) {
         List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
         if (field == 1) {
-            search = "SELECT * FROM Weike WHERE title LIKE ? or description LIKE ? ORDER BY id DESC";
-            weikeCells = weikeDAO.findWeikeWithQueryString(search, searchString);
+            weikeCells = weikeDAO.searchWeikeWithContentString(startNum, searchString);
         } else if (field == 2) {
             List<Integer> userIds =  userDAO.findUserIdsWithQueryString("SELECT * FROM User WHERE name LIKE ?", searchString);
-            if (userIds.size() == 0) {
-                return null;
-            }
-            search = "SELECT * FROM Weike";
-            for (int i = 0; i < userIds.size(); i ++) {
-                if (i == 1) {
-                    search = search + " WHERE u LIKE ?";
-                } else {
-                    search = search + " OR u LIKE ?";
-                }
-            }
-            search = search + " ORDER BY id DESC";
-            weikeCells = weikeDAO.findWeikeWithQueryString(search, userIds);
+            weikeCells = weikeDAO.searchWeikeWithUserNameString(startNum, userIds);
         } else if (field == 3) {
-            search = "SELECT * FROM Weike WHERE sbject LIKE ? ORDER BY id DESC";
-            weikeCells = weikeDAO.findWeikeWithQueryString(search, searchString);
+            weikeCells = weikeDAO.searchWeikeWithSubjectString(startNum, searchString);
         }
         return weikeCells;
     }
 
-    public List<WeikeCell> searchWeike(int field, String searchString, int currentUserId) {
-        List<WeikeCell> weikeCells = searchWeike(field, searchString);
+    public List<WeikeCell> searchWeike(int startNum, int field, String searchString, int currentUserId) {
+        List<WeikeCell> weikeCells = searchWeike(startNum, field, searchString);
         return checkStarred(weikeCells, currentUserId);
+    }
+
+    public int getGap() {
+        return weikeDAO.getGap();
     }
 
     public List<WeikeCell> checkStarred(List<WeikeCell> weikeCells, int currentUserId) {

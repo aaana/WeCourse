@@ -470,7 +470,7 @@ var getMoreWeikeCell = function (t) {
             hideUploadModal();
             $(t).attr("start_id", parseInt(start_id) + data.weikeCells.length);
             if (!data.hasMoreWeike) {
-                $(t).text("已显示全部微课");
+                $(t).text("已显示全部结果");
                 $(t).attr("disabled", "disabled");
             }
             var parentNode = $(".js .grid");
@@ -491,7 +491,7 @@ var initWeikeTemplate = function(weikeCell) {
         star = '<span><span class="glyphicon glyphicon-heart-empty"></span> <span>' + weikeCell.star_num + '</span></span>';
     }
     return '<div class="grid__item" data-size=' + weikeCell.thumbnail_size + '> ' +
-        '<div class="thumbnail weikeCell" weikeid="' + weikeCell.id + '" onclick="showDisplayModal(' + weikeCell.id + ')">' +
+        '<div class="thumbnail weikeCell" weikeid="' + weikeCell.id + '" onclick="showDisplayModalInPG(' + weikeCell.id + ')">' +
         '<img src="uploadfiles/' + weikeCell.thumbnail_url + '">' +
         '<div class="weikeCellDes">' +
         '<h3>' + weikeCell.title + '</h3>' +
@@ -673,7 +673,67 @@ var showDisplayModal = function (weikeCell) {
     $('#displayModal').modal('show');
     doWatch(weikeCell.id);
 };
+function showDisplayModalInPG(weikeId) {
+    $("#displayModal .personalPageContentItemComment").remove();
 
+    var query = '.weikeCell[weikeid=' + weikeId +'] ';
+    var weikeTitle = $(query + '.weikeTitle').val();
+    var weikeAuthorName = $(query + '.weikeAuthorName').val();
+    var weikeAuthorAvatar = $(query + '.weikeAuthorAvatar').val();
+    var weikeAuthorId = $(query + '.weikeAuthorId').val();
+    var weikeSubject = $(query + '.weikeSubject').val();
+    var weikePostDate = $(query + '.weikePostDate').val();
+    var weikeDescription = $(query + '.weikeDescription').val();
+    var weikeThumbnailUrl = $(query + '.weikeThumbnailUrl').val();
+    var weikeAttachmentUrl = $(query + '.weikeAttachmentUrl').val();
+    var weikeFileUrl = $(query + '.weikeFileUrl').val();
+    var weikeFileType = $(query + '.weikeFileType').val();
+    var weikeCommentNum = $(query + '.weikeCommentNum').val();
+    var weikeViewNum = $(query + '.weikeViewNum').val();
+    var weikeStarNum = $(query + '.weikeStarNum').val();
+    var weikeStarred = $(query + '.weikeStarred').val();
+
+    $("#displayModal .weikeDetail").attr("weike_id", weikeId);
+    $("#displayModal #titleInDisplayModal").text(weikeTitle);
+    $("#displayModal #userNameInDisplayModal").text(weikeAuthorName);
+    $("#displayModal .media").attr("user_id", weikeAuthorId);
+    $("#displayModal #userAvatarInDisplayModal")[0].src = "resource/img/" + weikeAuthorAvatar;
+    $("#displayModal #subjectInDisplayModal").text(weikeSubject);
+    $("#displayModal #postDateInDisplayModal").text(weikePostDate);
+    $("#displayModal #descriptionInDisplayModal").text(weikeDescription);
+//            alert(weikeAttachmentUrl!="");
+    if(weikeAttachmentUrl!=""){
+        $("#displayModal #attachment").show();
+        $("#displayModal #attachment").text("查看附件");
+        $("#displayModal #attachment")[0].href="../uploadfiles/"+weikeAttachmentUrl;
+    }else{
+        $("#displayModal #attachment").hide();
+    }
+
+
+    if (weikeFileType == "0") {
+        $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="uploadfiles/' + weikeFileUrl + '">');
+    } else if (weikeFileType == "1") {
+        $("#displayModal .thumbnail").html(
+            '<video id="videoInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
+            'controls preload="none" width="100%" height="600px" ' +
+            'poster="uploadfiles/' + weikeThumbnailUrl + '">'+
+            '<source type="video/mp4" src="uploadfiles/' + weikeFileUrl + '"/> </video>');
+        videojs("videoInDisplayModal", {}, function(){});
+    }
+
+    $("#displayModal #commentNumInDisplayModal").text(weikeCommentNum);
+    $("#displayModal #viewNumInDisplayModal").text(weikeViewNum);
+    $("#displayModal #starNumInDisplayModal").text(weikeStarNum);
+    if (weikeStarred == "true") {
+        $("#displayModal .glyphicon.glyphicon-heart-empty").removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
+    } else {
+        $("#displayModal .glyphicon.glyphicon-heart").removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
+    }
+
+    $('#displayModal').modal('show');
+    doWatch(weikeId);
+}
 
 // others
 var gotoPersonalPage = function (t) {

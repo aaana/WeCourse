@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -62,6 +63,8 @@ public class WeikeController {
         } else {
             weikeCells = weikeService.findWeikeFromStartNum(0);
         }
+        session.setAttribute("searchField", null);
+        session.setAttribute("searchString", null);
         model.addAttribute("weikeCells", weikeCells);
         return "playground";
     }
@@ -291,14 +294,54 @@ public class WeikeController {
 
         HttpSession session = request.getSession();
         List<WeikeCell> weikeCells = null;
-        if(session.getAttribute("user") != null) {
-            UserCell userCell = (UserCell) session.getAttribute("user");
-            weikeCells = weikeService.findWeikeFromStartNum(startNum, userCell.getId());
+
+        if(session.getAttribute("searchField") != null && session.getAttribute("searchString") != null) {
+            int field =  (Integer) session.getAttribute("searchField");
+            String searchString = (String) session.getAttribute("searchString");
+            if(session.getAttribute("user") != null) {
+                UserCell userCell = (UserCell) session.getAttribute("user");
+                weikeCells = weikeService.searchWeike(startNum, field, searchString, userCell.getId());
+            } else {
+                weikeCells = weikeService.searchWeike(startNum, field, searchString);
+            }
+            map.put("hasMoreWeike", weikeCells.size() == weikeService.getGap()+1);
+            weikeCells.remove(weikeCells.size()-1);
         } else {
-            weikeCells = weikeService.findWeikeFromStartNum(startNum);
+            if(session.getAttribute("user") != null) {
+                UserCell userCell = (UserCell) session.getAttribute("user");
+                weikeCells = weikeService.findWeikeFromStartNum(startNum, userCell.getId());
+            } else {
+                weikeCells = weikeService.findWeikeFromStartNum(startNum);
+            }
+            map.put("hasMoreWeike", weikeService.haveMoreWeike(startNum));
         }
         map.put("weikeCells", weikeCells);
-        map.put("hasMoreWeike", weikeService.haveMoreWeike(startNum));
+        return map;
+    }
+
+    @RequestMapping(value = "/searchWeike", method = RequestMethod.GET, produces={"text/html;charset=UTF-8;","application/json;"})
+    public @ResponseBody
+    Map<String,Object> searchWeike(HttpServletRequest request) {
+        int field = Integer.parseInt(request.getParameter("field"));
+        String searchString = (String) request.getParameter("searchString");
+        Map<String,Object> map = new HashMap<String,Object>();
+
+        HttpSession session = request.getSession();
+        List<WeikeCell> weikeCells = null;
+        if(session.getAttribute("user") != null) {
+            UserCell userCell = (UserCell) session.getAttribute("user");
+            weikeCells = weikeService.searchWeike(0, field, searchString, userCell.getId());
+        } else {
+            weikeCells = weikeService.searchWeike(0, field, searchString);
+        }
+
+        session.setAttribute("searchField", field);
+        session.setAttribute("searchString", searchString);
+        map.put("hasMoreWeike", weikeCells.size() == weikeService.getGap()+1);
+        if (weikeCells.size() > 1) {
+            weikeCells.remove(weikeCells.size()-1);
+        }
+        map.put("weikeCells", weikeCells);
         return map;
     }
 

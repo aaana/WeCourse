@@ -358,22 +358,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="loggedPersonalPageSidebar.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp">
+      <file leaf-file-name="playground.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="personalPage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/personalPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="1215">
+              <caret line="115" column="20" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="20" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -381,8 +373,8 @@
       <file leaf-file-name="weikeOpHelper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="584" column="70" selection-start-line="584" selection-start-column="70" selection-end-line="584" selection-end-column="70" />
+            <state relative-caret-position="390">
+              <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
               <folding>
                 <element signature="e#85#1438#0" expanded="false" />
                 <element signature="e#1496#1842#0" expanded="false" />
@@ -405,58 +397,132 @@
                 <element signature="e#14181#14901#0" expanded="false" />
                 <element signature="e#14931#15652#0" expanded="false" />
                 <element signature="e#15710#16620#0" expanded="false" />
-                <element signature="e#16666#19028#0" expanded="false" />
-                <element signature="e#19101#19855#0" expanded="false" />
-                <element signature="e#19910#20140#0" expanded="false" />
-                <element signature="e#20199#20851#0" expanded="false" />
-                <element signature="e#21563#21703#0" expanded="false" />
-                <element signature="e#21791#22620#0" expanded="false" />
-                <element signature="e#22666#25272#0" expanded="false" />
-                <element signature="e#25322#25410#0" expanded="false" />
-                <element signature="e#25445#25602#0" expanded="false" />
+                <element signature="e#16666#19032#0" expanded="false" />
+                <element signature="e#19105#19859#0" expanded="false" />
+                <element signature="e#19914#20144#0" expanded="false" />
+                <element signature="e#20203#20855#0" expanded="false" />
+                <element signature="e#20905#21523#0" expanded="false" />
+                <element signature="e#21567#21707#0" expanded="false" />
+                <element signature="e#21795#22624#0" expanded="false" />
+                <element signature="e#22670#25276#0" expanded="false" />
+                <element signature="n#!!block;n#showDisplayModalInPG#0" expanded="false" />
+                <element signature="e#28474#28562#0" expanded="false" />
+                <element signature="e#28597#28754#0" expanded="false" />
                 <element signature="n#!!block;n#showHint#0" expanded="false" />
                 <element signature="n#!!block;n#showUploadModal#0" expanded="false" />
                 <element signature="n#!!block;n#hideUploadModal#0" expanded="false" />
                 <element signature="n#!!block;n#transTimeStamp2String#0" expanded="false" />
-                <marker date="1488112816000" expanded="true" signature="331:869" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17178" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17208" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17226" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17248" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17284" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17312" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17373" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17400" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17440" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17458" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17513" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17527" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17566" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17627" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17654" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17720" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:17850" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:18033" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:18227" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:18330" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:18512" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:18799" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:19004" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="17121:19023" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="21201:21312" placeholder="..." />
-                <marker date="1488112816000" expanded="true" signature="21201:21514" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="331:869" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17178" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17208" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17226" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17252" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17288" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17316" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17377" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17404" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17444" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17462" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17517" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17531" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17570" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17631" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17658" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17724" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:17854" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:18037" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:18231" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:18334" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:18516" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:18803" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:19008" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="17121:19027" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="21205:21316" placeholder="..." />
+                <marker date="1488123674000" expanded="true" signature="21205:21518" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalPage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+      <file leaf-file-name="searchHelper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/searchHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+            <state relative-caret-position="180">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
-                <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" expanded="false" />
+                <element signature="e#0#38#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeikeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
+              <folding>
+                <element signature="method#home#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#favorite#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#unfavorite#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#watchWeike#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#makeComment#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#getComment#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#submit#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#getDetailWeike#0;class#WeikeController#0" expanded="false" />
+                <element signature="method#getMoreWeike#0;class#WeikeController#0" expanded="false" />
+                <element signature="e#11428#11443#0" expanded="true" />
+                <element signature="e#13213#13228#0" expanded="true" />
+                <element signature="method#isContainChinese#0;class#WeikeController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeikeDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding>
+                <element signature="method#update#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#remove#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findSimpleWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findAllWeike#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findHotWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#findWeikeFromStartNum#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#haveMoreWeike#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="e#5044#5045#0" expanded="true" />
+                <element signature="e#5071#5072#0" expanded="true" />
+                <element signature="e#5168#5169#0" expanded="true" />
+                <element signature="e#5195#5196#0" expanded="true" />
+                <element signature="e#5704#5715#0" expanded="true" />
+                <element signature="method#searchWeikeWithSubjectString#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="e#7264#7275#0" expanded="true" />
+                <element signature="method#transWeike2WeikeCell#0;class#WeikeDAOImpl#0" expanded="false" />
+                <element signature="method#transWeike2WeikeCell#1;class#WeikeDAOImpl#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -470,9 +536,9 @@
         <option value="spring-beans.schema" />
         <option value="CSS File" />
         <option value="Jsp File" />
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -487,9 +553,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/NoticeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/entity/NoticeCell.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/myMessage.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/ReminderPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/myMessage1.css" />
@@ -521,14 +584,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FileDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/pbl/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/pblItem.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/playground.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/PersonalPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper1.js" />
@@ -536,8 +593,17 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pages/reviewPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/personalPage.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/personalPage1.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/pblItem1.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/playground.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/searchHelper.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java" />
       </list>
     </option>
   </component>
@@ -629,6 +695,10 @@
               <option name="myItemId" value="SpringMVC" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -659,6 +729,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -819,6 +893,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1498,16 +1580,16 @@
       <workItem from="1487341266006" duration="91356000" />
       <workItem from="1487829461191" duration="46761000" />
       <workItem from="1487951964140" duration="14967000" />
-      <workItem from="1488038428105" duration="16755000" />
+      <workItem from="1488038428105" duration="26411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246348000" />
+    <option name="totallyTimeSpent" value="256004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1524,7 +1606,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4555735" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24151857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30936995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1532,7 +1614,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23150685" sideWeight="0.57350564" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28219178" sideWeight="0.57350564" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1556,9 +1638,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.57350564" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41643837" sideWeight="0.57350564" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39041096" sideWeight="0.42649436" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16712329" sideWeight="0.42649436" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1568,7 +1650,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14246576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4555735" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23909532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1720517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35753426" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
@@ -1593,7 +1675,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="322" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java</url>
+          <line>344</line>
+          <properties />
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="360" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1602,29 +1692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/NoticeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/entity/NoticeCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/template/navbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/NoticeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -1640,14 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/publish.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="168" column="12" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1744,14 +1803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/weike/uploadfiles/github矛盾.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1772,22 +1823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1860,14 +1895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/pblItem1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1884,89 +1911,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="302" column="5" selection-start-line="302" selection-start-column="5" selection-end-line="302" selection-end-column="5" />
-          <folding>
-            <element signature="method#home#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#favorite#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#unfavorite#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#watchWeike#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#makeComment#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#getComment#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#submit#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#getDetailWeike#0;class#WeikeController#0" expanded="false" />
-            <element signature="e#11263#11278#0" expanded="true" />
-            <element signature="method#isContainChinese#0;class#WeikeController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/ReminderPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="method#findWeikeByWeikeId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findAllWeike#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findFavoriteWeikesWithUserId#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findFavoriteWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetFavorited#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetUnfavorited#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetWatched#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetCommented#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findHotWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#searchWeike#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="e#4544#4555#0" expanded="false" />
-            <element signature="method#searchWeike#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#checkStarred#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#checkStarred#1;class#WeikeServiceImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="94" column="61" selection-start-line="94" selection-start-column="61" selection-end-line="94" selection-end-column="61" />
-          <folding>
-            <element signature="method#update#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#remove#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findSimpleWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="e#3153#3164#0" expanded="false" />
-            <element signature="e#3836#3847#0" expanded="false" />
-            <element signature="method#haveMoreWeike#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikeWithQueryString#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikeWithQueryString#1;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#transWeike2WeikeCell#1;class#WeikeDAOImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1983,8 +1932,8 @@
         <state relative-caret-position="150">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding>
-            <element signature="e#1264#1279#0" expanded="true" />
-            <element signature="e#2012#2027#0" expanded="true" />
+            <element signature="e#1264#1279#0" expanded="false" />
+            <element signature="e#2012#2027#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1993,22 +1942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="31" column="14" selection-start-line="27" selection-start-column="12" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2041,10 +1974,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/personalPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/pblItem1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/publish.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="168" column="12" selection-start-line="168" selection-start-column="12" selection-end-line="168" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="91" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="115" column="20" selection-start-line="115" selection-start-column="17" selection-end-line="115" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="584" column="70" selection-start-line="584" selection-start-column="70" selection-end-line="584" selection-end-column="70" />
+        <state relative-caret-position="390">
+          <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
           <folding>
             <element signature="e#85#1438#0" expanded="false" />
             <element signature="e#1496#1842#0" expanded="false" />
@@ -2067,65 +2076,163 @@
             <element signature="e#14181#14901#0" expanded="false" />
             <element signature="e#14931#15652#0" expanded="false" />
             <element signature="e#15710#16620#0" expanded="false" />
-            <element signature="e#16666#19028#0" expanded="false" />
-            <element signature="e#19101#19855#0" expanded="false" />
-            <element signature="e#19910#20140#0" expanded="false" />
-            <element signature="e#20199#20851#0" expanded="false" />
-            <element signature="e#21563#21703#0" expanded="false" />
-            <element signature="e#21791#22620#0" expanded="false" />
-            <element signature="e#22666#25272#0" expanded="false" />
-            <element signature="e#25322#25410#0" expanded="false" />
-            <element signature="e#25445#25602#0" expanded="false" />
+            <element signature="e#16666#19032#0" expanded="false" />
+            <element signature="e#19105#19859#0" expanded="false" />
+            <element signature="e#19914#20144#0" expanded="false" />
+            <element signature="e#20203#20855#0" expanded="false" />
+            <element signature="e#20905#21523#0" expanded="false" />
+            <element signature="e#21567#21707#0" expanded="false" />
+            <element signature="e#21795#22624#0" expanded="false" />
+            <element signature="e#22670#25276#0" expanded="false" />
+            <element signature="n#!!block;n#showDisplayModalInPG#0" expanded="false" />
+            <element signature="e#28474#28562#0" expanded="false" />
+            <element signature="e#28597#28754#0" expanded="false" />
             <element signature="n#!!block;n#showHint#0" expanded="false" />
             <element signature="n#!!block;n#showUploadModal#0" expanded="false" />
             <element signature="n#!!block;n#hideUploadModal#0" expanded="false" />
             <element signature="n#!!block;n#transTimeStamp2String#0" expanded="false" />
-            <marker date="1488112816000" expanded="true" signature="331:869" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17178" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17208" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17226" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17248" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17284" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17312" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17373" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17400" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17440" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17458" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17513" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17527" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17566" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17627" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17654" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17720" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:17850" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:18033" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:18227" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:18330" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:18512" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:18799" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:19004" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="17121:19023" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="21201:21312" placeholder="..." />
-            <marker date="1488112816000" expanded="true" signature="21201:21514" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="331:869" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17178" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17208" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17226" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17252" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17288" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17316" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17377" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17404" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17444" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17462" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17517" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17531" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17570" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17631" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17658" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17724" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:17854" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:18037" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:18231" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:18334" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:18516" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:18803" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:19008" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="17121:19027" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="21205:21316" placeholder="..." />
+            <marker date="1488123674000" expanded="true" signature="21205:21518" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/personalPage.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/searchHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/WeikeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="139" column="85" selection-start-line="139" selection-start-column="85" selection-end-line="139" selection-end-column="85" />
+          <folding>
+            <element signature="method#findWeikeByWeikeId#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findAllWeike#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findFavoriteWeikesWithUserId#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findFavoriteWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findWeikeFromStartNum#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#weikeGetFavorited#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#weikeGetUnfavorited#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#weikeGetWatched#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#weikeGetCommented#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#findHotWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#searchWeike#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#searchWeike#1;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#checkStarred#0;class#WeikeServiceImpl#0" expanded="false" />
+            <element signature="method#checkStarred#1;class#WeikeServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding>
+            <element signature="method#update#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#remove#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findSimpleWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findAllWeike#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findHotWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#findWeikeFromStartNum#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#haveMoreWeike#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="e#5044#5045#0" expanded="true" />
+            <element signature="e#5071#5072#0" expanded="true" />
+            <element signature="e#5168#5169#0" expanded="true" />
+            <element signature="e#5195#5196#0" expanded="true" />
+            <element signature="e#5704#5715#0" expanded="true" />
+            <element signature="method#searchWeikeWithSubjectString#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="e#7264#7275#0" expanded="true" />
+            <element signature="method#transWeike2WeikeCell#0;class#WeikeDAOImpl#0" expanded="false" />
+            <element signature="method#transWeike2WeikeCell#1;class#WeikeDAOImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE.jar!/org/springframework/http/converter/StringHttpMessageConverter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/WeikeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        <state relative-caret-position="241">
+          <caret line="335" column="9" selection-start-line="335" selection-start-column="9" selection-end-line="335" selection-end-column="9" />
           <folding>
-            <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" expanded="false" />
+            <element signature="method#home#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#favorite#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#unfavorite#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#watchWeike#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#makeComment#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#getComment#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#submit#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#getDetailWeike#0;class#WeikeController#0" expanded="false" />
+            <element signature="method#getMoreWeike#0;class#WeikeController#0" expanded="false" />
+            <element signature="e#11428#11443#0" expanded="true" />
+            <element signature="e#13213#13228#0" expanded="true" />
+            <element signature="method#isContainChinese#0;class#WeikeController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

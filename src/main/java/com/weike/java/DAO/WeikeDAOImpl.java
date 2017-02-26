@@ -124,8 +124,23 @@ public class WeikeDAOImpl implements WeikeDAO {
         return weikes.size() > gap;
     }
 
+    public int getGap() {
+        return gap;
+    }
+
     public List<WeikeCell> findWeikeWithQueryString(String string, String searchString) {
-        List<Weike> weikes =  (List<Weike>) sessionFactory.getCurrentSession().createQuery(string).setParameter(0, "%" + searchString + "%").list();
+        return null;
+    }
+
+    public List<WeikeCell> findWeikeWithQueryString(String string, List<Integer> searchUsers) {
+        return null;
+    }
+
+    public List<WeikeCell> searchWeikeWithContentString(int startNum, String searchString) {
+        Query query = sessionFactory.getCurrentSession().createQuery("FROM Weike WHERE title LIKE ? or description LIKE ? ORDER BY id DESC").setParameter(0, "%" + searchString + "%").setParameter(1, "%" + searchString + "%");
+        query.setMaxResults(gap + 1);
+        query.setFirstResult(startNum);
+        List<Weike> weikes =  (List<Weike>) query.list();
         List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
 
         for (Weike weike : weikes) {
@@ -134,13 +149,37 @@ public class WeikeDAOImpl implements WeikeDAO {
         return weikeCells;
     }
 
-    public List<WeikeCell> findWeikeWithQueryString(String string, List<Integer> searchUsers) {
-        Query query = sessionFactory.getCurrentSession().createQuery(string);
+    public List<WeikeCell> searchWeikeWithUserNameString(int startNum, List<Integer> searchUsers) {
+        String search = "SELECT * FROM Weike";
+        for (int i = 0; i < searchUsers.size(); i ++) {
+            if (i == 1) {
+                search = search + " WHERE u LIKE ?";
+            } else {
+                search = search + " OR u LIKE ?";
+            }
+        }
+        search = search + " ORDER BY id DESC";
+        Query query = sessionFactory.getCurrentSession().createQuery(search);
         for (int i = 0; i < searchUsers.size(); i ++) {
             query.setParameter(i, searchUsers.get(i));
         }
+        query.setMaxResults(gap + 1);
+        query.setFirstResult(startNum);
         List<Weike> weikes =  (List<Weike>) query.list();
         List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
+        for (Weike weike : weikes) {
+            weikeCells.add(transWeike2WeikeCell(weike));
+        }
+        return weikeCells;
+    }
+
+    public List<WeikeCell> searchWeikeWithSubjectString(int startNum, String searchString) {
+        Query query = sessionFactory.getCurrentSession().createQuery("FROM Weike WHERE sbject LIKE ? ORDER BY id DESC").setParameter(0, "%" + searchString + "%");
+        query.setMaxResults(gap + 1);
+        query.setFirstResult(startNum);
+        List<Weike> weikes =  (List<Weike>) query.list();
+        List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
+
         for (Weike weike : weikes) {
             weikeCells.add(transWeike2WeikeCell(weike));
         }
