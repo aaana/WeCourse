@@ -86,6 +86,15 @@ body {
     border-top: none;
 }
 
+.personalPageHotWeike > div > p:last-child > span:first-child {
+    display: inline-block;
+    width: 80%;
+}
+
+.personalPageHotWeike > div > p:last-child > span:nth-child(4) {
+    margin-left: 5px;
+}
+
 .personalPageInfo > div > span:first-child {
     margin-right: 5px;
 }
