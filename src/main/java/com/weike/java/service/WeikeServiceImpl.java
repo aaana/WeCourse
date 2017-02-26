@@ -2,8 +2,10 @@ package com.weike.java.service;
 
 import com.weike.java.DAO.FavoriteDAO;
 import com.weike.java.DAO.FileDAO;
+import com.weike.java.DAO.UserDAO;
 import com.weike.java.DAO.WeikeDAO;
 import com.weike.java.entity.Favorite;
+import com.weike.java.entity.User;
 import com.weike.java.entity.Weike;
 import com.weike.java.entity.WeikeCell;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ public class WeikeServiceImpl implements WeikeService {
 
     @Autowired
     private FavoriteDAO favoriteDAO;
+
+    @Autowired
+    private UserDAO userDAO;
 
     public void saveWeike(Weike weike) {
         weikeDAO.save(weike);
@@ -118,7 +123,12 @@ public class WeikeServiceImpl implements WeikeService {
     }
 
     public List<WeikeCell> findHotWeikesWithUserId(int userId) {
-        return null;
+        return weikeDAO.findHotWeikesWithUserId(userId);
+    }
+
+    public List<WeikeCell> findHotWeikesWithUserId(int userId, int currentUserId) {
+        List<WeikeCell> weikeCells = weikeDAO.findHotWeikesWithUserId(userId);
+        return checkStarred(weikeCells, currentUserId);
     }
 
     public List<WeikeCell> findMayLikeWeikesWithUserId(int userId) {
@@ -126,7 +136,31 @@ public class WeikeServiceImpl implements WeikeService {
     }
 
     public List<WeikeCell> searchWeike(int field, String searchString) {
-        return null;
+        String search = "";
+        List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
+        if (field == 1) {
+            search = "SELECT * FROM Weike WHERE title LIKE ? or description LIKE ? ORDER BY id DESC";
+            weikeCells = weikeDAO.findWeikeWithQueryString(search, searchString);
+        } else if (field == 2) {
+            List<Integer> userIds =  userDAO.findUserIdsWithQueryString("SELECT * FROM User WHERE name LIKE ?", searchString);
+            if (userIds.size() == 0) {
+                return null;
+            }
+            search = "SELECT * FROM Weike";
+            for (int i = 0; i < userIds.size(); i ++) {
+                if (i == 1) {
+                    search = search + " WHERE u LIKE ?";
+                } else {
+                    search = search + " OR u LIKE ?";
+                }
+            }
+            search = search + " ORDER BY id DESC";
+            weikeCells = weikeDAO.findWeikeWithQueryString(search, userIds);
+        } else if (field == 3) {
+            search = "SELECT * FROM Weike WHERE sbject LIKE ? ORDER BY id DESC";
+            weikeCells = weikeDAO.findWeikeWithQueryString(search, searchString);
+        }
+        return weikeCells;
     }
 
     public List<WeikeCell> searchWeike(int field, String searchString, int currentUserId) {

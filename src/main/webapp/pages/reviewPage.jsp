@@ -13,9 +13,9 @@ To change this template use File | Settings | File Templates.
     <link rel="stylesheet" type="text/css" href="resource/css/weike.css">
     <link rel="stylesheet" type="text/css" href="resource/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="resource/css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/myMessage1.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/myMessage.css">
     <link rel="stylesheet" type="text/css" href="resource/css/loading.css">
-    <link rel="stylesheet" type="text/css" href="resource/css/displayModal1.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/displayModal.css">
 
     <script src="resource/pbl/js/modernizr-custom.js"></script>
     <script type="text/javascript" src="resource/js/jquery-1.11.1.min.js"></script>

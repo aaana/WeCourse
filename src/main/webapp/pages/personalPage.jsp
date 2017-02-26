@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../resource/css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../resource/css/personalPage.css">
     <link rel="stylesheet" type="text/css" href="../resource/css/loading.css">
+    <link rel="stylesheet" type="text/css" href="../resource/css/displayModal.css">
     <script type="text/javascript" src="../resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../resource/Bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../resource/js/weikeOpHelper.js"></script>
@@ -55,6 +56,14 @@
             if (pageNum == 3) {
                 changePage2FollowUser();
             }
+            getCommonFollowings($(".personalPageHead > div:nth-child(2)").attr("user_id"));
+            getHotWeikes($(".personalPageHead > div:nth-child(2)").attr("user_id"));
+
+            $('#displayModal').on('shown.bs.modal', function (event) {
+                if (!$("body").hasClass("modal-open")) {
+                    $("body").addClass("modal-open");
+                }
+            })
         });
     </script>
 
@@ -273,6 +282,7 @@
             </div>
         </div>
     </div>
+    <jsp:include page="template/displayModal.jsp" />
     <jsp:include page="template/formhelper.jsp" />
     <jsp:include page="template/footer.jsp" />
 </body>

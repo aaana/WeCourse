@@ -17,8 +17,10 @@ public interface WeikeDAO {
     public WeikeCell findWeikeByWeikeId(int id);
     public List<WeikeCell> findAllWeike();
     public List<WeikeCell> findWeikesWithUserId(int id);
+    public List<WeikeCell> findHotWeikesWithUserId(int id);
     public List<WeikeCell> findWeikeFromStartNum(int startId);
-    public List<WeikeCell> findWeikeWithQueryString(String string);
+    public List<WeikeCell> findWeikeWithQueryString(String string, String searchString);
+    public List<WeikeCell> findWeikeWithQueryString(String string, List<Integer> searchUsers);
 
     public int findWeikeNumWithUserId(int id);
     public Boolean haveMoreWeike(int startId);

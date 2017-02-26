@@ -30,7 +30,7 @@ To change this template use File | Settings | File Templates.
     <script src="resource/video-js/video.js"></script>
 
     <script src="resource/js/pblItem1.js"></script>
-    <script src="resource/js/weikeOpHelper.js"></script>
+    <script src="resource/js/weikeOpHelper1.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>

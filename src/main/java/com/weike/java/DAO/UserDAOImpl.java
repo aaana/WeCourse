@@ -54,4 +54,8 @@ public class UserDAOImpl implements UserDAO {
     public List<User> findUserWithEmail(String email) {
         return (List<User>) sessionFactory.getCurrentSession().createQuery("from User where email=?").setParameter(0, email).list();
     }
+
+    public List<Integer> findUserIdsWithQueryString(String string, String searchString) {
+        return (List<Integer>) sessionFactory.getCurrentSession().createQuery(string).setParameter(0, "%" + searchString + "%").list();
+    }
 }

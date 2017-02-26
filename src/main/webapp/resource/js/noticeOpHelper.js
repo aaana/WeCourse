@@ -57,7 +57,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.target_id + '" onclick="showWeikeDetail(this)" class="btn ' + btnType + '">查看微课</button>' +
+            '<button weike_id="' + notice.target_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -94,7 +94,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this)" class="btn ' + btnType + '"">查看微课</button>' +
+            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '"">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -113,7 +113,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this)" class="btn ' + btnType + '"">查看微课</button>' +
+            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '"">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -155,82 +155,6 @@ var changeNoticeState = function(noticeId) {
 var gotoPP = function (t) {
     readNotice(t);
     gotoPersonalPage(t);
-};
-
-var showWeikeDetail = function (t) {
-    showUploadModal("请稍等");
-
-    readNotice(t);
-
-    var weikeId = $(t).attr("weike_id");
-    $.ajax({
-        data:{
-            weikeId: weikeId
-        },
-        type:"post",
-        dataType: 'json',
-        url:"/detailWeike",
-        error:function(data){
-            hideUploadModal();
-            showHint("出错,请重试", "确定");
-        },
-        success:function(data){
-            hideUploadModal();
-            showDisplayModal(data.weikeCell);
-            var commentListDivNode = $('#displayModal .weikeCellCommentList');
-            commentList = transCommentFormat(data.commentCells);
-            initCommentDiv(commentList, commentListDivNode);
-        }
-    });
-};
-
-var showDisplayModal = function (weikeCell) {
-    $("#displayModal .weikeDetail").attr("weike_id", weikeCell.id);
-    $("#displayModal #titleInDisplayModal").text(weikeCell.title);
-    $("#displayModal #userNameInDisplayModal").text(weikeCell.user_name);
-    $("#displayModal .media").attr("user_id", weikeCell.user_id);
-    $("#displayModal #userAvatarInDisplayModal")[0].src = "resource/img/" + weikeCell.user_avatar;
-    $("#displayModal #subjectInDisplayModal").text(weikeCell.subject);
-    $("#displayModal #postDateInDisplayModal").text(transTimeStamp2String(weikeCell.post_date));
-    $("#displayModal #descriptionInDisplayModal").text(weikeCell.description);
-
-    if (weikeCell.file_type == 0) {
-        $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="uploadfiles/' + weikeCell.file_url + '">');
-    } else if (weikeCell.file_type == 1) {
-        $("#displayModal .thumbnail").html(
-            '<video id="videoInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
-            'controls preload="none" width="100%" height="600px" ' +
-            'poster="uploadfiles/' + weikeCell.thumbnail_url + '">'+
-            '<source type="video/mp4" src="uploadfiles/' + weikeCell.file_url + '"/> </video>');
-        videojs("videoInDisplayModal", {}, function(){});
-    }
-
-    $("#displayModal #commentNumInDisplayModal").text(weikeCell.comment_num);
-    $("#displayModal #viewNumInDisplayModal").text(weikeCell.view_num);
-    $("#displayModal #starNumInDisplayModal").text(weikeCell.star_num);
-    if (weikeCell.starred) {
-        $("#displayModal .glyphicon.glyphicon-heart-empty").removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
-    } else {
-        $("#displayModal .glyphicon.glyphicon-heart").removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
-    }
-
-    $("#displayModal .weikeDetail").append(
-        '<div class="personalPageContentItemComment" weike_id="' + weikeCell.id + '">' +
-        '<div></div>' +
-        '<div class="weikeCellComment input-group">' +
-        '<input type="text" class="form-control" placeholder="我来评论">' +
-        '<span class="input-group-btn">' +
-        '<button class="btn btn-default" type="button" onclick="makeComment2weike(this)">评论</button>' +
-        '</span>' +
-        '</div>' +
-        '<ul class="media-list weikeCellCommentList">' +
-        '</ul>' +
-        // '<a onclick="hideCommentListDiv(this)"><span class="glyphicon glyphicon-chevron-up"></span></a>' +
-        '</div>');
-
-    
-    $('#displayModal').modal('show');
-    doWatch(weikeCell.id);
 };
 
 function loadNotices() {

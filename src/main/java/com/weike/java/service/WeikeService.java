@@ -33,7 +33,8 @@ public interface WeikeService {
     public Boolean weikeGetCommented(int weikeId);
 
     // hot weike
-    public List<WeikeCell> findHotWeikesWithUserId(int userId);
+    public List<WeikeCell> findHotWeikesWithUserId(int id);
+    public List<WeikeCell> findHotWeikesWithUserId(int id, int currentUserId);
     public List<WeikeCell> findMayLikeWeikesWithUserId(int userId);
 
     // search

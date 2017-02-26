@@ -468,6 +468,7 @@ var getMoreWeikeCell = function (t) {
         },
         success:function(data){
             hideUploadModal();
+            $(t).attr("start_id", parseInt(start_id) + data.weikeCells.length);
             if (!data.hasMoreWeike) {
                 $(t).text("已显示全部微课");
                 $(t).attr("disabled", "disabled");
@@ -483,6 +484,12 @@ var getMoreWeikeCell = function (t) {
 };
 var initWeikeTemplate = function(weikeCell) {
     attachment = weikeCell.attachment==null?"":weikeCell.attachment;
+    star = "";
+    if (weikeCell.starred) {
+        star = '<span><span class="glyphicon glyphicon-heart"></span> <span>' + weikeCell.star_num + '</span></span>';
+    } else {
+        star = '<span><span class="glyphicon glyphicon-heart-empty"></span> <span>' + weikeCell.star_num + '</span></span>';
+    }
     return '<div class="grid__item" data-size=' + weikeCell.thumbnail_size + '> ' +
         '<div class="thumbnail weikeCell" weikeid="' + weikeCell.id + '" onclick="showDisplayModal(' + weikeCell.id + ')">' +
         '<img src="uploadfiles/' + weikeCell.thumbnail_url + '">' +
@@ -491,14 +498,7 @@ var initWeikeTemplate = function(weikeCell) {
         '<div class="weikeCellVote">' +
         '<h5>' + weikeCell.subject + '</h5>' +
         '<span></span>' +
-        '<c:choose>' +
-        '<c:when test="' + weikeCell.starred + '">' +
-        '<span><span class="glyphicon glyphicon-heart"></span> <span>' + weikeCell.star_num + '</span></span>' +
-        '</c:when>' +
-        '<c:otherwise>' +
-        '<span><span class="glyphicon glyphicon-heart-empty"></span> <span>' + weikeCell.star_num + '</span></span>' +
-        '</c:otherwise>' +
-        '</c:choose>' +
+        star +
         '</div>' +
         '</div>' +
         '<input type="hidden" class="weikeTitle" value="' + weikeCell.title  + '" />' +
@@ -518,6 +518,160 @@ var initWeikeTemplate = function(weikeCell) {
         '<input type="hidden" class="weikeStarred" value="' + weikeCell.starred  + '" />' +
         '</div>' +
         '</div>';
+};
+
+// load common followings
+var getCommonFollowings = function (userId) {
+    $.ajax({
+        data:{
+            userId: userId
+        },
+        type:"get",
+        dataType: 'json',
+        url:"/user/commonFollowings",
+        error:function(data){
+            console.log("加载共同关注失败");
+        },
+        success:function(data){
+            if (data.showCF && data.commonFollowings != null && data.commonFollowings.length != 0) {
+                var parentNode = $(".personalPageCommonFollow > div");
+                var commonFollowings = data.commonFollowings;
+                for (var i in commonFollowings) {
+                    parentNode.append(initCommonFollowingsTemplate(commonFollowings[i]));
+                }
+                $(".personalPageCommonFollow").css("display", "");
+            }
+        }
+    });
+};
+var initCommonFollowingsTemplate = function (follow) {
+    return '<div onclick="gotoPersonalPage(this)" user_id="' + follow.id + '">' +
+        '<img src="../resource/img/' + follow.avatar + '" class=" img-circle">' +
+        '<span>' + follow.name + '</span>' +
+        '</div>';
+};
+
+// load hot weikes
+var getHotWeikes = function (userId) {
+    $.ajax({
+        data:{
+            userId: userId
+        },
+        type:"get",
+        dataType: 'json',
+        url:"/user/hotWeikes",
+        error:function(data){
+            console.log("加载热门微课失败");
+        },
+        success:function(data){
+            if (data.hotWeikes != null && data.hotWeikes.length != 0) {
+                var parentNode = $(".personalPageHotWeike");
+                var hotWeikes = data.hotWeikes;
+                for (var i in hotWeikes) {
+                    parentNode.append(initHotWeikeTemplate(hotWeikes[i]));
+                }
+                parentNode.css("display", "");
+            }
+        }
+    });
+};
+var initHotWeikeTemplate = function (weikeCell) {
+    var time = transTimeStamp2String(weikeCell.post_date);
+    var star = weikeCell.starred ? '<span class="glyphicon glyphicon-heart">' : '<span class="glyphicon glyphicon-heart-empty">';
+    return '<div weike_id="' + weikeCell.id+ '" onclick="showWeikeDetail(this, null, doAfterShowWeikeDetail)">' +
+        '<p>' + weikeCell.title + '</p>' +
+        '<p><span>' + time + ' ' + weikeCell.subject + '</span>' +
+        star + '</span> <span>' + weikeCell.star_num + '</span>' +
+        '<span class="glyphicon glyphicon glyphicon-eye-open"></span> <span>' + weikeCell.view_num + '</span></p>' +
+        '</div>';
+};
+var doAfterShowWeikeDetail = function (t) {
+    var view_numEle = $(t).children("p:last-child").children("span:last-child");
+    view_numEle.text(parseInt(view_numEle.text()) + 1);
+};
+
+// show display modal
+var showWeikeDetail = function (t, preFunction, afterFunction) {
+    showUploadModal("请稍等");
+    
+    if (preFunction != null) {
+        preFunction(t);
+    }
+    
+    var weikeId = $(t).attr("weike_id");
+    $.ajax({
+        data:{
+            weikeId: weikeId
+        },
+        type:"post",
+        dataType: 'json',
+        url:"/detailWeike",
+        error:function(data){
+            hideUploadModal();
+            showHint("出错,请重试", "确定");
+        },
+        success:function(data){
+            hideUploadModal();
+            showDisplayModal(data.weikeCell);
+            var commentListDivNode = $('#displayModal .weikeCellCommentList');
+            commentList = transCommentFormat(data.commentCells);
+            initCommentDiv(commentList, commentListDivNode);
+            
+            if(afterFunction != null) {
+                afterFunction(t);
+            }
+        }
+    });
+};
+var showDisplayModal = function (weikeCell) {
+    $("#displayModal .personalPageContentItemComment").remove();
+    
+    $("#displayModal .weikeDetail").attr("weike_id", weikeCell.id);
+    $("#displayModal #titleInDisplayModal").text(weikeCell.title);
+    $("#displayModal #userNameInDisplayModal").text(weikeCell.user_name);
+    $("#displayModal .media").attr("user_id", weikeCell.user_id);
+    $("#displayModal #userAvatarInDisplayModal")[0].src = "/resource/img/" + weikeCell.user_avatar;
+    $("#displayModal #subjectInDisplayModal").text(weikeCell.subject);
+    $("#displayModal #postDateInDisplayModal").text(transTimeStamp2String(weikeCell.post_date));
+    $("#displayModal #descriptionInDisplayModal").text(weikeCell.description);
+
+    if (weikeCell.file_type == 0) {
+        $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="/uploadfiles/' + weikeCell.file_url + '">');
+    } else if (weikeCell.file_type == 1) {
+        $("#displayModal .thumbnail").html(
+            '<video id="videoInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
+            'controls preload="none" width="100%" height="600px" ' +
+            'poster="/uploadfiles/' + weikeCell.thumbnail_url + '">'+
+            '<source type="video/mp4" src="/uploadfiles/' + weikeCell.file_url + '"/> </video>');
+        videojs("videoInDisplayModal", {}, function(){});
+    }
+
+    $("#displayModal #commentNumInDisplayModal").text(weikeCell.comment_num);
+    $("#displayModal #viewNumInDisplayModal").text(weikeCell.view_num);
+    $("#displayModal #starNumInDisplayModal").text(weikeCell.star_num);
+    if (weikeCell.starred) {
+        $("#displayModal .glyphicon.glyphicon-heart-empty").removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
+    } else {
+        $("#displayModal .glyphicon.glyphicon-heart").removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
+    }
+
+    $("#displayModal .weikeDetail").append(
+        '<div class="personalPageContentItemComment" weike_id="' + weikeCell.id + '">' +
+        '<div></div>' +
+        '<div class="weikeCellComment input-group">' +
+        '<input type="text" class="form-control" placeholder="我来评论">' +
+        '<span class="input-group-btn">' +
+        '<button class="btn btn-default" type="button" onclick="makeComment2weike(this)">评论</button>' +
+        '</span>' +
+        '</div>' +
+        '<ul class="media-list weikeCellCommentList">' +
+        '</ul>' +
+        // '<a onclick="hideCommentListDiv(this)"><span class="glyphicon glyphicon-chevron-up"></span></a>' +
+        '</div>');
+
+
+    $('#displayModal').modal('show');
+    doWatch(weikeCell.id);
 };
 
 

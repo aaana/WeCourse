@@ -27,33 +27,13 @@
         <span>${visiting.introduction != "" ? visiting.introduction : "未填写"}</span>
     </div>
 </div>
-<div class="personalPageHotWeike">
+<div class="personalPageHotWeike" style="display: none">
     <span>热门微课</span>
+</div>
+
+<div class="personalPageCommonFollow" style="display: none" data-spy="affix" data-offset-top="668">
+    <span>共同关注</span>
     <div>
-        <p>英语写作小技巧3</p>
-        <p>2016-06-16 英语</p>
-    </div>
-    <div>
-        <p>英语写作小技巧2</p>
-        <p>2016-06-16 英语</p>
-    </div>
-    <div>
-        <p>英语写作小技巧1</p>
-        <p>2016-06-16 英语</p>
     </div>
 </div>
-<c:choose>
-    <c:when test="${commonFollowings != null && commonFollowings.size() != 0  && user.id == visiting.id}}">
-        <div class="personalPageCommonFollow" data-spy="affix" data-offset-top="668">
-            <span>共同关注</span>
-            <div>
-                <c:forEach var="follow" items="${commonFollowings}">
-                    <div onclick="gotoPersonalPage(this)" user_id="${follow.id}">
-                        <img src="../resource/img/${follow.avatar}" class=" img-circle">
-                        <span>${follow.name}</span>
-                    </div>
-                </c:forEach>
-            </div>
-        </div>
-    </c:when>
-</c:choose>
+

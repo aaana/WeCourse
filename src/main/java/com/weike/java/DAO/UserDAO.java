@@ -12,4 +12,5 @@ public interface UserDAO {
     public User findUserWithEmailAndPw(String email, String password);
     public User findUserWithId(int id);
     public List<User> findUserWithEmail(String email);
+    public List<Integer> findUserIdsWithQueryString(String string, String searchString);
 }
