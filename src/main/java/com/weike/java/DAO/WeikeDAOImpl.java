@@ -150,12 +150,12 @@ public class WeikeDAOImpl implements WeikeDAO {
     }
 
     public List<WeikeCell> searchWeikeWithUserNameString(int startNum, List<Integer> searchUsers) {
-        String search = "SELECT * FROM Weike";
+        String search = "FROM Weike";
         for (int i = 0; i < searchUsers.size(); i ++) {
-            if (i == 1) {
-                search = search + " WHERE u LIKE ?";
+            if (i == 0) {
+                search = search + " WHERE user_id=?";
             } else {
-                search = search + " OR u LIKE ?";
+                search = search + " OR user_id=?";
             }
         }
         search = search + " ORDER BY id DESC";
@@ -174,7 +174,7 @@ public class WeikeDAOImpl implements WeikeDAO {
     }
 
     public List<WeikeCell> searchWeikeWithSubjectString(int startNum, String searchString) {
-        Query query = sessionFactory.getCurrentSession().createQuery("FROM Weike WHERE sbject LIKE ? ORDER BY id DESC").setParameter(0, "%" + searchString + "%");
+        Query query = sessionFactory.getCurrentSession().createQuery("FROM Weike WHERE subject LIKE ? ORDER BY id DESC").setParameter(0, "%" + searchString + "%");
         query.setMaxResults(gap + 1);
         query.setFirstResult(startNum);
         List<Weike> weikes =  (List<Weike>) query.list();

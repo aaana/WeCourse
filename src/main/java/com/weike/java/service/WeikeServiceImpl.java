@@ -142,7 +142,7 @@ public class WeikeServiceImpl implements WeikeService {
         if (field == 1) {
             weikeCells = weikeDAO.searchWeikeWithContentString(startNum, searchString);
         } else if (field == 2) {
-            List<Integer> userIds =  userDAO.findUserIdsWithQueryString("SELECT * FROM User WHERE name LIKE ?", searchString);
+            List<Integer> userIds =  userDAO.findUserIdsWithQueryString("SELECT id FROM User WHERE name LIKE ?", searchString);
             weikeCells = weikeDAO.searchWeikeWithUserNameString(startNum, userIds);
         } else if (field == 3) {
             weikeCells = weikeDAO.searchWeikeWithSubjectString(startNum, searchString);

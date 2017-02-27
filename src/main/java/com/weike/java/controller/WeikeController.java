@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -305,7 +306,9 @@ public class WeikeController {
                 weikeCells = weikeService.searchWeike(startNum, field, searchString);
             }
             map.put("hasMoreWeike", weikeCells.size() == weikeService.getGap()+1);
-            weikeCells.remove(weikeCells.size()-1);
+            if (weikeCells.size() == weikeService.getGap()+1) {
+                weikeCells.remove(weikeCells.size()-1);
+            }
         } else {
             if(session.getAttribute("user") != null) {
                 UserCell userCell = (UserCell) session.getAttribute("user");
@@ -319,11 +322,12 @@ public class WeikeController {
         return map;
     }
 
-    @RequestMapping(value = "/searchWeike", method = RequestMethod.GET, produces={"text/html;charset=UTF-8;","application/json;"})
+    @RequestMapping("/searchWeike")
     public @ResponseBody
-    Map<String,Object> searchWeike(HttpServletRequest request) {
+    Map<String,Object> searchWeike(HttpServletRequest request) throws UnsupportedEncodingException {
         int field = Integer.parseInt(request.getParameter("field"));
-        String searchString = (String) request.getParameter("searchString");
+        String searchString = request.getParameter("searchString");
+        //String searchString = (String) request.getParameter("searchString");
         Map<String,Object> map = new HashMap<String,Object>();
 
         HttpSession session = request.getSession();
@@ -338,7 +342,7 @@ public class WeikeController {
         session.setAttribute("searchField", field);
         session.setAttribute("searchString", searchString);
         map.put("hasMoreWeike", weikeCells.size() == weikeService.getGap()+1);
-        if (weikeCells.size() > 1) {
+        if (weikeCells.size() == weikeService.getGap()+1) {
             weikeCells.remove(weikeCells.size()-1);
         }
         map.put("weikeCells", weikeCells);

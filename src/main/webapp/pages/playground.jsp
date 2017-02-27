@@ -31,7 +31,7 @@ To change this template use File | Settings | File Templates.
 
     <script src="resource/js/pblItem1.js"></script>
     <script src="resource/js/weikeOpHelper.js"></script>
-    <script src="resource/js/searchHelper.js"></script>
+    <script src="resource/js/searchHelper1.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>

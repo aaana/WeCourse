@@ -4,6 +4,11 @@
 var search = function () {
     var field = $(".playgroundSearchDiv .btn-default").attr("search_type");
     var searchString = $("#searchInput").val();
+    
+    if (searchString == "") {
+        showHint("关键词为空", "确定");
+        return false;
+    }
 
     showUploadModal("请稍等");
     $.ajax({
@@ -11,7 +16,7 @@ var search = function () {
             field: field,
             searchString: searchString
         },
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         url: '/searchWeike',
         error: function (data) {
@@ -25,6 +30,9 @@ var search = function () {
             if (!data.hasMoreWeike) {
                 btn.text("已显示全部结果");
                 btn.attr("disabled", "disabled");
+            } else {
+                btn.text("加载更多");
+                btn.attr("disabled", false);
             }
             if(data.weikeCells.length == 0) {
                 showHint("没有相符的结果,请更换关键词", "确定");
