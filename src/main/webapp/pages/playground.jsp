@@ -29,9 +29,9 @@ To change this template use File | Settings | File Templates.
     <link href="resource/video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="resource/video-js/video.js"></script>
 
-    <script src="resource/js/pblItem1.js"></script>
+    <script src="resource/js/pblItem.js"></script>
     <script src="resource/js/weikeOpHelper.js"></script>
-    <script src="resource/js/searchHelper1.js"></script>
+    <script src="resource/js/searchHelper.js"></script>
     <script src="resource/js/authHelper.js"></script>
 
     <script>
@@ -43,7 +43,17 @@ To change this template use File | Settings | File Templates.
                 if($("html").css("overflow") == "hidden") {
                     $("html").css("overflow", "");
                 }
-            })
+            });
+            $("#uploadModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
+            $("#reviewModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
         });
     </script>
 </head>

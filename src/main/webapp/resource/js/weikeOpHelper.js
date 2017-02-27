@@ -105,6 +105,10 @@ var makeComment2weike = function (t) {
                 $(t).parents('.weikeCellComment').next().append(initCommentTemplate(comment));
                 var commentNum = $(t).closest('.personalPageContentItemComment').prev().children("a:first-child").children("span:last-child").text();
                 $(t).closest('.personalPageContentItemComment').prev().children("a:first-child").children("span:last-child").text(parseInt(commentNum) + 1);
+
+                if ($(t).closest('#displayModal').length != 0) {
+                    changeWeikeInputValue($(".weikeCell[weikeid="+ weikeId +"] .weikeCommentNum"));
+                }
             } else if(!data.isLogged){
                 showHint("请先登录", "确定");
             } else {
@@ -165,6 +169,9 @@ var makeComment2comment = function (t) {
                 $(t).closest('.personalPageContentItemComment').prev().children("a:first-child").children("span:last-child").text(parseInt(commentNum) + 1);
 
                 hideComment2comment(t);
+                if ($(t).closest('#displayModal').length != 0) {
+                    changeWeikeInputValue($(".weikeCell[weikeid="+ weikeId +"] .weikeCommentNum"));
+                }
 
             } else if(!data.isLogged){
                 showHint("请先登录", "确定");
@@ -238,6 +245,9 @@ var placeCommentRightPlace = function (comment, list) {
         success: false,
         commentList: list
     };
+};
+var changeWeikeInputValue = function (num_input) {
+    num_input.val(parseInt(num_input.val()) + 1);
 };
 
 // favorite
@@ -749,7 +759,9 @@ var doWatch = function (weikeId) {
         dataType: 'json',
         url:"/watchWeike"
     });
-    
+    if ($(".weikeCell[weikeid="+ weikeId +"] .weikeViewNum").length != 0) {
+        changeWeikeInputValue($(".weikeCell[weikeid="+ weikeId +"] .weikeViewNum"));
+    }
 };
 
 function showHint(string, string2) {
@@ -769,6 +781,7 @@ function hideUploadModal() {
     $('#uploadModal #uploadModalHint').text("正在上传");
     $('#uploadModal').modal('hide');
 }
+
 
 function transTimeStamp2String (time){
     var datetime = new Date();
