@@ -361,17 +361,17 @@
       <file leaf-file-name="playground.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1080">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="60">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="62" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weikeOpHelper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weikeOpHelper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
+            <state relative-caret-position="2160">
               <caret line="732" column="55" selection-start-line="732" selection-start-column="55" selection-end-line="732" selection-end-column="55" />
               <folding>
                 <element signature="e#85#1438#0" expanded="false" />
@@ -441,11 +441,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalPage.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="personalPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="194" column="49" selection-start-line="194" selection-start-column="49" selection-end-line="194" selection-end-column="49" />
+            <state relative-caret-position="285">
+              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -515,10 +515,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/noticeOpHelper.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/editInfoPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/publish.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/reviewPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/entity/WeikeCell.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper1.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/NoticeDAOImpl.java" />
@@ -527,6 +525,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FileDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/playground.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/reviewPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp" />
       </list>
     </option>
   </component>
@@ -1462,12 +1462,12 @@
       <workItem from="1487829461191" duration="46761000" />
       <workItem from="1487951964140" duration="14967000" />
       <workItem from="1488038428105" duration="26467000" />
-      <workItem from="1488163176590" duration="11689000" />
+      <workItem from="1488163176590" duration="13646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267749000" />
+    <option name="totallyTimeSpent" value="269706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -2009,31 +2009,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/reviewPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        <state relative-caret-position="600">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="194" column="49" selection-start-line="194" selection-start-column="49" selection-end-line="194" selection-end-column="49" />
+        <state relative-caret-position="60">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="62" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
+        <state relative-caret-position="2160">
           <caret line="732" column="55" selection-start-line="732" selection-start-column="55" selection-end-line="732" selection-end-column="55" />
           <folding>
             <element signature="e#85#1438#0" expanded="false" />
@@ -2099,6 +2091,14 @@
             <marker date="1488380037000" expanded="true" signature="21667:21778" placeholder="..." />
             <marker date="1488380037000" expanded="true" signature="21667:21980" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -33,8 +33,24 @@ To change this template use File | Settings | File Templates.
                 if (!$("body").hasClass("modal-open")) {
                     $("body").addClass("modal-open");
                 }
-            })
-        })
+            });
+            $('#displayModal').on('hide.bs.modal', function (event) {
+                if ($("#displayModal video").length != 0) {
+                    videojs($("#displayModal video")[0]).pause();
+                    videojs($("#displayModal video")[0]).dispose();
+                }
+            });
+            $("#uploadModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
+            $("#reviewModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
+        });
     </script>
 
 </head>

@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../resource/css/displayModal.css">
     <script type="text/javascript" src="../resource/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="../resource/Bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resource/js/isInViewport.min.js"></script>
     <script type="text/javascript" src="../resource/js/weikeOpHelper.js"></script>
 
     <link href="../resource/video-js/video-js.css" rel="stylesheet" type="text/css">
@@ -63,7 +64,30 @@
                 if (!$("body").hasClass("modal-open")) {
                     $("body").addClass("modal-open");
                 }
-            })
+            });
+            $('#displayModal').on('hide.bs.modal', function (event) {
+                if ($("#displayModal video").length != 0) {
+                    videojs($("#displayModal video")[0]).pause();
+                    videojs($("#displayModal video")[0]).dispose();
+                }
+            });
+            $("#uploadModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
+            $("#reviewModal").on('hidden.bs.modal', function (event) {
+                if($("#displayModal").hasClass("in")) {
+                    $("body").addClass("modal-open");
+                }
+            });
+            $(window).scroll(function() {
+                $('video').each(function(){
+                    if ($(this).closest(".personalPageContentItem").isInViewport({ tolerance: 400 }).length == 0) {
+                        $(this)[0].pause();
+                    }
+                })
+            });
         });
     </script>
 
