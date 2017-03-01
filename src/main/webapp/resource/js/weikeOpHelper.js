@@ -516,7 +516,7 @@ var initWeikeTemplate = function(weikeCell) {
         '<input type="hidden" class="weikeAuthorAvatar" value="' + weikeCell.user_avatar + '" />' +
         '<input type="hidden" class="weikeAuthorId" value="' + weikeCell.user_id + '" />' +
         '<input type="hidden" class="weikeSubject" value="' + weikeCell.subject + '" />' +
-        '<input type="hidden" class="weikePostDate" value="' + weikeCell.post_date + '" />' +
+        '<input type="hidden" class="weikePostDate" value="' + weikeCell.post_date_string + '" />' +
         '<input type="hidden" class="weikeDescription" value="' + weikeCell.description  + '" />' +
         '<input type="hidden" class="weikeThumbnailUrl" value="' + weikeCell.thumbnail_url  + '" />' +
         '<input type="hidden" class="weikeAttachmentUrl" value="' + attachment  + '">' +
@@ -586,7 +586,7 @@ var getHotWeikes = function (userId) {
     });
 };
 var initHotWeikeTemplate = function (weikeCell) {
-    var time = transTimeStamp2String(weikeCell.post_date);
+    var time = weikeCell.post_date_string;
     var star = weikeCell.starred ? '<span class="glyphicon glyphicon-heart">' : '<span class="glyphicon glyphicon-heart-empty">';
     return '<div weike_id="' + weikeCell.id+ '" onclick="showWeikeDetail(this, null, doAfterShowWeikeDetail)">' +
         '<p>' + weikeCell.title + '</p>' +
@@ -642,7 +642,7 @@ var showDisplayModal = function (weikeCell) {
     $("#displayModal .media").attr("user_id", weikeCell.user_id);
     $("#displayModal #userAvatarInDisplayModal")[0].src = "/resource/img/" + weikeCell.user_avatar;
     $("#displayModal #subjectInDisplayModal").text(weikeCell.subject);
-    $("#displayModal #postDateInDisplayModal").text(transTimeStamp2String(weikeCell.post_date));
+    $("#displayModal #postDateInDisplayModal").text(weikeCell.post_date_string);
     $("#displayModal #descriptionInDisplayModal").text(weikeCell.description);
 
     if (weikeCell.file_type == 0) {
@@ -724,12 +724,13 @@ function showDisplayModalInPG(weikeId) {
     if (weikeFileType == "0") {
         $("#displayModal .thumbnail").html('<img id="picInDisplayModal" src="uploadfiles/' + weikeFileUrl + '">');
     } else if (weikeFileType == "1") {
+        var id = "videoInDisplayModal_" + weikeId;
         $("#displayModal .thumbnail").html(
-            '<video id="videoInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
+            '<video id="picInDisplayModal" class="video-js vjs-default-skin vjs-big-play-centered" ' +
             'controls preload="none" width="100%" height="600px" ' +
             'poster="uploadfiles/' + weikeThumbnailUrl + '">'+
             '<source type="video/mp4" src="uploadfiles/' + weikeFileUrl + '"/> </video>');
-        videojs("videoInDisplayModal", {}, function(){});
+        videojs("picInDisplayModal", {}, function(){});
     }
 
     $("#displayModal #commentNumInDisplayModal").text(weikeCommentNum);
@@ -781,7 +782,6 @@ function hideUploadModal() {
     $('#uploadModal #uploadModalHint').text("正在上传");
     $('#uploadModal').modal('hide');
 }
-
 
 function transTimeStamp2String (time){
     var datetime = new Date();

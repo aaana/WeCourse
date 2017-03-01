@@ -31,18 +31,18 @@ public class NoticeDAOImpl implements NoticeDAO {
     }
 
     public List<Notice> findAllNoticeWithReceiverId(int receiver_id) {
-        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=?").setParameter(0, receiver_id).list();
+        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? order by id desc").setParameter(0, receiver_id).list();
     }
 
     public List<Notice> findAllUnreadNoticeWithReceiverId(int receiver_id) {
-        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and hasread=false").setParameter(0, receiver_id).list();
+        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and hasread=false order by id desc").setParameter(0, receiver_id).list();
     }
 
     public List<Notice> findAllNoticeWithReceiverIdAndType(int receiver_id, int type) {
-        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and notice_type=?").setParameter(0, receiver_id).setParameter(1, type).list();
+        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and notice_type=? order by id desc").setParameter(0, receiver_id).setParameter(1, type).list();
     }
 
     public List<Notice> findAllUnreadNoticeWithReceiverIdAndType(int receiver_id, int type) {
-        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and notice_type=? and hasread=false").setParameter(0, receiver_id).setParameter(1, type).list();
+        return (List<Notice>) sessionFactory.getCurrentSession().createQuery("from Notice where receiver_id=? and notice_type=? and hasread=false order by id desc").setParameter(0, receiver_id).setParameter(1, type).list();
     }
 }

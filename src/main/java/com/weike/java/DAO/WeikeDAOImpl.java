@@ -11,6 +11,9 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -74,7 +77,7 @@ public class WeikeDAOImpl implements WeikeDAO {
     }
 
     public List<WeikeCell> findWeikesWithUserId(int id) {
-        List<Weike> weikes = (List<Weike>) sessionFactory.getCurrentSession().createQuery("from Weike where user_id=?").setParameter(0, id).list();
+        List<Weike> weikes = (List<Weike>) sessionFactory.getCurrentSession().createQuery("from Weike where user_id=? order by id desc").setParameter(0, id).list();
         User user = (User) sessionFactory.getCurrentSession().createQuery("from User where id=?").setParameter(0, id).uniqueResult();
         List<WeikeCell> weikeCells = new LinkedList<WeikeCell>();
 
@@ -126,14 +129,6 @@ public class WeikeDAOImpl implements WeikeDAO {
 
     public int getGap() {
         return gap;
-    }
-
-    public List<WeikeCell> findWeikeWithQueryString(String string, String searchString) {
-        return null;
-    }
-
-    public List<WeikeCell> findWeikeWithQueryString(String string, List<Integer> searchUsers) {
-        return null;
     }
 
     public List<WeikeCell> searchWeikeWithContentString(int startNum, String searchString) {
@@ -198,8 +193,14 @@ public class WeikeDAOImpl implements WeikeDAO {
         weikeCell.setFile_url(file.getUrl());
         weikeCell.setFile_type(file.getType());
 
+        String tsStr = "";
+        DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        tsStr = sdf.format(weike.getPost_date());
+        weikeCell.setPost_date_string(tsStr);
+
         return weikeCell;
     }
+
     public WeikeCell transWeike2WeikeCell(Weike weike, User user) {
         WeikeCell weikeCell = new WeikeCell(weike);
         UploadFile thumbnail = (UploadFile) sessionFactory.getCurrentSession().createQuery("from UploadFile where id=?").setParameter(0, weike.getThumbnail_id()).uniqueResult();
@@ -210,6 +211,11 @@ public class WeikeDAOImpl implements WeikeDAO {
         weikeCell.setThumbnail_size("1280x1280");
         weikeCell.setFile_url(file.getUrl());
         weikeCell.setFile_type(file.getType());
+
+        String tsStr = "";
+        DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        tsStr = sdf.format(weike.getPost_date());
+        weikeCell.setPost_date_string(tsStr);
 
         return weikeCell;
     }

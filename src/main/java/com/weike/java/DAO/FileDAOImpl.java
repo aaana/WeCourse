@@ -33,5 +33,4 @@ public class FileDAOImpl implements FileDAO {
         return ((List<Integer>) query.list()).get(0) + 1;
     }
 
-
 }

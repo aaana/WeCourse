@@ -49,7 +49,7 @@
                 <div class="col-sm-9">
                     <img id="avatarPreview" width="100px" src="../resource/img/${user.avatar}" />
                     <button id="avatarBtn" type="button" class="btn btn-primary" onclick="avatarInput.click();event.target.blur();">更换头像</button>
-                    <input id="avatarInput" style="display:none" type="file" name="avatar" accept="image/*" />
+                    <input id="avatarInput" style="display:none" type="file" name="avatar" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" />
                     <input type="hidden" id="oldAvatar" value="${user.avatar}">
                 </div>
             </div>

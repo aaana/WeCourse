@@ -57,7 +57,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.target_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '">查看微课</button>' +
+            '<button weike_id="' + notice.target_id + '" onclick="showWeikeDetail(this, readNotice, null)" class="btn ' + btnType + '">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -94,7 +94,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '"">查看微课</button>' +
+            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice, null)" class="btn ' + btnType + '"">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -113,7 +113,7 @@ var initNoticeTemplate = function (notice) {
             '</div>' +
             '<div></div>' +
             '<div>' +
-            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice)" class="btn ' + btnType + '"">查看微课</button>' +
+            '<button weike_id="' + notice.comment_weike_id + '" onclick="showWeikeDetail(this, readNotice, null)" class="btn ' + btnType + '"">查看微课</button>' +
             '</div>' +
             '</div>' +
             '</div>' +

@@ -26,7 +26,7 @@
     <script src="../resource/video-js/video.js"></script>
 
     <script>
-        videojs.options.flash.swf = "resource/video-js/video-js.swf";
+        videojs.options.flash.swf = "/resource/video-js/video-js.swf";
 
         function changePage2AllWeike() {
             changePage("allWeike", 1);
@@ -120,7 +120,7 @@
                                 </div>
                                 <div class="media-body">
                                     <p><b>${weikeCell.user_name}</b></p>
-                                    <p>${weikeCell.post_date} ${weikeCell.subject}</p>
+                                    <p>${weikeCell.post_date_string} ${weikeCell.subject}</p>
                                     <h3>${weikeCell.title}</h3>
                                     <p>${weikeCell.description}</p>
                                         <div class="thumbnail" >
@@ -130,7 +130,7 @@
                                                     <a href="../uploadfiles/${weikeCell.file_url}"><img  src="../uploadfiles/${weikeCell.file_url}" /></a>
                                                 </c:when>
                                                 <c:when test="${weikeCell.file_type == 1}">
-                                                    <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
+                                                    <video id="video_no_${weikeCell.id}" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
                                                            poster="../uploadfiles/${weikeCell.thumbnail_url}"
                                                            data-setup="{}" width="100%" height="400px">
                                                         <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />
@@ -183,7 +183,7 @@
                                 </div>
                                 <div class="media-body">
                                     <p><b>${weikeCell.user_name}</b></p>
-                                    <p>${weikeCell.post_date} ${weikeCell.subject}</p>
+                                    <p>${weikeCell.post_date_string} ${weikeCell.subject}</p>
                                     <h3>${weikeCell.title}</h3>
                                     <p>${weikeCell.description}</p>
                                     <div class="thumbnail" >
@@ -192,7 +192,7 @@
                                                 <img src="../uploadfiles/${weikeCell.file_url}" />
                                             </c:when>
                                             <c:when test="${weikeCell.file_type == 1}">
-                                                <video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
+                                                <video id="favorite_video_no_${weikeCell.id}" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none"
                                                        poster="../uploadfiles/${weikeCell.thumbnail_url}"
                                                        data-setup="{}" width="100%" height="400px">
                                                     <source src="../uploadfiles/${weikeCell.file_url}" type='video/mp4' />

@@ -55,7 +55,7 @@
                 <div class="col-sm-9">
                     <%--<button type="button" class="inputBtn btn btn-default">添加</button>--%>
                     <button id="thumbnailBtn" type="button" class="btn btn-primary" onclick="thumbnailInput.click();event.target.blur();">+</button>
-                    <input id="thumbnailInput" style="display:none" type="file" name="thumbnail" accept="image/*" />
+                    <input id="thumbnailInput" style="display:none" type="file" name="thumbnail" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" />
                 </div>
             </div>
 
@@ -80,14 +80,14 @@
                 <label class="col-sm-2 control-label">图片</label>
                 <div class="col-sm-9">
                     <button id="pictureBtn" type="button" class="btn btn-primary" onclick="pictureInput.click();event.target.blur();">+</button>
-                    <input id="pictureInput" style="display:none" type="file" name="picture" accept="image/*" />
+                    <input id="pictureInput" style="display:none" type="file" name="picture" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" />
                 </div>
             </div>
             <div class="form-group" id="publishVideoDiv">
                 <label class="col-sm-2 control-label">视频</label>
                 <div class="col-sm-9">
                     <button id="videoBtn" type="button" class="btn btn-primary" onclick="videoInput.click();event.target.blur();">+</button>
-                    <input id="videoInput" style="display:none" type="file" name="video" accept="video/*" />
+                    <input id="videoInput" style="display:none" type="file" name="video" accept="video/mp4,video/mpeg,video/3gpp" />
                 </div>
             </div>
             <div class="form-group" id="attachmentDiv">

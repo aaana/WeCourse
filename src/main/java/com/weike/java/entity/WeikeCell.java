@@ -12,6 +12,7 @@ public class WeikeCell extends Weike {
     private String thumbnail_size;
     private int file_type;
     private String file_url;
+    private String post_date_string;
     private boolean starred;
 
     public WeikeCell(Weike weike) {
@@ -75,5 +76,13 @@ public class WeikeCell extends Weike {
 
     public void setStarred(boolean starred) {
         this.starred = starred;
+    }
+
+    public String getPost_date_string() {
+        return post_date_string;
+    }
+
+    public void setPost_date_string(String post_date_string) {
+        this.post_date_string = post_date_string;
     }
 }

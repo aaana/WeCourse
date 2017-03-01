@@ -44,7 +44,7 @@ public class FavoriteDAOImpl implements FavoriteDAO {
     }
 
     public List<Favorite> findAllFavoritesWithUserId(int user_id) {
-        return sessionFactory.getCurrentSession().createQuery("from Favorite where user_id=?").setParameter(0, user_id).list();
+        return sessionFactory.getCurrentSession().createQuery("from Favorite where user_id=? order by id desc").setParameter(0, user_id).list();
     }
 
     public int findFavoriteNumWithUserId(int user_id) {

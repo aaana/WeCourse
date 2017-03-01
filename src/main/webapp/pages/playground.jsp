@@ -35,12 +35,19 @@ To change this template use File | Settings | File Templates.
     <script src="resource/js/authHelper.js"></script>
 
     <script>
+        videojs.options.flash.swf = "/resource/video-js/video-js.swf";
         $(document).ready(function () {
+            $('#displayModal').on('hide.bs.modal', function (event) {
+                if ($("#displayModal video").length != 0) {
+                    videojs($("#displayModal video")[0]).pause();
+                    videojs($("#displayModal video")[0]).dispose();
+                }
+            });
             $('#displayModal').on('hidden.bs.modal', function (event) {
-                if($("body").css("overflow") == "hidden") {
+                if ($("body").css("overflow") == "hidden") {
                     $("body").css("overflow", "");
                 }
-                if($("html").css("overflow") == "hidden") {
+                if ($("html").css("overflow") == "hidden") {
                     $("html").css("overflow", "");
                 }
             });
@@ -108,7 +115,7 @@ To change this template use File | Settings | File Templates.
                                 <input type="hidden" class="weikeAuthorAvatar" value="${weikeCell.user_avatar}" />
                                 <input type="hidden" class="weikeAuthorId" value="${weikeCell.user_id}" />
                                 <input type="hidden" class="weikeSubject" value="${weikeCell.subject}" />
-                                <input type="hidden" class="weikePostDate" value="${weikeCell.post_date}" />
+                                <input type="hidden" class="weikePostDate" value="${weikeCell.post_date_string}" />
                                 <input type="hidden" class="weikeDescription" value="${weikeCell.description}" />
                                 <input type="hidden" class="weikeThumbnailUrl" value="${weikeCell.thumbnail_url}" />
                                 <input type="hidden" class="weikeAttachmentUrl" value="${weikeCell.attachment==null?"":weikeCell.attachment}">
