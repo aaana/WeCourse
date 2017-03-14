@@ -8,333 +8,333 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="404dfbe9-5b93-4c7f-8c98-882fcb81368d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/myMessage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/MainController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/formhelper.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-checked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/myMessage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/log-bg.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap-validation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/loggedPlaygoundSidbar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/UserDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/unloggedPlaygroundSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_context_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/FileServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/WeikeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/classie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_orm_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/pblItem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/FileDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/WeikeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_web_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/5.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/playground.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/FileDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/Weike.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/WeikeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/unloggedPersonalPageSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/weikeBg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_aop_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/loggedPlaygoundSidbar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_beans_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/upload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/FileService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/PersonalPageController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/pblItem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/pblItem.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/classie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/UserDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/infrastructure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-expression-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/Weike.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_core_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/FileDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/log-bg.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/PersonalPageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/UserServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/WeikeDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/formhelper.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/example.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/weike.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_expression_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-context-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/PersonalPageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-orm-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/infrastructure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/WeikeDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-webmvc-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/FileServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/UploadFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__tomcat_servlet_api_5_5_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/personalPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/weike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-core-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap-validation.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/weikeBg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/WeikeService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/logBg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/FileService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/modernizr-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.woff" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/navbar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-checked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/formhelper.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-orm-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/publish.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/weike.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/Weike.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/auth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-beans-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/weike.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/example.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/weikeBg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/11.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/WeikeServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/loggedPersonalPageSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/FileDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/WeikeCell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/log-bg.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/WeikeService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/Weike.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/PersonalPageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/sidebar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/FileServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-unchecked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/c3p0-0.9.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/bg.JPEG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/WeikeCell.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/videoTest3.mp4" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/WeikeServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-jdbc-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/artifacts/WeikeWeb_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/unloggedPersonalPageSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/imagesloaded.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/navbar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/footer.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/FileDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/FileDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/UserDAO.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/bg.JPEG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/properties/hibernate.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/Weike.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/upload.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/WeikeCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-yes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/masonry.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/WeikeCell.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/personalPage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/WeikeCell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/footer.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__tomcat_jsp_api_5_5_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike.war" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/classmate-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/auth.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/UploadFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/logBg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-web-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/c3p0-0.9.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/loggedPersonalPageSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-aop-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/weike.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/webServers.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/show.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/auth.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/certification.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/UserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/WeikeController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/FileService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-beans-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/log.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_tx_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/FileServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/UserDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/WeikeDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-unchecked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/FileDAOImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/WeikeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/personalPage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/WeikeDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/show.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../WeikeWeb.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/pblItem.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/WeikeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/WeikeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/weikeBg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-validator-5.1.2.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/log-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/artifacts/WeikeWeb_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/finalversion.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/publish.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/weike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/unloggedPlaygroundSidebar.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/modernizr-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-yes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/infrastructure.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_2_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/log-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/properties/hibernate.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__tomcat_servlet_api_5_5_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/FileDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/WeikeDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/infrastructure.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/infrastructure.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/formhelper.jsp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_jsp_jstl_javax_servlet_jsp_jstl_api_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/weikeBg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/properties/hibernate.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/UploadFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/personalPage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-unchecked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/playground.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/spring-dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/example01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/reviewPage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/imagesloaded.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/demoUploadicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/UserDAOImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/bg.JPEG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/navbar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-tx-4.0.6.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/reviewPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/WeikeCell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/UploadFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/FileServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/upload.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_aop_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-core-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/demoUploadicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-webmvc-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/log-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/WeikeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/publish.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/playground.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-checked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_context_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/artifacts/WeikeWeb_war_exploded.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-no.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/publish.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/classmate-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/UserDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/MainController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/certification.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/FileService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/WeikeDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/bg.JPEG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/WeikeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/properties/hibernate.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/properties/hibernate.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-web-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/artifacts/WeikeWeb_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/webServers.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/FileDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/pblItem.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/pblItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/css/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_web_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/example.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/WeikeServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/FileDAOImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/auth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/pblItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-checked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/unloggedPlaygroundSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/WeikeDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/input-unchecked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/controller/PersonalPageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-expression-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/personalPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/weikeBg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__tomcat_jsp_api_5_5_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/pblItem.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/unloggedPersonalPageSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap-validation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_expression_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/log-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/WeikeDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/FileDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/input-yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/loggedPlaygoundSidbar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/playground.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/logBg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/FileDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-context-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/js/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/log.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/sidebar.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/weikeBg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/WeikeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/jquery-1.11.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/entity/Weike.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/WeikeController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/personalPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/navbar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/upload.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-jdbc-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/FileService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/modernizr-custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../WeikeWeb.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/FileService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/myMessage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/personalPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/personalPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/UserDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/modernizr-custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/loggedPersonalPageSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/unloggedPlaygroundSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/service/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/entity/UploadFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/logBg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/show.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_orm_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/pbl/js/imagesloaded.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/UploadFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/UserDAOImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/service/WeikeService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/spring-aop-4.0.6.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/show.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_tx_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_beans_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/spring-dispatcher-servlet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/hibernate-validator-5.1.2.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/imagesloaded.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/log-bg.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/Bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/controller/MainController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/example01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/DAO/WeikeDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/PersonalPageController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/unloggedPersonalPageSidebar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/font/vjs.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/uploadfiles/finalversion.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/reviewPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/FileServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/js/bootstrap-validation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/pages/template/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/reviewPage.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/com/weike/java/service/WeikeServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/java/com/weike/java/controller/MainController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/loggedPlaygoundSidbar.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/resources/META-INF/properties/hibernate.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/com/weike/java/DAO/UserDAOImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_5_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/Bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/video-js/font/vjs.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_core_4_0_6_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/css/weike.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/video-js/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/resource/pbl/js/masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/css/myMessage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/img/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../src/main/webapp/pages/template/footer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/resource/js/weike.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/classes/META-INF/infrastructure.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../target/weike/WEB-INF/classes/META-INF/applicationContext.xml" afterPath="" />
     </list>
     <ignored path="SpringMVC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -358,94 +358,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playground.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
+      <file leaf-file-name="wxController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wxController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="62" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weikeOpHelper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="732" column="55" selection-start-line="732" selection-start-column="55" selection-end-line="732" selection-end-column="55" />
+            <state relative-caret-position="219">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
-                <element signature="e#85#1438#0" expanded="false" />
-                <element signature="e#1496#1842#0" expanded="false" />
-                <element signature="e#1889#2501#0" expanded="false" />
-                <element signature="e#2541#2572#0" expanded="false" />
-                <element signature="e#2611#4564#0" expanded="false" />
-                <element signature="e#4602#5139#0" expanded="false" />
-                <element signature="e#4662#4691#0" expanded="false" />
-                <element signature="e#5180#7244#0" expanded="false" />
-                <element signature="e#7285#7336#0" expanded="false" />
-                <element signature="e#7383#8517#0" expanded="false" />
-                <element signature="e#8573#9237#0" expanded="false" />
-                <element signature="e#9288#9341#0" expanded="false" />
-                <element signature="e#9386#9597#0" expanded="false" />
-                <element signature="e#9627#10996#0" expanded="false" />
-                <element signature="e#11028#12400#0" expanded="false" />
-                <element signature="e#12439#12662#0" expanded="false" />
-                <element signature="e#12698#13554#0" expanded="false" />
-                <element signature="e#13592#14447#0" expanded="false" />
-                <element signature="e#14489#14624#0" expanded="false" />
-                <element signature="e#14652#15372#0" expanded="false" />
-                <element signature="e#15402#16123#0" expanded="false" />
-                <element signature="e#16181#17091#0" expanded="false" />
-                <element signature="e#17137#19510#0" expanded="false" />
-                <element signature="e#19583#20337#0" expanded="false" />
-                <element signature="e#20392#20622#0" expanded="false" />
-                <element signature="e#20681#21333#0" expanded="false" />
-                <element signature="e#21383#21985#0" expanded="false" />
-                <element signature="e#22029#22169#0" expanded="false" />
-                <element signature="e#22257#23086#0" expanded="false" />
-                <element signature="e#28967#29055#0" expanded="false" />
-                <element signature="e#29090#29409#0" expanded="false" />
-                <element signature="n#!!block;n#showHint#0" expanded="false" />
-                <element signature="n#!!block;n#showUploadModal#0" expanded="false" />
-                <element signature="n#!!block;n#hideUploadModal#0" expanded="false" />
-                <element signature="n#!!block;n#transTimeStamp2String#0" expanded="false" />
-                <marker date="1488380037000" expanded="true" signature="331:869" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17649" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17679" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17697" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17723" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17759" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17787" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17848" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17875" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17915" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17933" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:17988" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18002" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18041" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18102" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18129" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18195" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18325" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18508" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18709" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18812" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:18994" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:19281" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:19486" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="17592:19505" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="21667:21778" placeholder="..." />
-                <marker date="1488380037000" expanded="true" signature="21667:21980" placeholder="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1142#1157#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalPage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -460,8 +390,8 @@
         <option value="CSS File" />
         <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -476,7 +406,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/css/navbar.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/NoticeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/template/navbar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/pbl/js/main1.js" />
@@ -520,13 +449,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/WeikeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/NoticeDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FollowDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FavoriteDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FileDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/playground.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/js/weikeOpHelper.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/reviewPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FollowDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/wxController.java" />
       </list>
     </option>
   </component>
@@ -611,7 +541,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -630,282 +560,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -926,7 +584,7 @@
     <property name="project.structure.side.proportion" value="0.2802139" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -945,6 +603,19 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="transportHostId" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1349,7 +1020,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 8.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.73" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="WeikeWeb:war exploded">
@@ -1360,6 +1031,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_SpringMVC" />
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1421,9 +1093,45 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.21" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.editInfoPage.jsp" />
+    <configuration default="false" name="Remote Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" APPLICATION_SERVER_NAME="Tomcat 7.0.73" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="HOST" value="115.28.56.35" />
+      <option name="PORT" value="80" />
+      <option name="LOCAL" value="false" />
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://115.28.56.35/" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="stagingRemotePath" value="" />
+          <option name="transportHostId" />
+          <option name="transportStagingTarget">
+            <TransportTarget>
+              <option name="id" value="94d1a0ea-e103-48c0-925f-54d0925cb8cb" />
+              <id>94d1a0ea-e103-48c0-925f-54d0925cb8cb</id>
+            </TransportTarget>
+          </option>
+          <transport-target>
+            <TransportTarget>
+              <option name="id" value="94d1a0ea-e103-48c0-925f-54d0925cb8cb" />
+              <id>94d1a0ea-e103-48c0-925f-54d0925cb8cb</id>
+            </TransportTarget>
+          </transport-target>
+          <staging-path />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9999" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.editInfoPage.jsp" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.21" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Remote Tomcat" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1462,20 +1170,32 @@
       <workItem from="1487829461191" duration="46761000" />
       <workItem from="1487951964140" duration="14967000" />
       <workItem from="1488038428105" duration="26467000" />
-      <workItem from="1488163176590" duration="13646000" />
+      <workItem from="1488163176590" duration="14647000" />
+      <workItem from="1488423592594" duration="148000" />
+      <workItem from="1489137409870" duration="7361000" />
+      <workItem from="1489394845334" duration="4508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269706000" />
+    <option name="totallyTimeSpent" value="282724000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14794521" sideWeight="0.35056543" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28513733" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1483,27 +1203,27 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24109589" sideWeight="0.57350564" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12054794" sideWeight="0.42649436" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14794521" sideWeight="0.64943457" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24246575" sideWeight="0.42164782" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.057534248" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51643836" sideWeight="0.49676898" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14246576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.4555735" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10547945" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4555735" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28109854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20273973" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20273973" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1557,7 +1277,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="386" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="395" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wxController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="417" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="418" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1566,30 +1300,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/entity/Avatar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/entity/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/weike/uploadfiles/github矛盾.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/properties/hibernate.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1601,7 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-210">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1609,7 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1632,11 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-          <folding>
-            <element signature="method#saveFiles#0;class#FileServiceImpl#0" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-            <element signature="e#921#922#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1644,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,9 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="method#Notice#1;class#Notice#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1672,22 +1370,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/PersonalPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#1264#1279#0" expanded="false" />
-            <element signature="e#2012#2027#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/personalPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
           <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1695,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1703,15 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1719,7 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1734,7 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1754,19 +1427,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="58" column="123" selection-start-line="58" selection-start-column="123" selection-end-line="58" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1779,22 +1443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="144" column="83" selection-start-line="144" selection-start-column="83" selection-end-line="144" selection-end-column="83" />
-          <folding>
-            <element signature="method#findWeikeByWeikeId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findAllWeike#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findFavoriteWeikesWithUserId#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findFavoriteWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findWeikeFromStartNum#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetFavorited#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetUnfavorited#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetWatched#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#weikeGetCommented#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#findHotWeikesWithUserId#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#searchWeike#1;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#checkStarred#0;class#WeikeServiceImpl#0" expanded="false" />
-            <element signature="method#checkStarred#1;class#WeikeServiceImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1802,7 +1450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1810,19 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
-          <folding>
-            <element signature="method#home#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#favorite#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#unfavorite#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#watchWeike#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#makeComment#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#getComment#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#submit#0;class#WeikeController#0" expanded="false" />
-            <element signature="method#getDetailWeike#0;class#WeikeController#0" expanded="false" />
-            <element signature="e#11473#11488#0" expanded="true" />
-            <element signature="e#13351#13366#0" expanded="true" />
-            <element signature="method#isContainChinese#0;class#WeikeController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1830,7 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1838,7 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1846,11 +1478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-            <element signature="e#64#1502#0" expanded="false" />
-            <element signature="e#1551#2096#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1858,27 +1485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-            <element signature="e#120#1228#0" expanded="false" />
-            <element signature="e#1274#5233#0" expanded="false" />
-            <element signature="e#5290#5401#0" expanded="false" />
-            <element signature="e#5434#5817#0" expanded="false" />
-            <element signature="e#5863#6019#0" expanded="false" />
-            <element signature="e#6048#6095#0" expanded="false" />
-            <element signature="n#!!block;n#loadNotices#0" expanded="false" />
-            <element signature="e#6902#7252#0" expanded="false" />
-            <element signature="e#7287#7575#0" expanded="false" />
-            <marker date="1488180139000" expanded="true" signature="1472:2280" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="1724:2257" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="1746:2234" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2036:2211" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2341:3157" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2423:3157" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2675:3134" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2697:3111" placeholder="..." />
-            <marker date="1488180139000" expanded="true" signature="2943:3088" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1886,7 +1492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1894,15 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="85" column="57" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/ReminderPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1910,7 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1918,7 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-164">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1926,7 +1520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-164">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1934,10 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
-          <folding>
-            <element signature="method#WeikeCell#0;class#WeikeCell#0" expanded="false" />
-            <element signature="method#setUser_avatar#0;class#WeikeCell#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1945,7 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1953,25 +1541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-          <folding>
-            <element signature="method#update#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#remove#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findSimpleWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikeByWeikeId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findAllWeike#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findHotWeikesWithUserId#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#findWeikeFromStartNum#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#haveMoreWeike#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#searchWeikeWithContentString#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="e#5570#5581#0" expanded="true" />
-            <element signature="method#searchWeikeWithUserNameString#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="e#6527#6538#0" expanded="true" />
-            <element signature="method#searchWeikeWithSubjectString#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="e#7124#7135#0" expanded="true" />
-            <element signature="method#transWeike2WeikeCell#0;class#WeikeDAOImpl#0" expanded="false" />
-            <element signature="method#transWeike2WeikeCell#1;class#WeikeDAOImpl#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1979,15 +1548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="45" column="146" selection-start-line="45" selection-start-column="146" selection-end-line="45" selection-end-column="146" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FollowDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="56" column="242" selection-start-line="56" selection-start-column="242" selection-end-line="56" selection-end-column="242" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1995,7 +1555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="46" column="93" selection-start-line="46" selection-start-column="93" selection-end-line="46" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2003,7 +1562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2011,15 +1569,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="62" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="1335">
+          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -2027,78 +1583,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
           <caret line="732" column="55" selection-start-line="732" selection-start-column="55" selection-end-line="732" selection-end-column="55" />
-          <folding>
-            <element signature="e#85#1438#0" expanded="false" />
-            <element signature="e#1496#1842#0" expanded="false" />
-            <element signature="e#1889#2501#0" expanded="false" />
-            <element signature="e#2541#2572#0" expanded="false" />
-            <element signature="e#2611#4564#0" expanded="false" />
-            <element signature="e#4602#5139#0" expanded="false" />
-            <element signature="e#4662#4691#0" expanded="false" />
-            <element signature="e#5180#7244#0" expanded="false" />
-            <element signature="e#7285#7336#0" expanded="false" />
-            <element signature="e#7383#8517#0" expanded="false" />
-            <element signature="e#8573#9237#0" expanded="false" />
-            <element signature="e#9288#9341#0" expanded="false" />
-            <element signature="e#9386#9597#0" expanded="false" />
-            <element signature="e#9627#10996#0" expanded="false" />
-            <element signature="e#11028#12400#0" expanded="false" />
-            <element signature="e#12439#12662#0" expanded="false" />
-            <element signature="e#12698#13554#0" expanded="false" />
-            <element signature="e#13592#14447#0" expanded="false" />
-            <element signature="e#14489#14624#0" expanded="false" />
-            <element signature="e#14652#15372#0" expanded="false" />
-            <element signature="e#15402#16123#0" expanded="false" />
-            <element signature="e#16181#17091#0" expanded="false" />
-            <element signature="e#17137#19510#0" expanded="false" />
-            <element signature="e#19583#20337#0" expanded="false" />
-            <element signature="e#20392#20622#0" expanded="false" />
-            <element signature="e#20681#21333#0" expanded="false" />
-            <element signature="e#21383#21985#0" expanded="false" />
-            <element signature="e#22029#22169#0" expanded="false" />
-            <element signature="e#22257#23086#0" expanded="false" />
-            <element signature="e#28967#29055#0" expanded="false" />
-            <element signature="e#29090#29409#0" expanded="false" />
-            <element signature="n#!!block;n#showHint#0" expanded="false" />
-            <element signature="n#!!block;n#showUploadModal#0" expanded="false" />
-            <element signature="n#!!block;n#hideUploadModal#0" expanded="false" />
-            <element signature="n#!!block;n#transTimeStamp2String#0" expanded="false" />
-            <marker date="1488380037000" expanded="true" signature="331:869" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17649" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17679" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17697" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17723" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17759" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17787" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17848" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17875" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17915" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17933" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:17988" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18002" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18041" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18102" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18129" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18195" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18325" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18508" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18709" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18812" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:18994" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:19281" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:19486" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="17592:19505" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="21667:21778" placeholder="..." />
-            <marker date="1488380037000" expanded="true" signature="21667:21980" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/personalPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/playground.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="89" column="15" selection-start-line="89" selection-start-column="15" selection-end-line="89" selection-end-column="15" />
+        <state relative-caret-position="660">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/ReminderPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/FollowDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/PersonalPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="102" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1142#1157#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

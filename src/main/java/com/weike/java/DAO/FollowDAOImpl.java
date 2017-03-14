@@ -54,7 +54,7 @@ public class FollowDAOImpl implements FollowDAO {
     }
 
     public List<Integer> findCommonFollowings(int user1, int user2) {
-        Query query = sessionFactory.getCurrentSession().createQuery("SELECT a.following_id FROM Follow as a, Follow as b WHERE a.valid = true and b.valid = true and a.follower_id = ? AND b.follower_id = ? AND a.following_id = b.following_id order by id desc");
+        Query query = sessionFactory.getCurrentSession().createQuery("SELECT a.following_id FROM Follow as a, Follow as b WHERE a.valid = true and b.valid = true and a.follower_id = ? AND b.follower_id = ? AND a.following_id = b.following_id order by a.id desc");
         query.setParameter(0, user1);
         query.setParameter(1, user2);
         return (List<Integer>) query.list();
