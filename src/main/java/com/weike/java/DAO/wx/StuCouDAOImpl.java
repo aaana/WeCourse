@@ -30,7 +30,7 @@ public class StuCouDAOImpl implements StuCouDAO {
     }
 
     public List<StuCou> findAllStuCouWithUserId(int user_id) {
-        return (List<StuCou>) sessionFactory.getCurrentSession().createQuery("from StuCou where userid  = ? order by id desc ").setParameter(0, user_id).list();
+        return (List<StuCou>) sessionFactory.getCurrentSession().createQuery("from StuCou where user_id  = ? order by id desc ").setParameter(0, user_id).list();
     }
 
     public Boolean updateAttendance(int id) {

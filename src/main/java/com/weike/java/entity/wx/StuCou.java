@@ -16,7 +16,7 @@ public class StuCou {
     @GeneratedValue
     private int id;
 
-    private int account_id;
+    private int user_id;
     private int course_id;
     private int attendance;
 
@@ -24,8 +24,8 @@ public class StuCou {
     public StuCou() {
     }
 
-    public StuCou(int account_id, int course_id, int attendance) {
-        this.account_id = account_id;
+    public StuCou(int user_id, int course_id, int attendance) {
+        this.user_id = user_id;
         this.course_id = course_id;
         this.attendance = attendance;
     }
@@ -38,12 +38,12 @@ public class StuCou {
         this.id = id;
     }
 
-    public int getAccount_id() {
-        return account_id;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public void setAccount_id(int account_id) {
-        this.account_id = account_id;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
     public int getCourse_id() {

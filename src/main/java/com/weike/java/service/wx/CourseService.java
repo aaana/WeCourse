@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface CourseService {
     // 新建\关闭课程
-    public int createCourse(Course course);
+    public Course createCourse(Course course);
     public Course closeCourse(Course course);
 
     // 检索课程
@@ -26,6 +26,11 @@ public interface CourseService {
     // 新加入课程
     public CourseCell joinNewCourse(int user_id, int course_id);
 
+    // 点到
+    public Boolean increaseAttendance(int user_id, int course_id);
     // 签到
     public Boolean attendCourse(int user_id, int course_id);
+
+    public CourseCell transCourse2CourseCell(Course course);
+    public CourseCell transCourse2CourseCell(Course course, String teacher_name);
 }

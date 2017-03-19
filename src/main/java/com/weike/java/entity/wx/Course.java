@@ -25,8 +25,8 @@ public class Course {
     public Course() {
     }
 
-    public Course(int account_id, String course_name, Timestamp create_time, int stu_num, int attendance_num, Boolean available) {
-        this.user_id = account_id;
+    public Course(int user_id, String course_name, Timestamp create_time, int stu_num, int attendance_num, Boolean available) {
+        this.user_id = user_id;
         this.course_name = course_name;
         this.create_time = create_time;
         this.stu_num = stu_num;

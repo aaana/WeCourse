@@ -100,5 +100,4 @@ public class WxUserController {
 
         return map;
     }
-
 }

@@ -30,8 +30,9 @@ public class CourseServiceImpl implements CourseService {
     @Autowired
     private StuCouDAO stuCouDAO;
 
-    public int createCourse(Course course) {
-        return courseDAO.save(course);
+    public Course createCourse(Course course) {
+        course.setId(courseDAO.save(course));
+        return course;
     }
 
     public Course closeCourse(Course course) {
@@ -78,13 +79,26 @@ public class CourseServiceImpl implements CourseService {
             Course course = courseDAO.findCourseById(stuCou.getCourse_id());
             courseCells.add(transCourse2CourseCell(course));
         }
-        return null;
+        return courseCells;
     }
 
     public CourseCell joinNewCourse(int user_id, int course_id) {
         StuCou stuCou = new StuCou(user_id, course_id, 0);
         stuCouDAO.save(stuCou);
-        return transCourse2CourseCell(courseDAO.findCourseById(course_id));
+        CourseCell courseCell = transCourse2CourseCell(courseDAO.findCourseById(course_id));
+        courseCell.setStu_num(courseCell.getStu_num() + 1);
+        courseDAO.updateCourseInfo(courseCell);
+        return courseCell;
+    }
+
+    public Boolean increaseAttendance(int user_id, int course_id) {
+        Course course = courseDAO.findCourseById(course_id);
+        if (user_id == course.getUser_id()) {
+            course.setAttendance_num(course.getAttendance_num() + 1);
+            courseDAO.updateCourseInfo(course);
+            return true;
+        }
+        return false;
     }
 
     public Boolean attendCourse(int user_id, int course_id) {
