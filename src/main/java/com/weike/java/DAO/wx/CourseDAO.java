@@ -12,5 +12,6 @@ public interface CourseDAO {
     public Course findCourseById(int id);
     public List<Course> findCoursesByCourseName(String course_name);
     public List<Course> findCoursesByTeacherName(String teacher_name);
+    public List<Course> findCoursesByUserId(int user_id);
     public Boolean updateCourseInfo(Course course);
 }

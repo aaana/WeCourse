@@ -1,6 +1,7 @@
 package com.weike.java.DAO.wx;
 
 import com.weike.java.entity.wx.Course;
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -17,22 +18,34 @@ public class CourseDAOImpl implements CourseDAO {
     private SessionFactory sessionFactory;
 
     public int save(Course course) {
-        return 0;
+        return (Integer) sessionFactory.getCurrentSession().save(course);
     }
 
     public Course findCourseById(int id) {
-        return null;
+        return (Course) sessionFactory.getCurrentSession().createQuery("from Course where id=?").setParameter(0, id).uniqueResult();
+
     }
 
     public List<Course> findCoursesByCourseName(String course_name) {
-        return null;
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("from Course where course_name like ?").setParameter(0, "%" + course_name + "%").list();
     }
 
     public List<Course> findCoursesByTeacherName(String teacher_name) {
-        return null;
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("SELECT Course.* FROM Course, User WHERE Course.user_id = User.id and User.name LIKE ?").setParameter(0, "%" + teacher_name + "%").list();
+    }
+
+    public List<Course> findCoursesByUserId(int user_id) {
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("FROM Course WHERE user_id = ?").setParameter(0, user_id).list();
     }
 
     public Boolean updateCourseInfo(Course course) {
-        return null;
+        String hql = "update Course c set c.stu_num = ?, c.attendance_num=?, c.available=? where c.id = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0, course.getStu_num());
+        query.setParameter(1, course.getAttendance_num());
+        query.setParameter(2, course.getAvailable());
+        query.setParameter(3, course.getId());
+
+        return (query.executeUpdate() > 0);
     }
 }

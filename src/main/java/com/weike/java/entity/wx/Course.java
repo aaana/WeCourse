@@ -15,7 +15,7 @@ public class Course {
     @Id
     @GeneratedValue
     private int id;
-    private int account_id;
+    private int user_id;
     private String course_name;
     private Timestamp create_time;
     private int stu_num;
@@ -26,7 +26,7 @@ public class Course {
     }
 
     public Course(int account_id, String course_name, Timestamp create_time, int stu_num, int attendance_num, Boolean available) {
-        this.account_id = account_id;
+        this.user_id = account_id;
         this.course_name = course_name;
         this.create_time = create_time;
         this.stu_num = stu_num;
@@ -42,12 +42,12 @@ public class Course {
         this.id = id;
     }
 
-    public int getAccount_id() {
-        return account_id;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public void setAccount_id(int account_id) {
-        this.account_id = account_id;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
     public String getCourse_name() {

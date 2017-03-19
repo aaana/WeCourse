@@ -16,7 +16,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/wx")
-public class wxController {
+public class WxUserController {
     @Autowired
     private WxUserService wxUserService;
 
@@ -46,7 +46,7 @@ public class wxController {
     }
 
     // 首次登录上传账号密码
-    @RequestMapping(value = "/token", method = RequestMethod.PUT)
+    @RequestMapping(value = "/token", method = RequestMethod.POST)
     public Map<String,Object> login(HttpServletRequest request) throws Exception {
         String email = request.getParameter("userEmail");
         String password = request.getParameter("password");
@@ -72,7 +72,7 @@ public class wxController {
     }
 
     //绑定账号
-    @RequestMapping(value = "/account", method = RequestMethod.PUT)
+    @RequestMapping(value = "/account", method = RequestMethod.POST)
     public Map<String,Object> setStudentId(HttpServletRequest request) throws Exception {
         Integer wechat_id = Integer.parseInt(request.getParameter("wechat_id"));
         Integer student_id = Integer.parseInt(request.getParameter("student_id"));
@@ -89,8 +89,7 @@ public class wxController {
             if (subject.get("id") != null ) {
                 int id = Integer.parseInt(subject.get("id").toString());
                 WxUser u = wxUserService.findUserById(id);
-                wxUserService.newAccount(u, wechat_id, student_id);
-                u.setStudent_id(student_id);
+                u = wxUserService.newAccount(u, wechat_id, student_id);
 
                 map.put("user", u);
                 map.put("result", "success");

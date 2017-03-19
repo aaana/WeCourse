@@ -1,7 +1,5 @@
 package com.weike.java.entity.wx;
 
-import java.sql.Timestamp;
-
 /**
  * Created by tina on 3/18/17.
  */
@@ -12,7 +10,7 @@ public class CourseCell extends Course {
     }
 
     public CourseCell(Course course) {
-        super(course.getAccount_id(), course.getCourse_name(), course.getCreate_time(), course.getStu_num(), course.getAttendance_num());
+        super(course.getUser_id(), course.getCourse_name(), course.getCreate_time(), course.getStu_num(), course.getAttendance_num(), course.getAvailable());
     }
 
     public String getTeacher_name() {

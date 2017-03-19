@@ -17,16 +17,19 @@ public class WxQuestion {
 
     private int publisher_id;
     private String content;
+
     private int parent_id;
+    private int grandparent_id;
     private int course_id;
 
     public WxQuestion() {
     }
 
-    public WxQuestion(int publisher_id, String content, int parent_id, int course_id) {
+    public WxQuestion(int publisher_id, String content, int parent_id, int grandparent_id, int course_id) {
         this.publisher_id = publisher_id;
         this.content = content;
         this.parent_id = parent_id;
+        this.grandparent_id = grandparent_id;
         this.course_id = course_id;
     }
 
@@ -60,6 +63,14 @@ public class WxQuestion {
 
     public void setParent_id(int parent_id) {
         this.parent_id = parent_id;
+    }
+
+    public int getGrandparent_id() {
+        return grandparent_id;
+    }
+
+    public void setGrandparent_id(int grandparent_id) {
+        this.grandparent_id = grandparent_id;
     }
 
     public int getCourse_id() {
