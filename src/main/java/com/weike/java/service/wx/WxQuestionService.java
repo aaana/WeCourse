@@ -2,6 +2,7 @@ package com.weike.java.service.wx;
 
 import com.sun.org.apache.xalan.internal.utils.XMLSecurityManager;
 import com.weike.java.entity.wx.WxQuestion;
+import com.weike.java.entity.wx.WxQuestionCell;
 
 import java.util.List;
 
@@ -10,9 +11,10 @@ import java.util.List;
  */
 public interface WxQuestionService {
     // 创建Question
-    public WxQuestion createQuestion(WxQuestion wxQuestion);
+    public WxQuestionCell createQuestion(WxQuestion wxQuestion);
 
     // 获取WxQuestion
-    public List<WxQuestion> getAllQuestionWithCourseId(int course_id);
-    public List<WxQuestion> getAllQuestionWithFirstQuestionId(int wxQuestion_id);
+    public WxQuestionCell getQuestionWithId(int id);
+    public List<WxQuestionCell> getAllQuestionWithCourseId(int course_id);
+    public List<WxQuestionCell> getAllQuestionWithFirstQuestionId(int wxQuestion_id);
 }

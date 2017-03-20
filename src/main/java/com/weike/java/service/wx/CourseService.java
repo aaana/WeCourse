@@ -16,6 +16,7 @@ public interface CourseService {
 
     // 检索课程
     public CourseCell getCourseByCourseId(int id);
+    public Course getSimpleCourseByCourseId(int id);
     public List<CourseCell> getCoursesByCourseName(String course_name);
     public List<CourseCell> getCoursesByTeacherName(String teacher_name);
 

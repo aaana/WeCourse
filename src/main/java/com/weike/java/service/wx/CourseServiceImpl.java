@@ -45,6 +45,10 @@ public class CourseServiceImpl implements CourseService {
         return transCourse2CourseCell(courseDAO.findCourseById(id));
     }
 
+    public Course getSimpleCourseByCourseId(int id) {
+        return courseDAO.findCourseById(id);
+    }
+
     public List<CourseCell> getCoursesByCourseName(String course_name) {
         List<Course> courses = courseDAO.findCoursesByCourseName(course_name);
         List<CourseCell> courseCells = new LinkedList<CourseCell>();

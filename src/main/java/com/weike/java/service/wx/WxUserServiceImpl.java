@@ -43,6 +43,10 @@ public class WxUserServiceImpl implements WxUserService {
         return transUser2WxUser(userDao.findUserWithId(id));
     }
 
+    public User findSimpleUserById(int id) {
+        return userDao.findUserWithId(id);
+    }
+
     public WxUser transUser2WxUser(User user) {
         if (user ==  null) {
             return null;

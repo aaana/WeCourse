@@ -20,10 +20,9 @@ public class CourseCell extends Course {
 
         this.setId(course.getId());
 
-        Timestamp ts = new Timestamp(System.currentTimeMillis());
         DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         try {
-            this.create_time_string = sdf.format(ts);
+            this.create_time_string = sdf.format(this.getCreate_time());
         } catch (Exception e) {
             e.printStackTrace();
         }

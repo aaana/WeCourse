@@ -2,11 +2,13 @@ package com.weike.java.service.wx;
 
 import com.weike.java.DAO.wx.WxNoticeDAO;
 import com.weike.java.entity.wx.WxNotice;
+import com.weike.java.entity.wx.WxNoticeCell;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -19,13 +21,18 @@ public class WxNoticeServiceImpl implements WxNoticeService {
     @Autowired
     private WxNoticeDAO wxNoticeDAO;
 
-    public WxNotice createNotice(WxNotice wxNotice) {
+    public WxNoticeCell createNotice(WxNotice wxNotice) {
         int id = wxNoticeDAO.save(wxNotice);
         wxNotice.setId(id);
-        return wxNotice;
+        return new WxNoticeCell(wxNotice);
     }
 
-    public List<WxNotice> getAllNoticesWithCourseId(int course_id) {
-        return wxNoticeDAO.findAllNoticeWithCourseId(course_id);
+    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id) {
+        List<WxNotice> wxNotices = wxNoticeDAO.findAllNoticeWithCourseId(course_id);
+        List<WxNoticeCell> wxNoticeCells = new LinkedList<WxNoticeCell>();
+        for (WxNotice wxNotice : wxNotices) {
+            wxNoticeCells.add(new WxNoticeCell(wxNotice));
+        }
+        return wxNoticeCells;
     }
 }

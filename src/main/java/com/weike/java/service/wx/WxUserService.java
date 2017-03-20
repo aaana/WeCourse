@@ -19,4 +19,5 @@ public interface WxUserService {
 
     // 获取Account
     public WxUser findUserById(int id);
+    public User findSimpleUserById(int id);
 }

@@ -1,6 +1,7 @@
 package com.weike.java.service.wx;
 
 import com.weike.java.entity.wx.WxNotice;
+import com.weike.java.entity.wx.WxNoticeCell;
 
 import java.util.List;
 
@@ -9,8 +10,8 @@ import java.util.List;
  */
 public interface WxNoticeService {
     // 新建通知
-    public WxNotice createNotice(WxNotice wxNotice);
+    public WxNoticeCell createNotice(WxNotice wxNotice);
 
     // 获得某课程的全部通知
-    public List<WxNotice> getAllNoticesWithCourseId(int course_id);
+    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id);
 }

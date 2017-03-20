@@ -20,6 +20,10 @@ public class WxQuestionDAOImpl implements WxQuestionDAO {
         return (Integer) sessionFactory.getCurrentSession().save(wxQuestion);
     }
 
+    public WxQuestion findQuestionWithId(int id) {
+        return (WxQuestion) sessionFactory.getCurrentSession().createQuery("from WxQuestion where id = ? ").setParameter(0, id).uniqueResult();
+    }
+
     public List<WxQuestion> findAllQuestionWithCourseId(int course_id) {
         return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where course_id  = ? and grandparent_id = -1 order by id desc ").setParameter(0, course_id).list();
     }

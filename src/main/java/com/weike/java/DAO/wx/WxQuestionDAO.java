@@ -10,6 +10,7 @@ import java.util.List;
  */
 public interface WxQuestionDAO {
     public int save(WxQuestion wxQuestion);
+    public WxQuestion findQuestionWithId(int id);
     public List<WxQuestion> findAllQuestionWithCourseId(int course_id);
     public List<WxQuestion> findAllQuestionWithFirstQuestionId(int wxQuestion_id);
 }
