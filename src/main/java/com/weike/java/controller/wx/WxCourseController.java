@@ -32,9 +32,36 @@ public class WxCourseController {
     @Autowired
     private WxUserService wxUserService;
 
-    // 获取全部/搜索 课程
+    // 获取全部课程
     @RequestMapping(value = "/course", method = RequestMethod.GET)
     public Map<String,Object> findCourses(HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") != null ) {
+                int id = Integer.parseInt(subject.get("id").toString());
+                WxUser u = wxUserService.findUserById(id);
+                List<CourseCell> courseCells = findAllCourses(u);
+
+                map.put("user", u);
+                map.put("courses", courseCells);
+                map.put("result", "success");
+            } else {
+                map.put("result", "fail");
+            }
+        }
+        return map;
+    }
+
+    // 搜索 课程
+    @RequestMapping(value = "/search", method = RequestMethod.POST)
+    public Map<String,Object> searchCourses(HttpServletRequest request) throws Exception {
         String token = request.getHeader("Authorization");
         String keyWord = request.getParameter("keyWord");
         String searchField = request.getParameter("searchField");
@@ -49,43 +76,13 @@ public class WxCourseController {
             if (subject.get("id") != null ) {
                 int id = Integer.parseInt(subject.get("id").toString());
                 WxUser u = wxUserService.findUserById(id);
-                List<CourseCell> courseCells;
+                List<CourseCell> courseCells = null;
                 // 只有学生可以搜索
                 if (u.getType() == 1 && keyWord != null && keyWord != "" && searchField != null && searchField != "") {
                     courseCells = searchCourses(u, keyWord, searchField);
-                } else {
-                    courseCells = findAllCourses(u);
                 }
                 map.put("user", u);
                 map.put("courses", courseCells);
-                map.put("result", "success");
-            } else {
-                map.put("result", "fail");
-            }
-        }
-        return map;
-    }
-
-    // 获取某个 课程
-    @RequestMapping(value = "/course/{course_id}", method = RequestMethod.GET)
-    public Map<String,Object> findCertainCourse(@PathVariable String course_id, HttpServletRequest request) throws Exception {
-        String token = request.getHeader("Authorization");
-
-        Map<String,Object> map = new HashMap<String, Object>();
-        if (token == null) {
-            map.put("result", "fail");
-        } else {
-            JwtUtil jwtUtil = new JwtUtil();
-            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
-
-            if (subject.get("id") != null ) {
-                int id = Integer.parseInt(subject.get("id").toString());
-                WxUser u = wxUserService.findUserById(id);
-
-                CourseCell courseCell = courseService.getCourseByCourseId(Integer.parseInt(course_id));
-
-                map.put("user", u);
-                map.put("course", courseCell);
                 map.put("result", "success");
             } else {
                 map.put("result", "fail");
@@ -108,12 +105,38 @@ public class WxCourseController {
         List<CourseCell> courseCells = new LinkedList<CourseCell>();
         if (searchField.equals("id")) {
             int key = Integer.parseInt(keyWord);
-            CourseCell course = courseService.getCourseByCourseId(key);
+            CourseCell course = courseService.getCourseByCourseId(key, u.getId());
             courseCells.add(course);
         } else {
-            courseCells = courseService.getCoursesByCourseName(keyWord);
+            courseCells = courseService.getCoursesByCourseName(keyWord, u.getId());
         }
         return courseCells;
+    }
+
+    // 获取某个 课程
+    @RequestMapping(value = "/course/{course_id}", method = RequestMethod.GET)
+    public Map<String,Object> findCertainCourse(@PathVariable String course_id, HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") != null ) {
+                int id = Integer.parseInt(subject.get("id").toString());
+
+                CourseCell courseCell = courseService.getCourseByCourseId(Integer.parseInt(course_id), id);
+
+                map.put("course", courseCell);
+                map.put("result", "success");
+            } else {
+                map.put("result", "fail");
+            }
+        }
+        return map;
     }
 
     // 新建课程
@@ -163,7 +186,7 @@ public class WxCourseController {
             } else {
                 int id = Integer.parseInt(subject.get("id").toString());
 
-                CourseCell course = courseService.getCourseByCourseId(Integer.parseInt(course_id));
+                Course course = courseService.getSimpleCourseByCourseId(Integer.parseInt(course_id));
                 if (course.getUser_id() == id) {
                     courseService.closeCourse(course);
                     map.put("result", "success");

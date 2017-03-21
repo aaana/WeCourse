@@ -4,6 +4,8 @@ import com.weike.java.DAO.wx.WxQuestionDAO;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by tina on 3/20/17.
@@ -12,13 +14,15 @@ public class WxQuestionCell extends WxQuestion {
     private String publish_time_string;
     private String publisher_name;
 
+    public List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
+
     public WxQuestionCell() {
     }
 
     public WxQuestionCell(WxQuestion wxQuestion) {
         super(wxQuestion.getPublisher_id(), wxQuestion.getContent(), wxQuestion.getPublish_time(), wxQuestion.getParent_id(),
                 wxQuestion.getGrandparent_id(), wxQuestion.getCourse_id());
-        this.setId(this.getId());
+        this.setId(wxQuestion.getId());
 
         DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         try {

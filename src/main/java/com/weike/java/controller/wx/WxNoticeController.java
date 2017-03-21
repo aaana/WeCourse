@@ -43,7 +43,8 @@ public class WxNoticeController {
             if (subject.get("id") == null) {
                 map.put("result", "fail");
             } else {
-                List<WxNoticeCell> wxNoticeCells = wxNoticeService.getAllNoticesWithCourseId(Integer.parseInt(course_id));
+                int id = Integer.parseInt(subject.get("id").toString());
+                List<WxNoticeCell> wxNoticeCells = wxNoticeService.getAllNoticesWithCourseId(Integer.parseInt(course_id), id);
                 map.put("notices", wxNoticeCells);
                 map.put("result", "success");
             }

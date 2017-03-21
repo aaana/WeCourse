@@ -11,6 +11,7 @@ public class CourseCell extends Course {
     private String create_time_string;
     private String teacher_name;
     private Boolean hasJoined;
+    private int unread_num;
 
     public CourseCell() {
     }
@@ -42,5 +43,21 @@ public class CourseCell extends Course {
 
     public void setTeacher_name(String teacher_name) {
         this.teacher_name = teacher_name;
+    }
+
+    public Boolean getHasJoined() {
+        return hasJoined;
+    }
+
+    public void setHasJoined(Boolean hasJoined) {
+        this.hasJoined = hasJoined;
+    }
+
+    public int getUnread_num() {
+        return unread_num;
+    }
+
+    public void setUnread_num(int unread_num) {
+        this.unread_num = unread_num;
     }
 }

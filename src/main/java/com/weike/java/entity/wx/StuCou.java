@@ -19,15 +19,17 @@ public class StuCou {
     private int user_id;
     private int course_id;
     private int attendance;
+    private int unread_num;
 
 
     public StuCou() {
     }
 
-    public StuCou(int user_id, int course_id, int attendance) {
+    public StuCou(int user_id, int course_id, int attendance, int unread_num) {
         this.user_id = user_id;
         this.course_id = course_id;
         this.attendance = attendance;
+        this.unread_num = unread_num;
     }
 
     public int getId() {
@@ -60,5 +62,13 @@ public class StuCou {
 
     public void setAttendance(int attendance) {
         this.attendance = attendance;
+    }
+
+    public int getUnread_num() {
+        return unread_num;
+    }
+
+    public void setUnread_num(int unread_num) {
+        this.unread_num = unread_num;
     }
 }

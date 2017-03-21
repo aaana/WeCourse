@@ -17,12 +17,22 @@ public class StuCouDAOImpl implements StuCouDAO {
     private SessionFactory sessionFactory;
 
     public int save(StuCou stuCou) {
-        return (Integer) sessionFactory.getCurrentSession().save(stuCou);
+        StuCou stuCouTest = findAllStuCouWithCourseIdAndUserId(stuCou.getCourse_id(), stuCou.getUser_id());
+        if (stuCouTest == null) {
+            return (Integer) sessionFactory.getCurrentSession().save(stuCou);
+        } else {
+            return stuCouTest.getId();
+        }
     }
 
 
     public StuCou findAllStuCouWithId(int id) {
         return (StuCou) sessionFactory.getCurrentSession().createQuery("from StuCou where id=?").setParameter(0, id).uniqueResult();
+    }
+
+    public StuCou findAllStuCouWithCourseIdAndUserId(int course_id, int user_id) {
+        return (StuCou) sessionFactory.getCurrentSession().createQuery("from StuCou where course_id=? and user_id = ?")
+                .setParameter(0, course_id).setParameter(1, user_id).uniqueResult();
     }
 
     public List<StuCou> findAllStuCouWithCourseId(int course_id) {
@@ -46,6 +56,16 @@ public class StuCouDAOImpl implements StuCouDAO {
         Query query = sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter(0, user_id);
         query.setParameter(1, course_id);
+
+        return (query.executeUpdate() > 0);
+    }
+
+    public Boolean updateUnreadNum(StuCou stuCou, int unread_num) {
+        String hql = "update StuCou s set s.unread_num = ? where s.user_id = ? and s.course_id = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter(0, unread_num);
+        query.setParameter(1, stuCou.getUser_id());
+        query.setParameter(2, stuCou.getCourse_id());
 
         return (query.executeUpdate() > 0);
     }

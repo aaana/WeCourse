@@ -15,10 +15,10 @@ public interface CourseService {
     public Course closeCourse(Course course);
 
     // 检索课程
-    public CourseCell getCourseByCourseId(int id);
+    public CourseCell getCourseByCourseId(int id, int current_user_id);
     public Course getSimpleCourseByCourseId(int id);
-    public List<CourseCell> getCoursesByCourseName(String course_name);
-    public List<CourseCell> getCoursesByTeacherName(String teacher_name);
+    public List<CourseCell> getCoursesByCourseName(String course_name, int current_user_id);
+    public List<CourseCell> getCoursesByTeacherName(String teacher_name, int current_user_id);
 
     // 获取课程列表
     public List<CourseCell> getCoursesByTeacherId(int teacher_id);

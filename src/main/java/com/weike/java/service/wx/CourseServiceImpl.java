@@ -41,28 +41,28 @@ public class CourseServiceImpl implements CourseService {
         return course;
     }
 
-    public CourseCell getCourseByCourseId(int id) {
-        return transCourse2CourseCell(courseDAO.findCourseById(id));
+    public CourseCell getCourseByCourseId(int id, int current_user_id) {
+        return transCourse2CourseCell(courseDAO.findCourseById(id), current_user_id);
     }
 
     public Course getSimpleCourseByCourseId(int id) {
         return courseDAO.findCourseById(id);
     }
 
-    public List<CourseCell> getCoursesByCourseName(String course_name) {
+    public List<CourseCell> getCoursesByCourseName(String course_name, int current_user_id) {
         List<Course> courses = courseDAO.findCoursesByCourseName(course_name);
         List<CourseCell> courseCells = new LinkedList<CourseCell>();
         for (Course course : courses) {
-            courseCells.add(transCourse2CourseCell(course));
+            courseCells.add(transCourse2CourseCell(course, current_user_id));
         }
         return courseCells;
     }
 
-    public List<CourseCell> getCoursesByTeacherName(String teacher_name) {
+    public List<CourseCell> getCoursesByTeacherName(String teacher_name, int current_user_id) {
         List<Course> courses = courseDAO.findCoursesByTeacherName(teacher_name);
         List<CourseCell> courseCells = new LinkedList<CourseCell>();
         for (Course course : courses) {
-            courseCells.add(transCourse2CourseCell(course));
+            courseCells.add(transCourse2CourseCell(course, current_user_id));
         }
         return courseCells;
     }
@@ -81,13 +81,18 @@ public class CourseServiceImpl implements CourseService {
         List<CourseCell> courseCells = new LinkedList<CourseCell>();
         for (StuCou stuCou : stuCous) {
             Course course = courseDAO.findCourseById(stuCou.getCourse_id());
-            courseCells.add(transCourse2CourseCell(course));
+            if (course == null) {
+                continue;
+            }
+            CourseCell courseCell = transCourse2CourseCell(course);
+            courseCell.setUnread_num(stuCou.getUnread_num());
+            courseCells.add(courseCell);
         }
         return courseCells;
     }
 
     public CourseCell joinNewCourse(int user_id, int course_id) {
-        StuCou stuCou = new StuCou(user_id, course_id, 0);
+        StuCou stuCou = new StuCou(user_id, course_id, 0, 0);
         stuCouDAO.save(stuCou);
         CourseCell courseCell = transCourse2CourseCell(courseDAO.findCourseById(course_id));
         courseCell.setStu_num(courseCell.getStu_num() + 1);
@@ -113,12 +118,30 @@ public class CourseServiceImpl implements CourseService {
         CourseCell courseCell = new CourseCell(course);
         User user = userDAO.findUserWithId(course.getUser_id());
         courseCell.setTeacher_name(user.getName());
+        courseCell.setHasJoined(true);
+        courseCell.setUnread_num(0);
+        return  courseCell;
+    }
+
+    public CourseCell transCourse2CourseCell(Course course, int currentUser_id) {
+        CourseCell courseCell = new CourseCell(course);
+        User user = userDAO.findUserWithId(course.getUser_id());
+        courseCell.setTeacher_name(user.getName());
+        StuCou stuCou = stuCouDAO.findAllStuCouWithCourseIdAndUserId(courseCell.getId(), currentUser_id);
+        if (stuCou == null) {
+            courseCell.setHasJoined(false);
+            courseCell.setUnread_num(0);
+        } else {
+            courseCell.setHasJoined(true);
+            courseCell.setUnread_num(stuCou.getUnread_num());
+        }
         return  courseCell;
     }
 
     public CourseCell transCourse2CourseCell(Course course, String teacher_name) {
         CourseCell courseCell = new CourseCell(course);
         courseCell.setTeacher_name(teacher_name);
+        courseCell.setHasJoined(true);
         return  courseCell;
     }
 

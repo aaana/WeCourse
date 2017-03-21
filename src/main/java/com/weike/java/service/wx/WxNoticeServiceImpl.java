@@ -1,6 +1,8 @@
 package com.weike.java.service.wx;
 
+import com.weike.java.DAO.wx.StuCouDAO;
 import com.weike.java.DAO.wx.WxNoticeDAO;
+import com.weike.java.entity.wx.StuCou;
 import com.weike.java.entity.wx.WxNotice;
 import com.weike.java.entity.wx.WxNoticeCell;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,18 +23,31 @@ public class WxNoticeServiceImpl implements WxNoticeService {
     @Autowired
     private WxNoticeDAO wxNoticeDAO;
 
+    @Autowired
+    private StuCouDAO stuCouDAO;
+
     public WxNoticeCell createNotice(WxNotice wxNotice) {
         int id = wxNoticeDAO.save(wxNotice);
         wxNotice.setId(id);
+
+        List<StuCou> stuCous = stuCouDAO.findAllStuCouWithCourseId(wxNotice.getCourse_id());
+        for (StuCou stuCou : stuCous) {
+            stuCouDAO.updateUnreadNum(stuCou, stuCou.getUnread_num() + 1);
+        }
+
         return new WxNoticeCell(wxNotice);
     }
 
-    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id) {
+    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id, int current_user_id) {
         List<WxNotice> wxNotices = wxNoticeDAO.findAllNoticeWithCourseId(course_id);
         List<WxNoticeCell> wxNoticeCells = new LinkedList<WxNoticeCell>();
         for (WxNotice wxNotice : wxNotices) {
             wxNoticeCells.add(new WxNoticeCell(wxNotice));
         }
+
+        StuCou stuCou = stuCouDAO.findAllStuCouWithCourseIdAndUserId(course_id, current_user_id);
+        stuCouDAO.updateUnreadNum(stuCou, 0);
+
         return wxNoticeCells;
     }
 }

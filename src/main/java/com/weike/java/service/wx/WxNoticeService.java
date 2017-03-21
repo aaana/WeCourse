@@ -13,5 +13,5 @@ public interface WxNoticeService {
     public WxNoticeCell createNotice(WxNotice wxNotice);
 
     // 获得某课程的全部通知
-    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id);
+    public List<WxNoticeCell> getAllNoticesWithCourseId(int course_id, int current_user_id);
 }

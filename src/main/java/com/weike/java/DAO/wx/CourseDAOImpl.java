@@ -22,20 +22,20 @@ public class CourseDAOImpl implements CourseDAO {
     }
 
     public Course findCourseById(int id) {
-        return (Course) sessionFactory.getCurrentSession().createQuery("from Course where id=?").setParameter(0, id).uniqueResult();
+        return (Course) sessionFactory.getCurrentSession().createQuery("from Course where id=? and available = true").setParameter(0, id).uniqueResult();
 
     }
 
     public List<Course> findCoursesByCourseName(String course_name) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("from Course where course_name like ?").setParameter(0, "%" + course_name + "%").list();
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("from Course where course_name like ? and available = true").setParameter(0, "%" + course_name + "%").list();
     }
 
     public List<Course> findCoursesByTeacherName(String teacher_name) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("SELECT Course.* FROM Course, User WHERE Course.user_id = User.id and User.name LIKE ?").setParameter(0, "%" + teacher_name + "%").list();
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("SELECT Course.* FROM Course, User WHERE Course.user_id = User.id and User.name LIKE ? and Course.available = true").setParameter(0, "%" + teacher_name + "%").list();
     }
 
     public List<Course> findCoursesByUserId(int user_id) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("FROM Course WHERE user_id = ?").setParameter(0, user_id).list();
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("FROM Course WHERE user_id = ? and available = true").setParameter(0, user_id).list();
     }
 
     public Boolean updateCourseInfo(Course course) {
