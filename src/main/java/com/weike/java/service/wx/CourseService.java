@@ -24,7 +24,7 @@ public interface CourseService {
     public List<CourseCell> getCoursesByTeacherId(int teacher_id);
     public List<CourseCell> getCoursesByStuId(int user_id);
 
-    // 新加入课程
+    // 新同学加入课程
     public CourseCell joinNewCourse(int user_id, int course_id);
 
     // 点到

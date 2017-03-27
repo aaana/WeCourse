@@ -39,12 +39,13 @@ public class CourseDAOImpl implements CourseDAO {
     }
 
     public Boolean updateCourseInfo(Course course) {
-        String hql = "update Course c set c.stu_num = ?, c.attendance_num=?, c.available=? where c.id = ?";
+        String hql = "update Course c set c.update_time = ?, c.stu_num = ?, c.attendance_num=?, c.available=? where c.id = ?";
         Query query = sessionFactory.getCurrentSession().createQuery(hql);
-        query.setParameter(0, course.getStu_num());
-        query.setParameter(1, course.getAttendance_num());
-        query.setParameter(2, course.getAvailable());
-        query.setParameter(3, course.getId());
+        query.setParameter(0, course.getUpdate_time());
+        query.setParameter(1, course.getStu_num());
+        query.setParameter(2, course.getAttendance_num());
+        query.setParameter(3, course.getAvailable());
+        query.setParameter(4, course.getId());
 
         return (query.executeUpdate() > 0);
     }

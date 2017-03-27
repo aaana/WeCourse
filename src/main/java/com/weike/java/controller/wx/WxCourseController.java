@@ -156,7 +156,7 @@ public class WxCourseController {
                 int id = Integer.parseInt(subject.get("id").toString());
                 WxUser u = wxUserService.findUserById(id);
 
-                Course course = new Course(u.getId(), course_name,  new Timestamp(System.currentTimeMillis()), 0, 0, true);
+                Course course = new Course(u.getId(), course_name,  new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis()), 0, 0, true);
                 CourseCell courseCell = courseService.transCourse2CourseCell(courseService.createCourse(course), u.getName());
 
                 map.put("user", u);

@@ -102,7 +102,7 @@ public class CourseServiceImpl implements CourseService {
 
     public Boolean increaseAttendance(int user_id, int course_id) {
         Course course = courseDAO.findCourseById(course_id);
-        if (user_id == course.getUser_id()) {
+        if (course != null && user_id == course.getUser_id()) {
             course.setAttendance_num(course.getAttendance_num() + 1);
             courseDAO.updateCourseInfo(course);
             return true;

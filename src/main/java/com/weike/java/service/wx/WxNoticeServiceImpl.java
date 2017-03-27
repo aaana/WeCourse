@@ -1,7 +1,9 @@
 package com.weike.java.service.wx;
 
+import com.weike.java.DAO.wx.CourseDAO;
 import com.weike.java.DAO.wx.StuCouDAO;
 import com.weike.java.DAO.wx.WxNoticeDAO;
+import com.weike.java.entity.wx.Course;
 import com.weike.java.entity.wx.StuCou;
 import com.weike.java.entity.wx.WxNotice;
 import com.weike.java.entity.wx.WxNoticeCell;
@@ -10,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Timestamp;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -26,10 +29,19 @@ public class WxNoticeServiceImpl implements WxNoticeService {
     @Autowired
     private StuCouDAO stuCouDAO;
 
+    @Autowired
+    private CourseDAO courseDAO;
+
     public WxNoticeCell createNotice(WxNotice wxNotice) {
         int id = wxNoticeDAO.save(wxNotice);
         wxNotice.setId(id);
 
+        //更新课程的update_time
+        Course course = courseDAO.findCourseById(wxNotice.getCourse_id());
+        course.setUpdate_time(new Timestamp(System.currentTimeMillis()));
+        courseDAO.updateCourseInfo(course);
+
+        // 每个学生-课程的unread_num加一
         List<StuCou> stuCous = stuCouDAO.findAllStuCouWithCourseId(wxNotice.getCourse_id());
         for (StuCou stuCou : stuCous) {
             stuCouDAO.updateUnreadNum(stuCou, stuCou.getUnread_num() + 1);
