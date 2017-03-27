@@ -35,19 +35,24 @@ public class WxQuestionServiceImpl implements WxQuestionService {
 
     public List<WxQuestionCell> getAllQuestionWithCourseId(int course_id) {
         List<WxQuestion> wxQuestions = wxQuestionDAO.findAllQuestionWithCourseId(course_id);
-        return transWxQUestion2QuestionCell(wxQuestions);
+        return transWxQUestion2QuestionCell(wxQuestions, true);
     }
 
     public List<WxQuestionCell> getAllQuestionWithFirstQuestionId(int wxQuestion_id) {
         List<WxQuestion> wxQuestions = wxQuestionDAO.findAllQuestionWithFirstQuestionId(wxQuestion_id);
-        List<WxQuestionCell> wxQuestionCells = transWxQUestion2QuestionCell(wxQuestions);
+        List<WxQuestionCell> wxQuestionCells = transWxQUestion2QuestionCell(wxQuestions, false);
         return transWxQUestionCell2NestWxQuestionCell(wxQuestionCells);
     }
 
-    public List<WxQuestionCell> transWxQUestion2QuestionCell(List<WxQuestion> wxQuestions) {
+    public List<WxQuestionCell> transWxQUestion2QuestionCell(List<WxQuestion> wxQuestions, Boolean hasAnswerNum) {
         List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
         for (WxQuestion wxQuestion : wxQuestions) {
-            wxQuestionCells.add(new WxQuestionCell(wxQuestion));
+            WxQuestionCell wxQuestionCell = new WxQuestionCell(wxQuestion);
+            if (hasAnswerNum) {
+                int answer_num = wxQuestionDAO.getAnswerNumWithQuestionId(wxQuestion.getId());
+                wxQuestionCell.setAnswer_num(answer_num);
+            }
+            wxQuestionCells.add(wxQuestionCell);
         }
         return wxQuestionCells;
     }

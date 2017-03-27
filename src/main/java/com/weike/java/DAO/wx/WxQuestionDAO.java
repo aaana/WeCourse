@@ -13,4 +13,5 @@ public interface WxQuestionDAO {
     public WxQuestion findQuestionWithId(int id);
     public List<WxQuestion> findAllQuestionWithCourseId(int course_id);
     public List<WxQuestion> findAllQuestionWithFirstQuestionId(int wxQuestion_id);
+    public int getAnswerNumWithQuestionId(int id);
 }

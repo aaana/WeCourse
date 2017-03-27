@@ -31,4 +31,8 @@ public class WxQuestionDAOImpl implements WxQuestionDAO {
     public List<WxQuestion> findAllQuestionWithFirstQuestionId(int wxQuestion_id) {
         return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where grandparent_id = ? order by id desc ").setParameter(0, wxQuestion_id).list();
     }
+
+    public int getAnswerNumWithQuestionId(int id) {
+        return sessionFactory.getCurrentSession().createQuery("from WxQuestion where grandparent_id = ?  ").setParameter(0, id).list().size();
+    }
 }

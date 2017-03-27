@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class WxQuestionCell extends WxQuestion {
     private String publish_time_string;
+    private int answer_num;
     private String publisher_name;
 
     public List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
@@ -46,5 +47,13 @@ public class WxQuestionCell extends WxQuestion {
 
     public void setPublisher_name(String publisher_name) {
         this.publisher_name = publisher_name;
+    }
+
+    public int getAnswer_num() {
+        return answer_num;
+    }
+
+    public void setAnswer_num(int answer_num) {
+        this.answer_num = answer_num;
     }
 }
