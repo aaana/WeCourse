@@ -29,6 +29,10 @@ public class WxQuestionServiceImpl implements WxQuestionService {
         return new WxQuestionCell(wxQuestion);
     }
 
+    public WxQuestion getSimpleQuestionWithId(int id) {
+        return wxQuestionDAO.findQuestionWithId(id);
+    }
+
     public WxQuestionCell getQuestionWithId(int id) {
         return new WxQuestionCell(wxQuestionDAO.findQuestionWithId(id));
     }

@@ -10,6 +10,7 @@ import java.util.List;
 public interface WxMessageDAO {
     public int save(WxMessage wxMessage);
     public Boolean updateReadStatus(int message_id);
+    public WxMessage findMessageWithId(int id);
     public List<WxMessage> findAllMessageWithReceiverId(int receiver_id);
     public List<WxMessage> findAllUnreadMessageWithReceiverId(int receiver_id);
     public List<WxMessage> findAllMessageWithReceiverIdAndType(int receiver_id, int type);

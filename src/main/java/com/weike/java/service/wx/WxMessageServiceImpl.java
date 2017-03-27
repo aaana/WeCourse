@@ -31,14 +31,16 @@ public class WxMessageServiceImpl implements WxMessageService {
     private CourseDAO courseDAO;
 
 
-    public WxMessageCell saveNotice(WxMessage wxMessage) {
-        int id = wxMessageDAO.save(wxMessage);
-        wxMessage.setId(id);
-        return transWxMessage2WxMessageCell(wxMessage);
+    public int saveNotice(WxMessage wxMessage) {
+        return wxMessageDAO.save(wxMessage);
     }
 
     public Boolean readMessage(int message_id) {
         return wxMessageDAO.updateReadStatus(message_id);
+    }
+
+    public WxMessage getSimpleMessageWithId(int message_id) {
+        return wxMessageDAO.findMessageWithId(message_id);
     }
 
     public List<WxMessageCell> getMessageWithUserId(int user_id) {
@@ -70,6 +72,7 @@ public class WxMessageServiceImpl implements WxMessageService {
         List<WxMessageCell> wxMessageCells = new LinkedList<WxMessageCell>();
         for (WxMessage message : wxMessages) {
             WxMessageCell wxMessageCell = transWxMessage2WxMessageCell(message);
+            wxMessageCells.add(wxMessageCell);
         }
         return wxMessageCells;
     }

@@ -1,9 +1,8 @@
 package com.weike.java.controller.wx;
 
-import com.weike.java.entity.wx.Course;
-import com.weike.java.entity.wx.WxNotice;
-import com.weike.java.entity.wx.WxQuestion;
-import com.weike.java.entity.wx.WxQuestionCell;
+import com.weike.java.DAO.wx.CourseDAO;
+import com.weike.java.entity.wx.*;
+import com.weike.java.service.wx.WxMessageService;
 import com.weike.java.service.wx.WxQuestionService;
 import com.weike.java.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +26,12 @@ public class WxQuestionController {
     @Autowired
     private WxQuestionService wxQuestionService;
 
+    @Autowired
+    private WxMessageService wxMessageService;
+
+    @Autowired
+    private CourseDAO courseDAO;
+
     // 新建提问
     @RequestMapping(value = "/course/{course_id}/question", method = RequestMethod.POST)
     public Map<String,Object> newQuestion(@PathVariable String course_id, HttpServletRequest request) throws Exception {
@@ -47,6 +52,12 @@ public class WxQuestionController {
                 WxQuestion wxQuestion = new WxQuestion(id, content, new Timestamp(System.currentTimeMillis()), -1, -1, Integer.parseInt(course_id));
                 WxQuestionCell wxQuestionCell = wxQuestionService.createQuestion(wxQuestion);
                 map.put("question", wxQuestionCell);
+
+                // 当前课程教师收到一条消息
+                Course course = courseDAO.findCourseById(Integer.parseInt(course_id));
+                WxMessage wxMessage = new WxMessage(id, course.getUser_id(), 1, new Timestamp(System.currentTimeMillis()), wxQuestionCell.getId(), false);
+                wxMessageService.saveNotice(wxMessage);
+
                 map.put("result", "success");
             }
         }
@@ -98,6 +109,21 @@ public class WxQuestionController {
                 WxQuestion wxQuestion = new WxQuestion(id, content, new Timestamp(System.currentTimeMillis()), Integer.parseInt(parent_id), Integer.parseInt(question_id), Integer.parseInt(course_id));
                 WxQuestionCell wxQuestionCell = wxQuestionService.createQuestion(wxQuestion);
                 map.put("question", wxQuestionCell);
+
+                // 当前问题提问者收到一条消息
+                wxQuestion = wxQuestionService.getSimpleQuestionWithId(Integer.parseInt(question_id));
+                WxMessage wxMessage = new WxMessage(id, wxQuestion.getPublisher_id(), 2, new Timestamp(System.currentTimeMillis()), wxQuestionCell.getId(), false);
+                wxMessageService.saveNotice(wxMessage);
+
+                // 当前回复对象收到一条消息
+                if (!parent_id.equals("-1")) {
+                    WxQuestion wxQuestion2 = wxQuestionService.getSimpleQuestionWithId(Integer.parseInt(parent_id));
+                    if (id != wxQuestion.getPublisher_id() && wxQuestion.getPublisher_id() != wxQuestion2.getPublisher_id()) {
+                        wxMessage = new WxMessage(id, wxQuestion.getPublisher_id(), 3, new Timestamp(System.currentTimeMillis()), wxQuestionCell.getId(), false);
+                        wxMessageService.saveNotice(wxMessage);
+                    }
+                }
+
                 map.put("result", "success");
             }
         }

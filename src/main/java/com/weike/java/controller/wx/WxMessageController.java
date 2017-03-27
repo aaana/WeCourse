@@ -1,7 +1,7 @@
 package com.weike.java.controller.wx;
 
-import com.weike.java.entity.wx.WxQuestion;
-import com.weike.java.entity.wx.WxQuestionCell;
+import com.weike.java.entity.wx.WxMessage;
+import com.weike.java.entity.wx.WxMessageCell;
 import com.weike.java.service.wx.WxMessageService;
 import com.weike.java.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Timestamp;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -40,10 +41,38 @@ public class WxMessageController {
                 map.put("result", "fail");
             } else {
                 int id = Integer.parseInt(subject.get("id").toString());
+                List<WxMessageCell> wxMessageCells = wxMessageService.getMessageWithUserId(id);
 
-
-                map.put("messages", null);
+                map.put("messages", wxMessageCells);
                 map.put("result", "success");
+            }
+        }
+        return map;
+    }
+
+    //阅读某条消息
+    @RequestMapping(value = "/message/{message_id}", method = RequestMethod.POST)
+    public Map<String,Object> changMessageState(@PathVariable String message_id, HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") == null) {
+                map.put("result", "fail");
+            } else {
+                int id = Integer.parseInt(subject.get("id").toString());
+                WxMessage wxMessage = wxMessageService.getSimpleMessageWithId(Integer.parseInt(message_id));
+                if (id == wxMessage.getReceiver_id()) {
+                    wxMessageService.readMessage(Integer.parseInt(message_id));
+                    map.put("result", "success");
+                } else {
+                    map.put("result", "fail");
+                }
             }
         }
         return map;
@@ -65,9 +94,34 @@ public class WxMessageController {
                 map.put("result", "fail");
             } else {
                 int id = Integer.parseInt(subject.get("id").toString());
+                List<WxMessageCell> wxMessageCells = wxMessageService.getUnreadMessageWithUserId(id);
 
+                map.put("messages", wxMessageCells);
+                map.put("result", "success");
+            }
+        }
+        return map;
+    }
 
-                map.put("messages", null);
+    //获取未读消息数量
+    @RequestMapping(value = "/unreadMessages/num", method = RequestMethod.GET)
+    public Map<String,Object> getUnreadMessagesNum(HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") == null) {
+                map.put("result", "fail");
+            } else {
+                int id = Integer.parseInt(subject.get("id").toString());
+                int num = wxMessageService.getUnreadMessageNum(id);
+
+                map.put("unreadMessageNum", num);
                 map.put("result", "success");
             }
         }

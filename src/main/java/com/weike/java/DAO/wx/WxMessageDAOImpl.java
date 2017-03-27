@@ -31,6 +31,10 @@ public class WxMessageDAOImpl implements WxMessageDAO {
         return (query.executeUpdate() > 0);
     }
 
+    public WxMessage findMessageWithId(int id) {
+        return (WxMessage) sessionFactory.getCurrentSession().createQuery("from WxMessage where id=? ").setParameter(0, id).uniqueResult();
+    }
+
     public List<WxMessage> findAllMessageWithReceiverId(int receiver_id) {
         return (List<WxMessage>) sessionFactory.getCurrentSession().createQuery("from WxMessage where receiver_id=? order by id desc").setParameter(0, receiver_id).list();
     }

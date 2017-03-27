@@ -14,6 +14,7 @@ public interface WxQuestionService {
     public WxQuestionCell createQuestion(WxQuestion wxQuestion);
 
     // 获取WxQuestion
+    public WxQuestion getSimpleQuestionWithId(int id);
     public WxQuestionCell getQuestionWithId(int id);
     public List<WxQuestionCell> getAllQuestionWithCourseId(int course_id);
     public List<WxQuestionCell> getAllQuestionWithFirstQuestionId(int wxQuestion_id);
