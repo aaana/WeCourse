@@ -13,9 +13,13 @@ import java.util.List;
 public class WxQuestionCell extends WxQuestion {
     private String publish_time_string;
     private int answer_num;
-    private String publisher_name;
 
-    public List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
+    private String publisher_name;
+    private int level_num;
+    private String target_user_name;
+    private int target_level_num;
+
+    // public List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
 
     public WxQuestionCell() {
     }
@@ -56,4 +60,29 @@ public class WxQuestionCell extends WxQuestion {
     public void setAnswer_num(int answer_num) {
         this.answer_num = answer_num;
     }
+
+    public int getLevel_num() {
+        return level_num;
+    }
+
+    public void setLevel_num(int level_num) {
+        this.level_num = level_num;
+    }
+
+    public String getTarget_user_name() {
+        return target_user_name;
+    }
+
+    public void setTarget_user_name(String target_user_name) {
+        this.target_user_name = target_user_name;
+    }
+
+    public int getTarget_level_num() {
+        return target_level_num;
+    }
+
+    public void setTarget_level_num(int target_level_num) {
+        this.target_level_num = target_level_num;
+    }
 }
+

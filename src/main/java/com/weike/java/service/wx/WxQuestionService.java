@@ -17,5 +17,5 @@ public interface WxQuestionService {
     public WxQuestion getSimpleQuestionWithId(int id);
     public WxQuestionCell getQuestionWithId(int id);
     public List<WxQuestionCell> getAllQuestionWithCourseId(int course_id);
-    public List<WxQuestionCell> getAllQuestionWithFirstQuestionId(int wxQuestion_id);
+    public List<WxQuestionCell> getAllQuestionWithFirstQuestionId(int wxQuestion_id, int user_id);
 }

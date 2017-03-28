@@ -146,8 +146,9 @@ public class WxQuestionController {
             if (subject.get("id") == null) {
                 map.put("result", "fail");
             } else {
+                int id = Integer.parseInt(subject.get("id").toString());
                 WxQuestionCell wxQuestionCell = wxQuestionService.getQuestionWithId(Integer.parseInt(question_id));
-                List<WxQuestionCell> wxAnswerCells = wxQuestionService.getAllQuestionWithFirstQuestionId(Integer.parseInt(question_id));
+                List<WxQuestionCell> wxAnswerCells = wxQuestionService.getAllQuestionWithFirstQuestionId(Integer.parseInt(question_id), id);
                 map.put("question", wxQuestionCell);
                 map.put("answers", wxAnswerCells);
                 map.put("result", "success");
