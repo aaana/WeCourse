@@ -14,14 +14,14 @@ public class Account {
     @Id
     @GeneratedValue
     private int id;
-    private int wechat_id;
+    private String wechat_id;
     private int wecourse_id;
     private int student_id;
 
     public Account() {
     }
 
-    public Account(int wechat_id, int wecourse_id, int student_id) {
+    public Account(String wechat_id, int wecourse_id, int student_id) {
         this.wechat_id = wechat_id;
         this.wecourse_id = wecourse_id;
         this.student_id = student_id;
@@ -35,11 +35,11 @@ public class Account {
         this.id = id;
     }
 
-    public int getWechat_id() {
+    public String getWechat_id() {
         return wechat_id;
     }
 
-    public void setWechat_id(int wechat_id) {
+    public void setWechat_id(String wechat_id) {
         this.wechat_id = wechat_id;
     }
 

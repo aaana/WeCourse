@@ -12,10 +12,10 @@ public interface WxUserService {
     public User login(String email, String password);
 
     // 绑定
-    public WxUser newAccount(User user, int wechat_id, int student_id);
+    public WxUser newAccount(User user, String wechat_id, int student_id);
 
     // 检查记录
-    public WxUser checkAccount(int wechat_id);
+    public WxUser checkAccount(String wechat_id);
 
     // 获取Account
     public WxUser findUserById(int id);

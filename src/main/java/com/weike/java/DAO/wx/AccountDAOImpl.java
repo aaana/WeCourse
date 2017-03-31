@@ -20,7 +20,7 @@ public class AccountDAOImpl implements AccountDAO {
         return (Integer) sessionFactory.getCurrentSession().save(a);
     }
 
-    public Account checkAccount(int wechat_id) {
+    public Account checkAccount(String wechat_id) {
         return (Account) sessionFactory.getCurrentSession().createQuery("from Account where wechat_id=?").setParameter(0, wechat_id).uniqueResult();
     }
 }

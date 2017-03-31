@@ -27,14 +27,17 @@ public class WxUserServiceImpl implements WxUserService {
         return userDao.findUserWithEmailAndPw(email, password);
     }
 
-    public WxUser newAccount(User user, int wechat_id, int student_id) {
+    public WxUser newAccount(User user, String wechat_id, int student_id) {
         Account account = new Account(wechat_id, user.getId(), student_id);
         accountDAO.save(account);
         return transUser2WxUser(user, student_id);
     }
 
-    public WxUser checkAccount(int wechat_id) {
+    public WxUser checkAccount(String wechat_id) {
         Account account = accountDAO.checkAccount(wechat_id);
+        if (account == null) {
+            return null;
+        }
         User user = userDao.findUserWithId(account.getWecourse_id());
         return transUser2WxUser(user, account.getStudent_id());
     }

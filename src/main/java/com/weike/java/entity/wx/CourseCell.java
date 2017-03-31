@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
  */
 public class CourseCell extends Course {
     private String create_time_string;
+    private String update_time_string;
     private String teacher_name;
     private Boolean hasJoined;
     private int unread_num;
@@ -24,6 +25,7 @@ public class CourseCell extends Course {
         DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         try {
             this.create_time_string = sdf.format(this.getCreate_time());
+            this.update_time_string = sdf.format(this.getUpdate_time());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -59,5 +61,13 @@ public class CourseCell extends Course {
 
     public void setUnread_num(int unread_num) {
         this.unread_num = unread_num;
+    }
+
+    public String getUpdate_time_string() {
+        return update_time_string;
+    }
+
+    public void setUpdate_time_string(String update_time_string) {
+        this.update_time_string = update_time_string;
     }
 }

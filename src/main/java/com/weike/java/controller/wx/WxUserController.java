@@ -23,7 +23,7 @@ public class WxUserController {
     // 检测该微信号是否已绑定
     @RequestMapping(value = "/account", method = RequestMethod.GET)
     public Map<String,Object> checkAccountExist(HttpServletRequest request) throws Exception {
-        Integer wechat_id = Integer.parseInt(request.getParameter("wechat_id"));
+        String wechat_id = request.getParameter("wechat_id");
 
         User u = wxUserService.checkAccount(wechat_id);
 
@@ -74,7 +74,7 @@ public class WxUserController {
     //绑定账号
     @RequestMapping(value = "/account", method = RequestMethod.POST)
     public Map<String,Object> setStudentId(HttpServletRequest request) throws Exception {
-        Integer wechat_id = Integer.parseInt(request.getParameter("wechat_id"));
+        String wechat_id = request.getParameter("wechat_id");
         Integer student_id = Integer.parseInt(request.getParameter("student_id"));
         String token = request.getHeader("Authorization");
 

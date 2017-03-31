@@ -10,5 +10,5 @@ import java.util.List;
  */
 public interface AccountDAO {
     public int save(Account u);
-    public Account checkAccount(int wechat_id);
+    public Account checkAccount(String wechat_id);
 }
