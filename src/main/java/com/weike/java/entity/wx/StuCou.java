@@ -20,16 +20,18 @@ public class StuCou {
     private int course_id;
     private int attendance;
     private int unread_num;
+    private int use_qrcode_id;
 
 
     public StuCou() {
     }
 
-    public StuCou(int user_id, int course_id, int attendance, int unread_num) {
+    public StuCou(int user_id, int course_id, int attendance, int unread_num, int use_qrcode_id) {
         this.user_id = user_id;
         this.course_id = course_id;
         this.attendance = attendance;
         this.unread_num = unread_num;
+        this.use_qrcode_id = use_qrcode_id;
     }
 
     public int getId() {
@@ -70,5 +72,13 @@ public class StuCou {
 
     public void setUnread_num(int unread_num) {
         this.unread_num = unread_num;
+    }
+
+    public int getUse_qrcode_id() {
+        return use_qrcode_id;
+    }
+
+    public void setUse_qrcode_id(int use_qrcode_id) {
+        this.use_qrcode_id = use_qrcode_id;
     }
 }

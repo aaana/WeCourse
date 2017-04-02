@@ -3,6 +3,7 @@ package com.weike.java.service.wx;
 import com.weike.java.entity.wx.Course;
 import com.weike.java.entity.wx.CourseCell;
 import com.weike.java.entity.wx.WxUser;
+import org.weixin4j.WeixinException;
 
 import java.util.List;
 
@@ -28,7 +29,7 @@ public interface CourseService {
     public CourseCell joinNewCourse(int user_id, int course_id);
 
     // 点到
-    public Boolean increaseAttendance(int user_id, int course_id);
+    public String increaseAttendance(int user_id, int course_id, String path) throws WeixinException;
     // 签到
     public Boolean attendCourse(int user_id, int course_id);
 

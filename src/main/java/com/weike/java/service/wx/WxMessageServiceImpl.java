@@ -78,6 +78,9 @@ public class WxMessageServiceImpl implements WxMessageService {
     }
 
     public WxMessageCell transWxMessage2WxMessageCell(WxMessage wxMessage) {
+        if (wxMessage == null) {
+            return null;
+        }
         WxMessageCell wxMessageCell = new WxMessageCell(wxMessage);
 
         // 1:老师收到当有人在他的课中匿名提问

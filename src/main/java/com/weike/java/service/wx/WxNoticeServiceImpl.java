@@ -58,7 +58,11 @@ public class WxNoticeServiceImpl implements WxNoticeService {
         }
 
         StuCou stuCou = stuCouDAO.findAllStuCouWithCourseIdAndUserId(course_id, current_user_id);
-        stuCouDAO.updateUnreadNum(stuCou, 0);
+        if (stuCou != null) {
+            //身份为学生
+            stuCouDAO.updateUnreadNum(stuCou, 0);
+        }
+
 
         return wxNoticeCells;
     }

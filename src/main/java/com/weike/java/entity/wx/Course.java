@@ -22,11 +22,12 @@ public class Course {
     private int stu_num;
     private int attendance_num;
     private Boolean available;
+    private int qrcode_id;
 
     public Course() {
     }
 
-    public Course(int user_id, String course_name, Timestamp create_time, Timestamp update_time, int stu_num, int attendance_num, Boolean available) {
+    public Course(int user_id, String course_name, Timestamp create_time, Timestamp update_time, int stu_num, int attendance_num, Boolean available, int qrcode_id) {
         this.user_id = user_id;
         this.course_name = course_name;
         this.create_time = create_time;
@@ -34,6 +35,7 @@ public class Course {
         this.stu_num = stu_num;
         this.attendance_num = attendance_num;
         this.available = available;
+        this.qrcode_id = qrcode_id;
     }
 
     public int getId() {
@@ -98,5 +100,13 @@ public class Course {
 
     public void setUpdate_time(Timestamp update_time) {
         this.update_time = update_time;
+    }
+
+    public int getQrcode_id() {
+        return qrcode_id;
+    }
+
+    public void setQrcode_id(int qrcode_id) {
+        this.qrcode_id = qrcode_id;
     }
 }

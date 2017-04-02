@@ -18,7 +18,7 @@ public class CourseCell extends Course {
     }
 
     public CourseCell(Course course) {
-        super(course.getUser_id(), course.getCourse_name(), course.getCreate_time(), course.getUpdate_time(), course.getStu_num(), course.getAttendance_num(), course.getAvailable());
+        super(course.getUser_id(), course.getCourse_name(), course.getCreate_time(), course.getUpdate_time(), course.getStu_num(), course.getAttendance_num(), course.getAvailable(), course.getQrcode_id());
 
         this.setId(course.getId());
 

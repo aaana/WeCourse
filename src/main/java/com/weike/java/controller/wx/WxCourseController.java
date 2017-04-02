@@ -6,7 +6,9 @@ import com.weike.java.entity.wx.CourseCell;
 import com.weike.java.entity.wx.WxUser;
 import com.weike.java.service.wx.CourseService;
 import com.weike.java.service.wx.WxUserService;
+import com.weike.java.util.HttpClientUtil;
 import com.weike.java.util.JwtUtil;
+import com.weike.java.util.WeixinUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -156,7 +159,7 @@ public class WxCourseController {
                 int id = Integer.parseInt(subject.get("id").toString());
                 WxUser u = wxUserService.findUserById(id);
 
-                Course course = new Course(u.getId(), course_name,  new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis()), 0, 0, true);
+                Course course = new Course(u.getId(), course_name,  new Timestamp(System.currentTimeMillis()), new Timestamp(System.currentTimeMillis()), 0, 0, true, 0);
                 CourseCell courseCell = courseService.transCourse2CourseCell(courseService.createCourse(course), u.getName());
 
                 map.put("user", u);
@@ -242,8 +245,17 @@ public class WxCourseController {
                 int courseId = Integer.parseInt(course_id);
                 User user = wxUserService.findUserById(id);
 
-                if (user.getType() == 0 && courseService.increaseAttendance(id, courseId)) {
-                    map.put("result", "success");
+                if (user.getType() == 0) {
+                    String path = request.getSession().getServletContext().getRealPath("/qrcodes");
+                    File directory = new File(path);
+                    if(!directory.exists()) {
+                        directory.mkdirs();
+                    }
+                    String fileName = courseService.increaseAttendance(id, courseId, path);
+                    if (fileName != null) {
+                        map.put("qrcodeSrc", "/qrcodes/" + fileName);
+                        map.put("result", "success");
+                    }
                 } else if (courseService.attendCourse(id, courseId)) {
                     map.put("result", "success");
                 } else {
