@@ -105,6 +105,9 @@ public class CourseServiceImpl implements CourseService {
         StuCou stuCou = new StuCou(user_id, course_id, 0, 0, 0);
         stuCouDAO.save(stuCou);
         CourseCell courseCell = transCourse2CourseCell(courseDAO.findCourseById(course_id));
+        if (courseCell == null) {
+            return null;
+        }
         courseCell.setStu_num(courseCell.getStu_num() + 1);
         courseDAO.updateCourseInfo(courseCell);
         return courseCell;

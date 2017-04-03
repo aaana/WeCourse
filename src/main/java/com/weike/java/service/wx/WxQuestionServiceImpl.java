@@ -54,6 +54,11 @@ public class WxQuestionServiceImpl implements WxQuestionService {
         return transWxQUestionCell2WellPreparedWxQuestionCell(wxQuestionCells, user_id, wxQuestion_id);
     }
 
+    public List<WxQuestionCell> getAllQuestionWithRaiserId(int user_id) {
+        List<WxQuestion> wxQuestions = wxQuestionDAO.findAllQuestionWithRaiserId(user_id);
+        return transWxQUestion2QuestionCell(wxQuestions, true);
+    }
+
     public List<WxQuestionCell> transWxQUestion2QuestionCell(List<WxQuestion> wxQuestions, Boolean hasAnswerNum) {
         List<WxQuestionCell> wxQuestionCells = new LinkedList<WxQuestionCell>();
         for (WxQuestion wxQuestion : wxQuestions) {

@@ -157,4 +157,30 @@ public class WxQuestionController {
         return map;
     }
 
+    // 获取所有某问题的回答
+    @RequestMapping(value = "/questions", method = RequestMethod.GET)
+    public Map<String,Object> getAllQuestions(HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") == null) {
+                map.put("result", "fail");
+            } else {
+                int id = Integer.parseInt(subject.get("id").toString());
+
+                List<WxQuestionCell> wxQuestionCells = wxQuestionService.getAllQuestionWithRaiserId(id);
+                map.put("questions", wxQuestionCells);
+                map.put("result", "success");
+            }
+        }
+        return map;
+    }
+
+
 }

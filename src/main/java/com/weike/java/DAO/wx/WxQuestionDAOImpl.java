@@ -32,7 +32,11 @@ public class WxQuestionDAOImpl implements WxQuestionDAO {
         return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where grandparent_id = ?").setParameter(0, wxQuestion_id).list();
     }
 
+    public List<WxQuestion> findAllQuestionWithRaiserId(int user_id) {
+        return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where publisher_id = ? and grandparent_id = -1 order by id desc").setParameter(0, user_id).list();
+    }
+
     public int getAnswerNumWithQuestionId(int id) {
-        return sessionFactory.getCurrentSession().createQuery("from WxQuestion where grandparent_id = ?  ").setParameter(0, id).list().size();
+        return sessionFactory.getCurrentSession().createQuery("from WxQuestion where grandparent_id = ?").setParameter(0, id).list().size();
     }
 }
