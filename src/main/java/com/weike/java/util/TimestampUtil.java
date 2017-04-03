@@ -1,6 +1,8 @@
 package com.weike.java.util;
 
 import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -20,5 +22,16 @@ public class TimestampUtil {
         return new Timestamp(c.getTime().getTime());
     }
 
+
+    public static String transTimestemp2String(Timestamp t) {
+        DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        String s = "";
+        try {
+            s = sdf.format(t);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return s;
+    }
 
 }

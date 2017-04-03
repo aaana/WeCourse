@@ -98,6 +98,7 @@ public class WxMessageServiceImpl implements WxMessageService {
             WxQuestion wxQuestion = wxQuestionDAO.findQuestionWithId(wxMessage.getTrigger_id());
             wxMessageCell.setTrigger_content(wxQuestion.getContent());
             wxMessageCell.setCourse_id(wxQuestion.getCourse_id());
+            wxMessageCell.setGrandparent_id(wxQuestion.getGrandparent_id());
 
             wxQuestion = wxQuestionDAO.findQuestionWithId(wxQuestion.getGrandparent_id());
             wxMessageCell.setTarget_content(wxQuestion.getContent());
@@ -106,6 +107,7 @@ public class WxMessageServiceImpl implements WxMessageService {
             WxQuestion wxQuestion = wxQuestionDAO.findQuestionWithId(wxMessage.getTrigger_id());
             wxMessageCell.setTrigger_content(wxQuestion.getContent());
             wxMessageCell.setCourse_id(wxQuestion.getCourse_id());
+            wxMessageCell.setGrandparent_id(wxQuestion.getGrandparent_id());
 
             wxQuestion = wxQuestionDAO.findQuestionWithId(wxQuestion.getParent_id());
             wxMessageCell.setTarget_content(wxQuestion.getContent());

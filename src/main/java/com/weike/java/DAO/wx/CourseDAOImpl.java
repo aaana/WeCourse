@@ -40,7 +40,7 @@ public class CourseDAOImpl implements CourseDAO {
     }
 
     public Boolean updateCourseInfo(Course course) {
-        String hql = "update Course c set c.update_time = ?, c.stu_num = ?, c.attendance_num=?, c.available=?, c.qrcode_id where c.id = ?";
+        String hql = "update Course c set c.update_time = ?, c.stu_num = ?, c.attendance_num=?, c.available=?, c.qrcode_id=? where c.id = ?";
         Query query = sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter(0, course.getUpdate_time());
         query.setParameter(1, course.getStu_num());
