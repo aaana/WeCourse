@@ -43,10 +43,12 @@ public class StuCouDAOImpl implements StuCouDAO {
         return (List<StuCou>) sessionFactory.getCurrentSession().createQuery("from StuCou where user_id  = ? order by id desc ").setParameter(0, user_id).list();
     }
 
-    public Boolean updateAttendance(int id) {
-        String hql = "update StuCou s set s.attendance = s.attendance + 1 where s.id = ?";
+    public Boolean updateAttendance(StuCou stuCou) {
+        String hql = "update StuCou s set s.attendance = ?, s.use_qrcode_id = ? where s.id = ?";
         Query query = sessionFactory.getCurrentSession().createQuery(hql);
-        query.setParameter(0, id);
+        query.setParameter(0, stuCou.getAttendance());
+        query.setParameter(1, stuCou.getUse_qrcode_id());
+        query.setParameter(2, stuCou.getId());
 
         return (query.executeUpdate() > 0);
     }

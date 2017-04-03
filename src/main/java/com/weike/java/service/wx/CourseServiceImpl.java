@@ -141,8 +141,31 @@ public class CourseServiceImpl implements CourseService {
         return null;
     }
 
-    public Boolean attendCourse(int user_id, int course_id) {
-        return stuCouDAO.updateAttendance(user_id, course_id);
+    public int attendCourse(int user_id, int course_id) {
+        // check last qrcode record
+        Course course = courseDAO.findCourseById(course_id);
+        int qid = course.getQrcode_id();
+        QrcodeRecord q = qrcodeRecordDAO.findQrcodeRecordById(qid);
+
+        StuCou stuCou = stuCouDAO.findAllStuCouWithCourseIdAndUserId(course_id, user_id);
+        int useQId = stuCou.getUse_qrcode_id();
+        QrcodeRecord useQ = qrcodeRecordDAO.findQrcodeRecordById(useQId);
+
+        if (useQId == qid) {
+            // 已签到过
+            return 1;
+        } else {
+            Timestamp qExpireTime = q.getExpire_time();
+            Timestamp now = new Timestamp(System.currentTimeMillis());
+            if (TimestampUtil.compareTimestamp(qExpireTime, now) != 1) {
+                stuCou.setAttendance(stuCou.getAttendance() + 1);
+                stuCou.setUse_qrcode_id(qid);
+                stuCouDAO.updateAttendance(stuCou);
+                return 0;
+            }
+            // 过期
+            return 2;
+        }
     }
 
     public CourseCell transCourse2CourseCell(Course course) {

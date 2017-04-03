@@ -11,4 +11,6 @@ public interface QrcodeRecordDAO {
     public boolean updateExpireTime(QrcodeRecord q);
     public boolean updateSrc(QrcodeRecord q);
 
+    public QrcodeRecord findQrcodeRecordById(int id);
+
 }

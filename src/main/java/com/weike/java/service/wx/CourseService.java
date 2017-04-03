@@ -31,7 +31,7 @@ public interface CourseService {
     // 点到
     public String increaseAttendance(int user_id, int course_id, String path) throws WeixinException;
     // 签到
-    public Boolean attendCourse(int user_id, int course_id);
+    public int attendCourse(int user_id, int course_id);
 
     public CourseCell transCourse2CourseCell(Course course);
     public CourseCell transCourse2CourseCell(Course course, String teacher_name);

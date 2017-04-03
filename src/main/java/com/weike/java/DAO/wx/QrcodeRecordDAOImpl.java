@@ -36,4 +36,8 @@ public class QrcodeRecordDAOImpl implements QrcodeRecordDAO {
 
         return (query.executeUpdate() > 0);
     }
+
+    public QrcodeRecord findQrcodeRecordById(int id) {
+        return (QrcodeRecord) sessionFactory.getCurrentSession().createQuery("from QrcodeRecord where id=?").setParameter(0, id).uniqueResult();
+    }
 }

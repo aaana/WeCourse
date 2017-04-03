@@ -256,8 +256,19 @@ public class WxCourseController {
                         map.put("qrcodeSrc", "/qrcodes/" + fileName);
                         map.put("result", "success");
                     }
-                } else if (courseService.attendCourse(id, courseId)) {
-                    map.put("result", "success");
+                } else if (user.getType() == 1){
+                    int result = courseService.attendCourse(id, courseId);
+                    if (result == 0) {
+                        map.put("result", "success");
+                    } else if (result == 1){
+                        map.put("result", "fail");
+                        map.put("errmsg", "已签到过");
+
+                    } else {
+                        map.put("result", "fail");
+                        map.put("errmsg", "二维码过期");
+                    }
+
                 } else {
                     map.put("result", "fail");
                 }
