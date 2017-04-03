@@ -27,19 +27,20 @@ public class CourseDAOImpl implements CourseDAO {
     }
 
     public List<Course> findCoursesByCourseName(String course_name) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("from Course where course_name like ? and available = true").setParameter(0, "%" + course_name + "%").list();
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("from Course where course_name like ? and available = true order by id desc").setParameter(0, "%" + course_name + "%").list();
     }
 
     public List<Course> findCoursesByTeacherName(String teacher_name) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("SELECT Course.* FROM Course, User WHERE Course.user_id = User.id and User.name LIKE ? and Course.available = true").setParameter(0, "%" + teacher_name + "%").list();
+        return (List<Course>) sessionFactory.getCurrentSession()
+                .createQuery("SELECT c FROM Course c, User u WHERE u.name LIKE ? and c.user_id = u.id and c.available = true order by id desc").setParameter(0, "%" + teacher_name + "%").list();
     }
 
     public List<Course> findCoursesByUserId(int user_id) {
-        return (List<Course>) sessionFactory.getCurrentSession().createQuery("FROM Course WHERE user_id = ? and available = true").setParameter(0, user_id).list();
+        return (List<Course>) sessionFactory.getCurrentSession().createQuery("FROM Course WHERE user_id = ? and available = true order by id desc").setParameter(0, user_id).list();
     }
 
     public Boolean updateCourseInfo(Course course) {
-        String hql = "update Course c set c.update_time = ?, c.stu_num = ?, c.attendance_num=?, c.available=?, c.qrcode_id=? where c.id = ?";
+        String hql = "update Course c set c.update_time = ?, c.stu_num = ?, c.attendance_num=?, c.available=?, c.qrcode_id where c.id = ?";
         Query query = sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter(0, course.getUpdate_time());
         query.setParameter(1, course.getStu_num());

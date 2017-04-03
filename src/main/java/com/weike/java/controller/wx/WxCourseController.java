@@ -110,8 +110,10 @@ public class WxCourseController {
             int key = Integer.parseInt(keyWord);
             CourseCell course = courseService.getCourseByCourseId(key, u.getId());
             courseCells.add(course);
-        } else {
+        } else if (searchField.equals("name")){
             courseCells = courseService.getCoursesByCourseName(keyWord, u.getId());
+        } else if (searchField.equals("tname")){
+            courseCells = courseService.getCoursesByTeacherName(keyWord, u.getId());
         }
         return courseCells;
     }

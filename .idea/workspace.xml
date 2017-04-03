@@ -361,70 +361,27 @@
       <file leaf-file-name="WxCourseController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="269" column="21" selection-start-line="269" selection-start-column="21" selection-end-line="269" selection-end-column="21" />
+            <state relative-caret-position="133">
+              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
                 <element signature="method#findCourses#0;class#WxCourseController#0" expanded="false" />
                 <element signature="method#searchCourses#0;class#WxCourseController#0" expanded="false" />
                 <element signature="method#findAllCourses#0;class#WxCourseController#0" expanded="false" />
-                <element signature="method#searchCourses#1;class#WxCourseController#0" expanded="false" />
                 <element signature="method#findCertainCourse#0;class#WxCourseController#0" expanded="false" />
                 <element signature="method#createCourse#0;class#WxCourseController#0" expanded="false" />
                 <element signature="method#deleteCourse#0;class#WxCourseController#0" expanded="false" />
                 <element signature="method#joinCourse#0;class#WxCourseController#0" expanded="false" />
+                <element signature="method#attendCourse#0;class#WxCourseController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CourseServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseServiceImpl.java">
+      <file leaf-file-name="CourseDAOImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
-              <folding>
-                <element signature="method#createCourse#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#closeCourse#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#getCourseByCourseId#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#getCoursesByCourseName#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#getCoursesByTeacherName#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#getCoursesByTeacherId#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#getCoursesByStuId#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#joinNewCourse#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#increaseAttendance#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#transCourse2CourseCell#0;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#transCourse2CourseCell#1;class#CourseServiceImpl#0" expanded="false" />
-                <element signature="method#transCourse2CourseCell#2;class#CourseServiceImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StuCouDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/StuCouDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StuCouDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/StuCouDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="38" column="145" selection-start-line="38" selection-start-column="145" selection-end-line="38" selection-end-column="145" />
               <folding />
             </state>
           </provider>
@@ -497,15 +454,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/entity/wx/StuCou.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/entity/wx/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/entity/wx/CourseCell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/util/TimestampUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/QrcodeRecordDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/QrcodeRecordDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/StuCouDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/StuCouDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -625,36 +582,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SpringMVC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WeCourse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1374,12 +1301,12 @@
       <workItem from="1490925273479" duration="765000" />
       <workItem from="1490935295174" duration="768000" />
       <workItem from="1490940875147" duration="6893000" />
-      <workItem from="1491123090175" duration="15874000" />
+      <workItem from="1491123090175" duration="19380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384810000" />
+    <option name="totallyTimeSpent" value="388316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1417,7 +1344,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27945206" sideWeight="0.64943457" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16438356" sideWeight="0.64943457" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1491,8 +1418,32 @@
           <properties />
           <option name="timeStamp" value="663" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="749" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseServiceImpl.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="750" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="751" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseServiceImpl.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="752" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="749" />
+      <option name="time" value="753" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1533,13 +1484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/WxMessageDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="34" column="138" selection-start-line="34" selection-start-column="138" selection-end-line="34" selection-end-column="138" />
         </state>
       </provider>
     </entry>
@@ -1803,14 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/weike/qrcodes/course6_qrcode1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1860,36 +1796,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/util/WeixinUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="269" column="21" selection-start-line="269" selection-start-column="21" selection-end-line="269" selection-end-column="21" />
-          <folding>
-            <element signature="method#findCourses#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#searchCourses#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#findAllCourses#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#searchCourses#1;class#WxCourseController#0" expanded="false" />
-            <element signature="method#findCertainCourse#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#createCourse#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#deleteCourse#0;class#WxCourseController#0" expanded="false" />
-            <element signature="method#joinCourse#0;class#WxCourseController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1909,24 +1820,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/controller/wx/WxCourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="method#findCourses#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#searchCourses#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#findAllCourses#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#findCertainCourse#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#createCourse#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#deleteCourse#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#joinCourse#0;class#WxCourseController#0" expanded="false" />
+            <element signature="method#attendCourse#0;class#WxCourseController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/WxMessageDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="163" column="25" selection-start-line="163" selection-start-column="25" selection-end-line="163" selection-end-column="25" />
+        <state relative-caret-position="207">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="method#createCourse#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#closeCourse#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#getCourseByCourseId#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#getCoursesByCourseName#0;class#CourseServiceImpl#0" expanded="false" />
-            <element signature="method#getCoursesByTeacherName#0;class#CourseServiceImpl#0" expanded="false" />
+            <element signature="e#2364#2376#0" expanded="true" />
             <element signature="method#getCoursesByTeacherId#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#getCoursesByStuId#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#joinNewCourse#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#increaseAttendance#0;class#CourseServiceImpl#0" expanded="false" />
+            <element signature="method#attendCourse#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#transCourse2CourseCell#0;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#transCourse2CourseCell#1;class#CourseServiceImpl#0" expanded="false" />
             <element signature="method#transCourse2CourseCell#2;class#CourseServiceImpl#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/service/wx/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/weike/java/DAO/wx/CourseDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="38" column="145" selection-start-line="38" selection-start-column="145" selection-end-line="38" selection-end-column="145" />
+          <folding />
         </state>
       </provider>
     </entry>
