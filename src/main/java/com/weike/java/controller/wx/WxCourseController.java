@@ -253,7 +253,7 @@ public class WxCourseController {
                     if(!directory.exists()) {
                         directory.mkdirs();
                     }
-                    String fileName = courseService.increaseAttendance(id, courseId, path);
+                    String fileName = courseService.increaseAttendance(id, courseId, path, "pages/attendance?courseId=" + course_id);
                     if (fileName != null) {
                         map.put("qrcodeSrc", "/qrcodes/" + fileName);
                         map.put("result", "success");

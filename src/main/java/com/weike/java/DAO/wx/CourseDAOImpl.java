@@ -32,7 +32,7 @@ public class CourseDAOImpl implements CourseDAO {
 
     public List<Course> findCoursesByTeacherName(String teacher_name) {
         return (List<Course>) sessionFactory.getCurrentSession()
-                .createQuery("SELECT c FROM Course c, User u WHERE u.name LIKE ? and c.user_id = u.id and c.available = true order by id desc").setParameter(0, "%" + teacher_name + "%").list();
+                .createQuery("SELECT c FROM Course c, User u WHERE u.name LIKE ? and c.user_id = u.id and c.available = true order by c.id desc").setParameter(0, "%" + teacher_name + "%").list();
     }
 
     public List<Course> findCoursesByUserId(int user_id) {

@@ -29,7 +29,7 @@ public interface CourseService {
     public CourseCell joinNewCourse(int user_id, int course_id);
 
     // 点到
-    public String increaseAttendance(int user_id, int course_id, String path) throws WeixinException;
+    public String increaseAttendance(int user_id, int course_id, String save_path, String redirect_path) throws WeixinException;
     // 签到
     public int attendCourse(int user_id, int course_id);
 

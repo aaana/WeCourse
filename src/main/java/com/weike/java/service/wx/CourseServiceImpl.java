@@ -113,7 +113,7 @@ public class CourseServiceImpl implements CourseService {
         return courseCell;
     }
 
-    public String increaseAttendance(int user_id, int course_id, String path) throws WeixinException {
+    public String increaseAttendance(int user_id, int course_id, String save_path, String redirect_path) throws WeixinException {
         Course course = courseDAO.findCourseById(course_id);
         if (course != null && user_id == course.getUser_id()) {
 
@@ -125,9 +125,9 @@ public class CourseServiceImpl implements CourseService {
 
             // generate qrcode and save
             String fileName = "course" + course_id + "_qrcode" + qid + ".jpg";
-            String filePath = path + File.separator + fileName;
+            String filePath = save_path + File.separator + fileName;
             WeixinUtil weixinUtil = new WeixinUtil();
-            boolean result = weixinUtil.generateQRCode("pages/courses", filePath);
+            boolean result = weixinUtil.generateQRCode(redirect_path, filePath);
 
             if (result) {
                 // database update
