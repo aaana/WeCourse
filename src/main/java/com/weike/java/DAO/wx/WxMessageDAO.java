@@ -13,6 +13,4 @@ public interface WxMessageDAO {
     public WxMessage findMessageWithId(int id);
     public List<WxMessage> findAllMessageWithReceiverId(int receiver_id);
     public List<WxMessage> findAllUnreadMessageWithReceiverId(int receiver_id);
-    public List<WxMessage> findAllMessageWithReceiverIdAndType(int receiver_id, int type);
-    public List<WxMessage> findAllUnreadMessageWithReceiverIdAndType(int receiver_id, int type);
 }

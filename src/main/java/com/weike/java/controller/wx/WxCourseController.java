@@ -1,6 +1,7 @@
 package com.weike.java.controller.wx;
 
 import com.weike.java.entity.User;
+import com.weike.java.entity.wx.AttendanceCell;
 import com.weike.java.entity.wx.Course;
 import com.weike.java.entity.wx.CourseCell;
 import com.weike.java.entity.wx.WxUser;
@@ -278,4 +279,48 @@ public class WxCourseController {
         }
         return map;
     }
+
+    // 获得出勤记录
+    @RequestMapping(value = "/course/{course_id}/attendanceRecords", method = RequestMethod.GET)
+    public Map<String,Object> getAttendanceList(@PathVariable String course_id, HttpServletRequest request) throws Exception {
+        String token = request.getHeader("Authorization");
+
+        Map<String,Object> map = new HashMap<String, Object>();
+        if (token == null) {
+            map.put("result", "fail");
+        } else {
+            JwtUtil jwtUtil = new JwtUtil();
+            Map<String,Object> subject = jwtUtil.translateSubject(jwtUtil.parseJWT(token));
+
+            if (subject.get("id") == null) {
+                map.put("result", "fail");
+            } else {
+                int id = Integer.parseInt(subject.get("id").toString());
+                int courseId = Integer.parseInt(course_id);
+                User u = wxUserService.findSimpleUserById(id);
+                Course course = courseService.getSimpleCourseByCourseId(courseId);
+
+                int attendanceAll = course.getAttendance_num();
+                map.put("all", attendanceAll);
+                List<AttendanceCell> attendanceCells = new LinkedList<AttendanceCell>();
+                if (u.getType() == 0) {
+                    attendanceCells = courseService.getAttendanceRecordWithCourseId(courseId, attendanceAll);
+                    map.put("attendanceCells", attendanceCells);
+                } else {
+
+                    AttendanceCell attendanceCell = courseService.getAttendanceRecordWithCourseIdAndUserId(courseId, id, attendanceAll);
+                    if (attendanceCell != null){
+                        attendanceCells.add(attendanceCell);
+                    }
+
+                }
+                map.put("attendanceCells", attendanceCells);
+                map.put("result", "success");
+            }
+        }
+        return map;
+    }
+
+
+
 }

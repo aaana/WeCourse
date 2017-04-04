@@ -1,15 +1,13 @@
 package com.weike.java.service.wx;
 
 import com.weike.java.DAO.UserDAO;
+import com.weike.java.DAO.wx.AccountDAO;
 import com.weike.java.DAO.wx.CourseDAO;
 import com.weike.java.DAO.wx.QrcodeRecordDAO;
 import com.weike.java.DAO.wx.StuCouDAO;
 import com.weike.java.entity.Follow;
 import com.weike.java.entity.User;
-import com.weike.java.entity.wx.Course;
-import com.weike.java.entity.wx.CourseCell;
-import com.weike.java.entity.wx.QrcodeRecord;
-import com.weike.java.entity.wx.StuCou;
+import com.weike.java.entity.wx.*;
 import com.weike.java.util.TimestampUtil;
 import com.weike.java.util.WeixinUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +31,9 @@ public class CourseServiceImpl implements CourseService {
 
     @Autowired
     private UserDAO userDAO;
+
+    @Autowired
+    private AccountDAO accountDAO;
 
     @Autowired
     private StuCouDAO stuCouDAO;
@@ -169,6 +170,36 @@ public class CourseServiceImpl implements CourseService {
             // 过期
             return 2;
         }
+    }
+
+    public List<AttendanceCell> getAttendanceRecordWithCourseId(int course_id, int attAll) {
+        List<StuCou> stuCous = stuCouDAO.findAllStuCouWithCourseId(course_id);
+        List<AttendanceCell> attendanceCells = new LinkedList<AttendanceCell>();
+        for (StuCou stuCou : stuCous) {
+            int absence = attAll;
+            int rate = attAll;
+            if (attAll != 0) {
+                absence = attAll-stuCou.getAttendance();
+                rate = stuCou.getAttendance() * 100 / attAll;
+            }
+            int stu_num = accountDAO.getStuNum(stuCou.getUser_id());
+            AttendanceCell attendanceCell = new AttendanceCell(stu_num, stuCou.getAttendance(), absence, rate);
+            attendanceCells.add(attendanceCell);
+        }
+        return attendanceCells;
+    }
+
+    public AttendanceCell getAttendanceRecordWithCourseIdAndUserId(int course_id, int user_id, int attAll) {
+        StuCou stuCou = stuCouDAO.findAllStuCouWithCourseIdAndUserId(course_id, user_id);
+        int absence = attAll;
+        int rate = attAll;
+        if (attAll != 0) {
+            absence = attAll-stuCou.getAttendance();
+            rate = stuCou.getAttendance() * 100 / attAll;
+        }
+        int stu_num = accountDAO.getStuNum(stuCou.getUser_id());
+        AttendanceCell attendanceCell = new AttendanceCell(stu_num, stuCou.getAttendance(), absence, rate);
+        return attendanceCell;
     }
 
     public CourseCell transCourse2CourseCell(Course course) {

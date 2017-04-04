@@ -1,5 +1,6 @@
 package com.weike.java.service.wx;
 
+import com.weike.java.entity.wx.AttendanceCell;
 import com.weike.java.entity.wx.Course;
 import com.weike.java.entity.wx.CourseCell;
 import com.weike.java.entity.wx.WxUser;
@@ -32,6 +33,10 @@ public interface CourseService {
     public String increaseAttendance(int user_id, int course_id, String save_path, String redirect_path) throws WeixinException;
     // 签到
     public int attendCourse(int user_id, int course_id);
+
+    // 获得出勤记录
+    public List<AttendanceCell> getAttendanceRecordWithCourseId(int course_id, int attAll);
+    public AttendanceCell getAttendanceRecordWithCourseIdAndUserId(int course_id, int user_id, int attAll);
 
     public CourseCell transCourse2CourseCell(Course course);
     public CourseCell transCourse2CourseCell(Course course, String teacher_name);

@@ -22,7 +22,12 @@
             <a href="#"><span>${user.weike_num}</span><span>微课</span></a>
         </div>
     </div>
-    <div class="sidebarPublishBtn">
-        <button onclick="window.location.href='./upload'">发布微课</button>
-    </div>
+    <c:choose>
+        <c:when test="${user.type == 0}">
+            <div class="sidebarPublishBtn">
+                <button onclick="window.location.href='./upload'">发布微课</button>
+            </div>
+        </c:when>
+    </c:choose>
+
 </div>

@@ -15,7 +15,5 @@ public interface WxMessageService {
     public WxMessage getSimpleMessageWithId(int message_id);
     public List<WxMessageCell> getMessageWithUserId(int user_id);
     public List<WxMessageCell> getUnreadMessageWithUserId(int user_id);
-    public List<WxMessageCell> getMessageWithUserIdAndType(int user_id, int notice_type);
-    public List<WxMessageCell> getUnreadMessageWithUserIdAndType(int user_id, int notice_type);
     public int getUnreadMessageNum(int user_id);
 }

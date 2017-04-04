@@ -25,7 +25,7 @@ public class WxQuestionDAOImpl implements WxQuestionDAO {
     }
 
     public List<WxQuestion> findAllQuestionWithCourseId(int course_id) {
-        return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where course_id  = ? and grandparent_id = -1 order by id desc ").setParameter(0, course_id).list();
+        return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where course_id  = ? and grandparent_id = -1 order by id desc").setParameter(0, course_id).list();
     }
 
     public List<WxQuestion> findAllQuestionWithFirstQuestionId(int wxQuestion_id) {
@@ -33,7 +33,7 @@ public class WxQuestionDAOImpl implements WxQuestionDAO {
     }
 
     public List<WxQuestion> findAllQuestionWithRaiserId(int user_id) {
-        return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("from WxQuestion where publisher_id = ? and grandparent_id = -1 order by id desc").setParameter(0, user_id).list();
+        return (List<WxQuestion>) sessionFactory.getCurrentSession().createQuery("select q from WxQuestion q, Course c where q.publisher_id=? and q.grandparent_id=-1 and q.course_id=c.id and c.available=true order by q.id desc").setParameter(0, user_id).list();
     }
 
     public int getAnswerNumWithQuestionId(int id) {

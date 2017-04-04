@@ -23,4 +23,8 @@ public class AccountDAOImpl implements AccountDAO {
     public Account checkAccount(String wechat_id) {
         return (Account) sessionFactory.getCurrentSession().createQuery("from Account where wechat_id=?").setParameter(0, wechat_id).uniqueResult();
     }
+
+    public int getStuNum(int wecourse_id) {
+        return (Integer) sessionFactory.getCurrentSession().createQuery("select student_id from Account where wecourse_id=?").setParameter(0, wecourse_id).uniqueResult();
+    }
 }

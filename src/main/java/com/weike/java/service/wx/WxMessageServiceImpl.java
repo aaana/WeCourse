@@ -53,15 +53,6 @@ public class WxMessageServiceImpl implements WxMessageService {
         return transWxMessage2WxMessageCell(wxMessages);
     }
 
-    public List<WxMessageCell> getMessageWithUserIdAndType(int user_id, int message_type) {
-        List<WxMessage> wxMessages = wxMessageDAO.findAllMessageWithReceiverIdAndType(user_id, message_type);
-        return transWxMessage2WxMessageCell(wxMessages);
-    }
-
-    public List<WxMessageCell> getUnreadMessageWithUserIdAndType(int user_id, int message_type) {
-        List<WxMessage> wxMessages = wxMessageDAO.findAllUnreadMessageWithReceiverIdAndType(user_id, message_type);
-        return transWxMessage2WxMessageCell(wxMessages);
-    }
 
     public int getUnreadMessageNum(int user_id) {
         return wxMessageDAO.findAllUnreadMessageWithReceiverId(user_id).size();
