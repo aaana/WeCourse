@@ -128,8 +128,8 @@
                     <li><a onclick="changePage2FollowUser()">关注的人(${visiting.following_num})</a></li>
                     <span></span>
                     <c:choose>
-                        <c:when test="${user != null && user.id == visiting.id}">
-                            <button class="btn btn-primary">+<span>发布微课</span></button>
+                        <c:when test="${user != null && user.id == visiting.id && user.type == 0}">
+                            <button class="btn btn-primary" onclick="window.location.href='./upload'">+<span>发布微课</span></button>
                         </c:when>
                     </c:choose>
 
@@ -202,7 +202,7 @@
                         <div class="personalPageContentItem" weike_id="${weikeCell.id}">
                             <input type="hidden" class="fileType" value="${weikeCell.file_type}">
                             <div class="media">
-                                <div class="media-left">
+                                <div class="media-left" onclick="gotoPersonalPage(this)" user_id="${weikeCell.user_id}">
                                     <img src="../resource/img/${weikeCell.user_avatar}" class=" img-circle">
                                 </div>
                                 <div class="media-body">
@@ -270,7 +270,7 @@
                             <div class="personalPageContentItem followList">
                                 <c:forEach var="follow" items="${followings}">
                                     <div class="media">
-                                        <div class="media-left">
+                                        <div class="media-left"  onclick="gotoPersonalPage(this)" user_id="${follow.id}">
                                             <img src="../resource/img/${follow.avatar}" class=" img-circle">
                                         </div>
                                         <div class="media-body">
@@ -291,7 +291,7 @@
                                                     </c:when>
                                                     <c:otherwise>
                                                         <div user_id="${follow.id}">
-                                                            <<button type="button" class="btn btn-primary" onclick="doFollow(this)">关注</button>
+                                                            <button type="button" class="btn btn-primary" onclick="doFollow(this)">关注</button>
                                                         </div>
                                                     </c:otherwise>
                                                 </c:choose>

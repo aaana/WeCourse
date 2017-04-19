@@ -46,7 +46,7 @@ public class FollowDAOImpl implements FollowDAO {
     }
 
     public List<Follow> findAllFollowsWithUserId(int user_id) {
-        return sessionFactory.getCurrentSession().createQuery("from Follow where follower_id=? order by id desc").setParameter(0, user_id).list();
+        return sessionFactory.getCurrentSession().createQuery("from Follow where follower_id=? and valid=true order by id desc").setParameter(0, user_id).list();
     }
 
     public int findFollowNumWithUserId(int user_id) {
